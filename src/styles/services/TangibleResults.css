@@ -1,0 +1,49 @@
+.TangibleResults-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
+.TangibleResults-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.TangibleResults-header .TangibleResults-header-title { width: 80%; }
+.TangibleResults-item-first { width: 40%; }
+.TangibleResults-item-first .TangibleResults-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.TangibleResults-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+
+.TangibleResults-section .info { width: 40%; margin-left: auto; }
+.TangibleResults-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: #fff; margin-bottom: 48px; }
+.TangibleResults-section .info .assets--list { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 40px; list-style: none; padding: 0; margin-bottom: 40px; }
+.TangibleResults-section .info .assets--list .img--box { width: 200px; height: auto; margin-bottom: 16px; }
+.TangibleResults-section .info .assets--list .img--box img { width: 100%; height: auto; object-fit: contain; }
+.TangibleResults-section .info .assets--list .h4 { color: #FFF; font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 24px; }
+.TangibleResults-section .info .assets--list p { font-size: 18px; }
+
+
+@media screen and (min-width: 2560px) {
+.TangibleResults-header .TangibleResults-header-description { font-size: 1.6rem; }
+.TangibleResults-container { gap: 12rem; }
+}
+
+@media screen and (max-width: 1440px) {
+.TangibleResults-header .TangibleResults-header-description { font-size: 1.1rem; }
+.TangibleResults-container { gap: 8rem; }
+.TangibleResults-item-first { width: 35%; }
+}
+
+@media screen and (max-width: 1024px) {
+.TangibleResults-header { flex-direction: column; margin-bottom: 40px; }
+.TangibleResults-header .TangibleResults-header-title,
+.TangibleResults-item-first .TangibleResults-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+.TangibleResults-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
+.TangibleResults-item-first,
+.TangibleResults-item-second { width: 100%; margin-top: 0; }
+}
+
+@media screen and (max-width: 768px) {
+.TangibleResults-section { padding: 6vh 0; }
+.TangibleResults-header { padding: 0 5vw; }
+.TangibleResults-header .TangibleResults-header-title { font-size: 1.2rem; }
+.TangibleResults-item-first .TangibleResults-header-description { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 480px) {
+.TangibleResults-section { padding: 5vh 0; }
+.TangibleResults-header .TangibleResults-header-title { font-size: 1rem; }
+.TangibleResults-item-first .TangibleResults-header-description { font-size: 0.9rem; }
+.TangibleResults-container { gap: 2rem; }
+}

@@ -1,0 +1,44 @@
+.JoinTheWorkspace-section { padding: 10vh 0; position: relative; }
+.JoinTheWorkspace-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.JoinTheWorkspace-header .JoinTheWorkspace-header-title { width: 50%; }
+.JoinTheWorkspace-item-first { width: 40%; }
+.JoinTheWorkspace-item-first .JoinTheWorkspace-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.JoinTheWorkspace-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; justify-content: space-between; }
+
+.JoinTheWorkspace-section .JoinTheWorkspace-item-second { min-width: 20%; }
+.JoinTheWorkspace-section .JoinTheWorkspace-item-second p { font-size: 21px; font-weight: 400; margin-bottom: 16px; }
+.JoinTheWorkspace-section .JoinTheWorkspace-item-second p a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
+@media screen and (min-width: 2560px) {
+.JoinTheWorkspace-header .JoinTheWorkspace-header-description { font-size: 1.6rem; }
+.JoinTheWorkspace-container { gap: 12rem; }
+}
+
+@media screen and (max-width: 1440px) {
+.JoinTheWorkspace-header .JoinTheWorkspace-header-description { font-size: 1.1rem; }
+.JoinTheWorkspace-container { gap: 8rem; }
+.JoinTheWorkspace-item-first { width: 35%; }
+}
+
+@media screen and (max-width: 1024px) {
+.JoinTheWorkspace-header { flex-direction: column; margin-bottom: 40px; }
+.JoinTheWorkspace-header .JoinTheWorkspace-header-title,
+.JoinTheWorkspace-item-first .JoinTheWorkspace-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+.JoinTheWorkspace-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
+.JoinTheWorkspace-item-first,
+.JoinTheWorkspace-item-second { width: 100%; margin-top: 0; }
+}
+
+@media screen and (max-width: 768px) {
+.JoinTheWorkspace-section { padding: 6vh 0; }
+.JoinTheWorkspace-header { padding: 0 5vw; }
+.JoinTheWorkspace-header .JoinTheWorkspace-header-title { font-size: 1.2rem; }
+.JoinTheWorkspace-item-first .JoinTheWorkspace-header-description { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 480px) {
+.JoinTheWorkspace-section { padding: 5vh 0; }
+.JoinTheWorkspace-header .JoinTheWorkspace-header-title { font-size: 1rem; }
+.JoinTheWorkspace-item-first .JoinTheWorkspace-header-description { font-size: 0.9rem; }
+.JoinTheWorkspace-container { gap: 2rem; }
+}

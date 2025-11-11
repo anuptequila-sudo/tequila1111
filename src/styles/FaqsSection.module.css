@@ -1,0 +1,240 @@
+/* === Base Styles (Desktop 1920px) === */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--bg);
+  gap: 20px;
+}
+
+.groupOne {
+  flex: 0 0 30%;
+}
+.tabListWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+.tabBtn {
+  color: #fff5;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.tabBtn.active {
+  border: none;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.groupOne h2 {
+  font-size: 5.5rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.groupOne span {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.ctaBtn {
+  padding: 12px 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.ctaBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.gap {
+  flex: 0 0 20%;
+}
+
+.faqsDiv {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.faqItem {
+  border-bottom: 1px solid #444;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.faqItem:hover {
+  /* background: #fff;
+  color: #000; */
+}
+
+.faqItem:hover,
+.active {
+  border-bottom: 1px solid #e0dfdf;
+}
+
+.faqQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 0.7rem;
+}
+
+/* Smooth FAQ open/close transition */
+.faqAnswerWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.faqAnswerWrapper.open {
+  max-height: 400px; /* large enough for your longest answer */
+  transition: max-height 0.9s ease, opacity 0.4s ease;
+  opacity: 1;
+}
+
+.faqAnswer {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-style: italic;
+  margin-top: 1.5rem;
+  width: 65%;
+  color: #c4c4c4;
+}
+
+.active {
+  /* background: #fff;
+  color: #000; */
+  border-radius: 4px;
+}
+
+.active .faqAnswer {
+  color: #c4c4c4;
+}
+
+/* === Extra Large Screens (Mac / >2560px) === */
+@media (min-width: 2560px) {
+  .groupOne h2 {
+    font-size: 7rem;
+  }
+  .groupOne span {
+    font-size: 2.2rem;
+  }
+  .faqQuestion {
+    font-size: 1.2rem;
+  }
+  .faqAnswer {
+    font-size: 1.1rem;
+  }
+}
+
+/* === Laptops (1366px - 1440px) === */
+@media (max-width: 1440px) {
+  .groupOne h2 {
+    font-size: 5rem;
+  }
+  .groupOne span {
+    font-size: 2.2rem;
+  }
+  .faqQuestion {
+    font-size: 1rem;
+  }
+  .faqAnswer {
+    font-size: 0.95rem;
+  }
+}
+
+/* === Tablets (768px - 1024px) === */
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 1rem 5vw;
+  }
+  .groupOne,
+  .gap,
+  .faqsDiv {
+    flex: 100%;
+  }
+  .gap {
+    display: none;
+  }
+  .groupOne h2 {
+    font-size: 3.5rem;
+  }
+  .groupOne span {
+    font-size: 1.8rem;
+  }
+  .faqQuestion {
+    font-size: 0.95rem;
+  }
+  .faqAnswer {
+    font-size: 0.85rem;
+  }
+  .faqsDiv {
+    margin-top: 3rem;
+  }
+}
+
+/* === Mobile (<768px) === */
+@media (max-width: 768px) {
+  .groupOne h2 {
+    font-size: 2.8rem;
+  }
+  .groupOne span {
+    font-size: 1.5rem;
+  }
+  .faqQuestion {
+    font-size: 0.9rem;
+  }
+  .faqAnswer {
+    font-size: 0.8rem;
+  }
+  .faqsDiv {
+    margin-top: 2rem;
+  }
+  .ctaBtn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* === Small Mobiles (<480px) === */
+@media (max-width: 480px) {
+  .groupOne h2 {
+    font-size: 2rem;
+  }
+  .groupOne span {
+    font-size: 1.2rem;
+  }
+  .faqQuestion {
+    font-size: 0.85rem;
+  }
+  .faqAnswer {
+    font-size: 0.75rem;
+  }
+  .ctaBtn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+}

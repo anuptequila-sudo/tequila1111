@@ -1,0 +1,51 @@
+.BrandingServices-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
+.BrandingServices-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.BrandingServices-header .BrandingServices-header-title { width: 50%; }
+.BrandingServices-item-first { width: 35%; }
+.BrandingServices-item-first .BrandingServices-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.BrandingServices-container { display: flex; gap: 4rem; padding: 0 2vw; scroll-behavior: smooth; }
+.BrandingServices-container .BrandingServices-item-second { flex: 1; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
+.BrandingServices-container .BrandingServices-item-second .info { width: 100%; max-width: 300px; }
+.BrandingServices-container .BrandingServices-item-second .info .h4 { font-size: 36px; line-height: 1.1; font-weight: 400; text-transform: capitalize; margin-bottom: 24px; }
+.BrandingServices-container .BrandingServices-item-second .info p { font-size: 16px; line-height: 1.4; font-weight: 400; }
+.BrandingServices-container .BrandingServices-item-second .img-box { display: flex; flex: 1; }
+.BrandingServices-container .BrandingServices-item-second .img-box img { width: 100%; height: auto; object-fit: contain; }
+
+.branding--services--list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 60px; }
+.branding--services--list .branding--card { border: 1px solid rgba(255, 255, 255, 0.5); padding: 55px; }
+.branding--services--list .branding--card .branding--card--img { width: 150px; display: flex; margin-bottom: 120px; }
+.branding--services--list .branding--card .branding--card--img img { width: 100%; height: auto; object-fit: contain; }
+.branding--services--list .branding--card .h2 { font-size: 36px; font-weight: 400; color: #fff; margin-bottom: 24px; }
+.branding--services--list .branding--card p { font-size: 20px; font-weight: 400; color: #fff; margin-bottom: 0; }
+
+@media screen and (min-width: 2560px) {
+.BrandingServices-header .BrandingServices-header-description { font-size: 1.6rem; }
+}
+
+@media screen and (max-width: 1440px) {
+.BrandingServices-header .BrandingServices-header-description { font-size: 1.1rem; }
+.BrandingServices-item-first { width: 35%; }
+}
+
+@media screen and (max-width: 1024px) {
+.BrandingServices-header { flex-direction: column; margin-bottom: 40px; }
+.BrandingServices-header .BrandingServices-header-title,
+.BrandingServices-item-first .BrandingServices-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+.BrandingServices-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
+.BrandingServices-item-first,
+.BrandingServices-item-second { width: 100%; margin-top: 0; }
+}
+
+@media screen and (max-width: 768px) {
+.BrandingServices-section { padding: 6vh 0; }
+.BrandingServices-header { padding: 0 5vw; }
+.BrandingServices-header .BrandingServices-header-title { font-size: 1.2rem; }
+.BrandingServices-item-first .BrandingServices-header-description { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 480px) {
+.BrandingServices-section { padding: 5vh 0; }
+.BrandingServices-header .BrandingServices-header-title { font-size: 1rem; }
+.BrandingServices-item-first .BrandingServices-header-description { font-size: 0.9rem; }
+.BrandingServices-container { gap: 2rem; }
+}

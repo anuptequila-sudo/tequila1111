@@ -1,0 +1,46 @@
+.CoreValues-section { padding: 10vh 0; position: relative; overflow: hidden; }
+.CoreValues-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.CoreValues-header .CoreValues-header-title { width: 50%; }
+.CoreValues-item-first { width: 40%; }
+.CoreValues-item-first .CoreValues-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.CoreValues-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+
+.CoreValues--list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 120px; }
+.CoreValues--list .CoreValues--box { transform-origin: center center; position: relative; overflow: hidden; width: 100%; padding-bottom: 125%; border: 1px solid #fff; }
+.CoreValues--list .CoreValues--box .info--box { display: flex; flex-flow: column wrap; justify-content: space-between; position: absolute; bottom: 0; left: 0; color: #fff; z-index: 2; padding: 50px; }
+.CoreValues--list .CoreValues--box .info--box .title { font-size: 60px; font-family: InstrumentSerifRegular, serif; color: #fff; margin-bottom: 40px; }
+.CoreValues--list .CoreValues--box .info--box .description { font-size: 21px; color: #fff; margin-bottom: 0; }
+
+@media screen and (min-width: 2560px) {
+.CoreValues-header .CoreValues-header-description { font-size: 1.6rem; }
+.CoreValues-container { gap: 12rem; }
+}
+
+@media screen and (max-width: 1440px) {
+.CoreValues-header .CoreValues-header-description { font-size: 1.1rem; }
+.CoreValues-container { gap: 8rem; }
+.CoreValues-item-first { width: 35%; }
+}
+
+@media screen and (max-width: 1024px) {
+.CoreValues-header { flex-direction: column; margin-bottom: 40px; }
+.CoreValues-header .CoreValues-header-title,
+.CoreValues-item-first .CoreValues-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+.CoreValues-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
+.CoreValues-item-first,
+.CoreValues-item-second { width: 100%; margin-top: 0; }
+}
+
+@media screen and (max-width: 768px) {
+.CoreValues-section { padding: 6vh 0; }
+.CoreValues-header { padding: 0 5vw; }
+.CoreValues-header .CoreValues-header-title { font-size: 1.2rem; }
+.CoreValues-item-first .CoreValues-header-description { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 480px) {
+.CoreValues-section { padding: 5vh 0; }
+.CoreValues-header .CoreValues-header-title { font-size: 1rem; }
+.CoreValues-item-first .CoreValues-header-description { font-size: 0.9rem; }
+.CoreValues-container { gap: 2rem; }
+}

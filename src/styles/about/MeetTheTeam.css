@@ -1,0 +1,47 @@
+.MeetTheTeam-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; }
+.MeetTheTeam-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.MeetTheTeam-header .MeetTheTeam-header-title { width: 50%; }
+.MeetTheTeam-item-first { width: 40%; }
+.MeetTheTeam-item-first .MeetTheTeam-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.MeetTheTeam-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+
+.team--list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); gap: 60px 20px; margin-top: 80px; }
+.team--list li .team--card { width: 100%; transform-origin: center bottom; }
+.team--list li .team--card .team--img { width: 100%; display: flex; margin-bottom: 15px; }
+.team--list li .team--card .team--img img { width: 100%; }
+.team--list li .team--card .name { font-size: 37px; font-weight: 400; text-transform: capitalize; margin-bottom: 5px; }
+.team--list li .team--card .title { font-size: 37px; font-weight: 400; text-transform: capitalize; font-family: InstrumentSerifRegular, serif; margin-bottom: 0; }
+
+@media screen and (min-width: 2560px) {
+.MeetTheTeam-header .MeetTheTeam-header-description { font-size: 1.6rem; }
+.MeetTheTeam-container { gap: 12rem; }
+}
+
+@media screen and (max-width: 1440px) {
+.MeetTheTeam-header .MeetTheTeam-header-description { font-size: 1.1rem; }
+.MeetTheTeam-container { gap: 8rem; }
+.MeetTheTeam-item-first { width: 35%; }
+}
+
+@media screen and (max-width: 1024px) {
+.MeetTheTeam-header { flex-direction: column; margin-bottom: 40px; }
+.MeetTheTeam-header .MeetTheTeam-header-title,
+.MeetTheTeam-item-first .MeetTheTeam-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+.MeetTheTeam-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
+.MeetTheTeam-item-first,
+.MeetTheTeam-item-second { width: 100%; margin-top: 0; }
+}
+
+@media screen and (max-width: 768px) {
+.MeetTheTeam-section { padding: 6vh 0; }
+.MeetTheTeam-header { padding: 0 5vw; }
+.MeetTheTeam-header .MeetTheTeam-header-title { font-size: 1.2rem; }
+.MeetTheTeam-item-first .MeetTheTeam-header-description { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 480px) {
+.MeetTheTeam-section { padding: 5vh 0; }
+.MeetTheTeam-header .MeetTheTeam-header-title { font-size: 1rem; }
+.MeetTheTeam-item-first .MeetTheTeam-header-description { font-size: 0.9rem; }
+.MeetTheTeam-container { gap: 2rem; }
+}

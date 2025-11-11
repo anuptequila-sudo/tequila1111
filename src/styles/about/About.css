@@ -1,0 +1,3 @@
+.about-section { flex-flow: column wrap; }
+.about-description { padding-left: 0; }
+.about-right { margin-left: auto; }

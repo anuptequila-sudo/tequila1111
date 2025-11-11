@@ -1,0 +1,37 @@
+.ceo-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; }
+.ceo-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.ceo-header .ceo-header-title { width: 100%; }
+
+.ceo--info { padding: 0 2vw; display: flex; flex-flow: row wrap; align-items: flex-end; gap: 120px; }
+.ceo--info .left { width: 48%; transform-origin: center bottom; }
+.ceo--info .left img { width: 100%; display: flex; }
+.ceo--info .right { width: 30%; }
+
+.ceo--info .hero--text { font-size: 34px; margin-bottom: 80px; font-family: InstrumentSerifRegular, serif; width: 80%; }
+.ceo--info p { font-size: 21px; font-weight: 300; line-height: 1.1; margin-bottom: 20px; }
+.ceo--info .name--wrapper { margin-top: 80px; }
+.ceo--info .name--wrapper .name { font-size: 21px; font-weight: 400; }
+.ceo--info .name--wrapper .title { font-size: 21px; font-weight: 400; color: #808080; }
+
+
+@media screen and (min-width: 2560px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+.ceo-header { flex-direction: column; margin-bottom: 40px; }
+.ceo-header .ceo-header-title { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+}
+
+@media screen and (max-width: 768px) {
+.ceo-section { padding: 6vh 0; }
+.ceo-header { padding: 0 5vw; }
+.ceo-header .ceo-header-title { font-size: 1.2rem; }
+}
+
+@media screen and (max-width: 480px) {
+.ceo-section { padding: 5vh 0; }
+.ceo-header .ceo-header-title { font-size: 1rem; }
+}

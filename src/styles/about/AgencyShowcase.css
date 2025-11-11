@@ -1,0 +1,46 @@
+.AgencyShowcase-section { padding: 10vh 0; position: relative; }
+.AgencyShowcase-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.AgencyShowcase-header .AgencyShowcase-header-title { width: 80%; line-height: 1.2; font-family: InstrumentSerifRegular, serif; }
+.AgencyShowcase-item-first { width: 40%; }
+.AgencyShowcase-item-first .AgencyShowcase-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.AgencyShowcase-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+
+
+.AgencyShowcase-slider .swiper-wrapper { transition-timing-function: linear; }
+.AgencyShowcase-slider .swiper-slide { height: auto; }
+.AgencyShowcase-slider .swiper-slide img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+
+
+@media screen and (min-width: 2560px) {
+.AgencyShowcase-header .AgencyShowcase-header-description { font-size: 1.6rem; }
+.AgencyShowcase-container { gap: 12rem; }
+}
+
+@media screen and (max-width: 1440px) {
+.AgencyShowcase-header .AgencyShowcase-header-description { font-size: 1.1rem; }
+.AgencyShowcase-container { gap: 8rem; }
+.AgencyShowcase-item-first { width: 35%; }
+}
+
+@media screen and (max-width: 1024px) {
+.AgencyShowcase-header { flex-direction: column; margin-bottom: 40px; }
+.AgencyShowcase-header .AgencyShowcase-header-title,
+.AgencyShowcase-item-first .AgencyShowcase-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+.AgencyShowcase-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
+.AgencyShowcase-item-first,
+.AgencyShowcase-item-second { width: 100%; margin-top: 0; }
+}
+
+@media screen and (max-width: 768px) {
+.AgencyShowcase-section { padding: 6vh 0; }
+.AgencyShowcase-header { padding: 0 5vw; }
+.AgencyShowcase-header .AgencyShowcase-header-title { font-size: 1.2rem; }
+.AgencyShowcase-item-first .AgencyShowcase-header-description { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 480px) {
+.AgencyShowcase-section { padding: 5vh 0; }
+.AgencyShowcase-header .AgencyShowcase-header-title { font-size: 1rem; }
+.AgencyShowcase-item-first .AgencyShowcase-header-description { font-size: 0.9rem; }
+.AgencyShowcase-container { gap: 2rem; }
+}

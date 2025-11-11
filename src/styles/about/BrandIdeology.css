@@ -1,0 +1,50 @@
+.BrandIdeology-section { padding-bottom: 10vh; position: relative; overflow: hidden; }
+.BrandIdeology-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.BrandIdeology-header .BrandIdeology-header-title { width: 50%; }
+.BrandIdeology-item-first { width: 40%; }
+.BrandIdeology-item-first .BrandIdeology-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.BrandIdeology-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+
+.mission--vision { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: -60px; }
+.mission--vision > *:first-child { grid-column: 3 / 4; }
+.mission--vision .ideology--box { position: relative; overflow: hidden; width: 100%; padding-bottom: 125%; }
+.mission--vision .ideology--box .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; transition: transform 0.5s ease; }
+.mission--vision .ideology--box .bg .bgVideo { width: 100%; height: 100%; object-fit: cover; }
+.mission--vision .ideology--box .top--text { position: absolute; top: 0; left: 0; color: #fff; background: var(--bg); z-index: 2; padding: 4px 15px 10px 0px; }
+.mission--vision .ideology--box .info--box { min-height: 300px; display: flex; flex-flow: column wrap; justify-content: space-between; position: absolute; bottom: 0; left: 0; color: #fff; z-index: 2; padding: 40px; }
+.mission--vision .ideology--box .info--box .title { font-size: 60px; font-family: InstrumentSerifRegular, serif; color: #fff; margin-bottom: 40px; }
+.mission--vision .ideology--box .info--box .description { font-size: 21px; color: #fff; margin-bottom: 0; }
+
+@media screen and (min-width: 2560px) {
+.BrandIdeology-header .BrandIdeology-header-description { font-size: 1.6rem; }
+.BrandIdeology-container { gap: 12rem; }
+}
+
+@media screen and (max-width: 1440px) {
+.BrandIdeology-header .BrandIdeology-header-description { font-size: 1.1rem; }
+.BrandIdeology-container { gap: 8rem; }
+.BrandIdeology-item-first { width: 35%; }
+}
+
+@media screen and (max-width: 1024px) {
+.BrandIdeology-header { flex-direction: column; margin-bottom: 40px; }
+.BrandIdeology-header .BrandIdeology-header-title,
+.BrandIdeology-item-first .BrandIdeology-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
+.BrandIdeology-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
+.BrandIdeology-item-first,
+.BrandIdeology-item-second { width: 100%; margin-top: 0; }
+}
+
+@media screen and (max-width: 768px) {
+.BrandIdeology-section { padding: 6vh 0; }
+.BrandIdeology-header { padding: 0 5vw; }
+.BrandIdeology-header .BrandIdeology-header-title { font-size: 1.2rem; }
+.BrandIdeology-item-first .BrandIdeology-header-description { font-size: 0.95rem; }
+}
+
+@media screen and (max-width: 480px) {
+.BrandIdeology-section { padding: 5vh 0; }
+.BrandIdeology-header .BrandIdeology-header-title { font-size: 1rem; }
+.BrandIdeology-item-first .BrandIdeology-header-description { font-size: 0.9rem; }
+.BrandIdeology-container { gap: 2rem; }
+}
