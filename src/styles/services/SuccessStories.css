@@ -9,8 +9,8 @@
 .SuccessStories-section .SuccessStories--list .img--box { display: flex; width: 100%; margin-bottom: 24px; }
 .SuccessStories-section .SuccessStories--list .img--box img { width: 100%; height: auto; object-fit: contain; }
 .SuccessStories-section .SuccessStories--list .info { width: 100%; }
-.SuccessStories-section .SuccessStories--list .info .h3 { font-size: 36px; font-weight: 400; color: #fff; text-transform: capitalize; margin-bottom: 0; }
-.SuccessStories-section .SuccessStories--list .info .h4 { font-size: 36px; font-weight: 400; color: #fff; text-transform: capitalize; font-family: InstrumentSerifRegular, serif; margin-bottom: 0; }
+.SuccessStories-section .SuccessStories--list .info .h3 { font-size: 36px; font-weight: 400; color: rgba(var(--accent) / 100%); text-transform: capitalize; margin-bottom: 0; }
+.SuccessStories-section .SuccessStories--list .info .h4 { font-size: 36px; font-weight: 400; color: rgba(var(--accent) / 100%); text-transform: capitalize; font-family: InstrumentSerifRegular, serif; margin-bottom: 0; }
 
 
 @media screen and (min-width: 2560px) {

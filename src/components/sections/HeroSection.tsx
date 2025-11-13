@@ -55,7 +55,6 @@ export default function HeroSection() {
             <span className="hero-highlight" data-anime-hero-line-block></span>
           </h1>
         </div>
-        <div className="gap" />
         <div className="hero-middle">
           <span data-anime-hero-sentence-line-block>
             We craft purposeful brand identities and engaging digital

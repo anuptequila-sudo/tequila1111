@@ -1,8 +1,6 @@
 "use client";
 import "@/styles/about/WhyUs.css";
 
-import useScrollAnimations from "@/components/hooks/useScrollAnimations";
-
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -10,7 +8,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function WhyUs() {
-  useScrollAnimations();
 
   const sectionRef = useRef<HTMLDivElement>(null);
 

@@ -4,13 +4,13 @@
 .portfolioSection .headerText { width: 30%; font-size: 1.3rem; font-weight: 300; margin-top: 24px; }
 .portfolioSection .portfolioList { display: flex; gap: 80px 20px; position: relative; transform-style: preserve-3d; overflow: hidden; flex-flow: row wrap; margin-top: 100px; }
 .portfolioSection .portfolioCard { position: relative; transform-style: preserve-3d; backface-visibility: hidden; }
-.portfolioSection .cardTag { position: absolute; top: 0; left: 0; background: var(--bg); padding: 0.3rem 1rem; font-size: 0.9rem; z-index: 10; text-transform: uppercase; font-weight: 200; margin: -1px; }
+.portfolioSection .cardTag { position: absolute; top: 0; left: 0; background: rgba(var(--bg) / 100%); padding: 0.3rem 1rem; font-size: 0.9rem; z-index: 10; text-transform: uppercase; font-weight: 200; margin: -1px; }
 
 .portfolioSection .breadcrumb { margin-bottom: 0; }
 
 .portfolioSection .pagination { display: flex; flex-flow: row wrap; align-items: center; justify-content: center; list-style: none; gap: 40px; margin-top: 120px; }
 .portfolioSection .pagination .page-link { display: flex; padding: 8px 16px; }
-.portfolioSection .pagination .page-link.active { border-bottom: 1px solid #fff; }
+.portfolioSection .pagination .page-link.active { border-bottom: 1px solid rgba(var(--accent) / 100%); }
 
 .portfolioSection .video { width: 100%; height: 100%; object-fit: cover; }
 .portfolioSection .cardTitle { margin-top: 1.5rem; font-size: 2rem; }

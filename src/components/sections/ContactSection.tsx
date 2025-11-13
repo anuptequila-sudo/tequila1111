@@ -4,12 +4,73 @@ import Button from "../ui/Button";
 
 import Link from "next/link";
 
-import useScrollAnimations from "@/components/hooks/useScrollAnimations";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function ContactSection() {
-  useScrollAnimations();
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!sectionRef.current) return;
+
+    const wrapper = sectionRef.current.querySelector(".contact--info--list") as HTMLElement;
+    if (!wrapper) return;
+
+    const cards = Array.from(wrapper.querySelectorAll(".contact--info--list .info--box")) as HTMLElement[];
+    if (!cards.length) return;
+
+    sectionRef.current.style.perspective = "2000px";
+    wrapper.style.transformStyle = "preserve-3d";
+
+    cards.forEach((card, i) => {
+      const isEven = i % 2 === 0;
+
+      card.style.transformOrigin = "center bottom";
+
+      gsap.fromTo(
+        card,
+        {
+          x: isEven ? "-100%" : "100%",
+          rotateZ: isEven ? -10 : 10,
+          opacity: 0,
+          scale: 0.95,
+        },
+        {
+          x: "0%",
+          rotateZ: 0,
+          scale: 1,
+          opacity: 1,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 100%",
+            end: "top 40%",
+            scrub: 1,
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+
+      // video hover behavior
+      const video = card.querySelector("video") as HTMLVideoElement;
+      if (video) {
+        card.addEventListener("mouseenter", () => video.play());
+        card.addEventListener("mouseleave", () => {
+          video.pause();
+          // video.currentTime = 0;
+        });
+      }
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
+  }, []);
+
   return (
-    <section className="contact-section">
+    <section className="contact-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="contact-header">
           <h2 className="contact-header-title" data-splitting-opacity-anime>
@@ -54,24 +115,34 @@ export default function ContactSection() {
             </div>
           </div>
           <div className="contact-item-second" data-come-up-anime>
-            <span className="contact-form">
-              Hey Tequila, I'm &nbsp;
-              <div className="contact-name">
-                <input type="text" className="form-control" placeholder="Your Name*" />
+            <div className="contact-form">
+              <div className="input--wrapper">
+                Hey Tequila, I'm
+                <div className="form-group">
+                  <input type="text" className="form-control" placeholder="Your Name*" />
+                </div>
+                .
               </div>
-              .&nbsp; You can reach me at &nbsp;
-              <div className="contact-name">
-                <input type="text" className="form-control" placeholder="Your Email*" />
+              <div className="input--wrapper">
+                You can reach me at
+                <div className="form-group">
+                  <input type="text" className="form-control" placeholder="Your Email*" />
+                </div>
+                .
               </div>
-              .&nbsp; or call me on &nbsp;
-              <div className="contact-name">
-                <input type="text" className="form-control" placeholder="Your Phone Number*" />
+              <div className="input--wrapper">
+                or call me on
+                <div className="form-group">
+                  <input type="text" className="form-control" placeholder="Your Phone Number*" />
+                </div>
+                .
               </div>
-              Here's what I've been thinking about: <br />
-            </span>
-            <div className="contact-message">
-              &nbsp;
-              <textarea className="form-control" placeholder="Your Message" rows={5}></textarea>
+              <div className="input--wrapper">
+                Here's what I've been thinking about:
+                <div className="contact-message">
+                  <textarea className="form-control" placeholder="Your Message" rows={5}></textarea>
+                </div>
+              </div>
             </div>
             <div className="contact-button-container">
               <div className="contact-button">

@@ -1,118 +1,174 @@
-
 import Link from "next/link";
+import Button from "../ui/Button";
 
-
-const Button = ({ label, onClick }: { label: string; onClick?: () => void }) => {
-  return (
-    <button className="cta-btn footer-btn" onClick={onClick}>
-      {label}
-    </button>
-  );
-};
+// const Button = ({ label, onClick }: { label: string; onClick?: () => void }) => {
+//   return (
+//     <button className="cta-btn footer-btn" onClick={onClick}>
+//       {label}
+//     </button>
+//   );
+// };
 
 export default function Footer() {
   return (
     <footer>
       <div className="container-fixed">
-      <div  className="footer">      
-        <div className="footer-group footer-left">
-          <img src="/images/Logo.svg" alt="Logo" className="footer-logo" />
+        <div className="footer">
+          <div className="footer-group footer-left">
+            <img src="/images/Logo.svg" alt="Logo" className="footer-logo" />
+            <p className="footer-address">
+              A904, Tamani Arts, Business <br /> Bay, Downtown Dubai, UAE
+            </p>
+            <Button variant="primary">Get Direction →</Button>
+            <span className="footer-text">Lots to talk? Then call us!</span>
+            <a href="tel:971509372493" className="footer-phone">
+              +971 50 937 2493
+            </a>
+          </div>
 
-          <p className="footer-address">
-            A904, Tamani Arts, Business <br /> Bay, Downtown Dubai, UAE
-          </p>
+          <div className="footer-group footer-middle">
+            <div className="footer-menu">
+              <h4>
+                TEQ <span className="line-footer-menu"></span>
+              </h4>
+              <Link className="footer-menu-subtitle" href="/services">
+                WEB DESIGN & DEVELOPMENT
+              </Link>
+              <ul>
+                <li>
+                  <Link href="/subservices">Custom Website Design & Development</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">E-Commerce Website Design & Development</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Web Applications Design & Development</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Domain & Hosting Management</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Website Maintenance & Support</Link>
+                </li>
+              </ul>
+            </div>
 
-      <Button label="Get Direction →" />
+            <div className="footer-menu">
+              <h4>
+                UI <span className="line-footer-menu"></span>
+              </h4>
+              <Link className="footer-menu-subtitle" href="#">
+                BRANDING
+              </Link>
+              <ul>
+                <li>
+                  <Link href="/subservices">Logo Design & Visual Identity</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Rebranding</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Brand Elevation</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Graphic Design</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Branding, Strategy & Development</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Corporate Profile & Company Brochure</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">UI/UX Design for Digital Products</Link>
+                </li>
+              </ul>
+            </div>
 
-          <span className="footer-text">Lots to talk? Then call us!</span>
-          <p className="footer-phone">+971 50 937 2493</p>
+            <div className="footer-menu">
+              <h4>
+                LA <span className="line-footer-menu"></span>
+              </h4>
+              <Link className="footer-menu-subtitle" href="#">
+                COMMUNICATION
+              </Link>
+              <ul>
+                <li>
+                  <Link href="/subservices">Social Media Strategy & Design</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Search Engine Optimisation (SEO)</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Photography & Visual Storytelling</Link>
+                </li>
+                <li>
+                  <Link href="/subservices">Video Storyboarding & Production</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="footer-group footer-right">
+            <div className="footer-col">
+              <h4>&nbsp;</h4>
+              <Link className="footer-menu-subtitle" href="#">QUICK LINKS</Link>
+              <ul>
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/portfolios">Cases</Link>
+                </li>
+                <li>
+                  <Link href="#">Services</Link>
+                </li>
+                <li>
+                  <Link href="/about">The Agency</Link>
+                </li>
+                <li>
+                  <Link href="#">Blog</Link>
+                </li>
+                <li>
+                  <Link href="#">FAQs</Link>
+                </li>
+                <li>
+                  <Link href="#">Contact</Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="footer-col">
+              <h4>&nbsp;</h4>
+              <Link className="footer-menu-subtitle" href="#">SOCIALS</Link>
+              <ul>
+                <li>
+                  <Link href="#">Instagram</Link>
+                </li>
+                <li>
+                  <Link href="#">LinkedIn</Link>
+                </li>
+                <li>
+                  <Link href="#">Facebook</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div className="footer-group footer-middle">
-          <div className="footer-menu">
-            <h4>TEQ <span className="line-footer-menu"></span></h4>
-            <span>WEB DESIGN & DEVELOPMENT</span>
-            <ul>
-              <li>Custom Website Design & Development</li>
-              <li>E-Commerce Website Design & Development</li>
-              <li>Web Applications Design & Development</li>
-              <li>Domain & Hosting Management</li>
-              <li>Website Maintenance & Support</li>
-            </ul>
+        <div className="footer-bottom">
+          <div className="footer-bottom-left">
+            <div className="footer-bottom-left-col1">
+              <h4>@Tequila.ae</h4>
+            </div>
+            <div className="footer-bottom-left-col2">
+              <h4>COOKIES</h4>
+            </div>
           </div>
-
-          <div className="footer-menu">
-            <h4>UI <span className="line-footer-menu"></span></h4>
-            <span>BRANDING</span>
-            <ul>
-              <li>Logo Design & Visual Identity</li>
-              <li>Rebranding</li>
-              <li>Brand Elevation</li>
-              <li>Graphic Design</li>
-              <li>Branding, Strategy & Development</li>
-              <li>Corporate Profile & Company Brochure</li>
-              <li>UI/UX Design for Digital Products</li>
-            </ul>
-          </div>
-
-          <div className="footer-menu">
-            <h4>LA <span className="line-footer-menu"></span></h4>
-            <span>COMMUNICATION</span>
-            <ul>
-              <li>Social Media Strategy & Design</li>
-              <li>Search Engine Optimisation (SEO)</li>
-              <li>Photography & Visual Storytelling</li>
-              <li>Video Storyboarding & Production</li>
-            </ul>
+          <div className="footer-bottom-right">
+            <h4>© 2025 TEQUILA. All rights reserved</h4>
           </div>
         </div>
-
-        <div className="footer-group footer-right">
-          <div className="footer-col">
-            <h4>&nbsp;</h4>
-            <span>QUICK LINKS</span>      
-            <ul>
-              <li><Link href="/">Home</Link></li>
-              <li>Cases</li>
-              <li>Services</li>
-              <li><Link href="/about">The Agency</Link></li>
-              <li>Blog</li>
-              <li>FAQs</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-          <div className="footer-col">
-            <h4>&nbsp;</h4>
-            <span>SOCIALS</span>
-            <ul>
-              <li>Instagram</li>
-              <li>LinkedIn</li>
-              <li>Facebook</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <div className="footer-bottom-left">
-          <div className="footer-bottom-left-col1">
-            <h4>@Tequila.ae</h4>
-          </div>
-          <div className="footer-bottom-left-col2">
-             <h4>COOKIES</h4>
-
-          </div>
-
-        </div>
-        <div className="footer-bottom-right">
-          <h4>© 2025 TEQUILA. All rights reserved</h4>
-        </div>
-
-      </div>
       </div>
     </footer>
   );
 }
-
-
-

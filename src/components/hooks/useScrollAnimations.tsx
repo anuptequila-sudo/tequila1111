@@ -49,220 +49,6 @@ function splitTextNodes(root: HTMLElement) {
 }
 
 const useScrollAnimations = () => {
-  // useEffect(() => {
-  //   const originalsAll: { el: HTMLElement; html: string }[] = [];
-  //   const createdTriggers: Array<ScrollTrigger | gsap.core.Timeline> = [];
-
-  //   const opacityTimelines: gsap.core.Timeline[] = [];
-  //   const opacityTriggers: ScrollTrigger[] = [];
-  //   const opacityOriginals: { el: HTMLElement; html: string }[] = [];
-
-  //   const killOpacity = () => {
-  //     opacityTimelines.forEach((t) => t.kill());
-  //     opacityTriggers.forEach((st) => st.kill());
-  //     opacityOriginals.forEach(({ el, html }) => {
-  //       el.innerHTML = html;
-  //       delete (el as any).__splitted;
-  //     });
-  //     opacityTimelines.length = 0;
-  //     opacityTriggers.length = 0;
-  //     opacityOriginals.length = 0;
-  //   };
-
-  //   const initOpacityAnimations = () => {
-  //     const elems = Array.from(document.querySelectorAll<HTMLElement>("[data-splitting-opacity-anime]"));
-
-  //     const buildAnimations = () => {
-  //       opacityTimelines.forEach((tl) => {
-  //         try {
-  //           tl.scrollTrigger?.kill();
-  //           tl.kill();
-  //         } catch (e) {}
-  //       });
-  //       opacityTimelines.length = 0;
-  //       opacityTriggers.length = 0;
-
-  //       elems.forEach((el) => {
-  //         if (!(el as any).__splitted) {
-  //           opacityOriginals.push({ el, html: el.innerHTML });
-  //           originalsAll.push({ el, html: el.innerHTML });
-  //           splitTextNodes(el);
-  //           (el as any).__splitted = true;
-  //         }
-
-  //         const isLight = document.documentElement.getAttribute("data-theme") === "light";
-
-  //         const fromColor = isLight ? "rgba(136,136,136,0.5)" : "rgba(68,68,68,0.5)";
-  //         const targetColor = isLight ? "#000000" : "#ffffff";
-
-  //         const chars = Array.from(el.querySelectorAll<HTMLElement>(".spl-char"));
-  //         if (!chars.length) return;
-  //         chars.forEach((c) => (c.style.willChange = "color"));
-
-  //         const tl = gsap.timeline({
-  //           scrollTrigger: {
-  //             trigger: el,
-  //             start: el.getAttribute("data-splitting-start") || "top 80%",
-  //             end: el.getAttribute("data-splitting-end") || "bottom 80%",
-  //             scrub: Number(el.getAttribute("data-splitting-scrub") ?? 1),
-  //           },
-  //         });
-
-  //         tl.fromTo(
-  //           chars,
-  //           { color: fromColor },
-  //           {
-  //             color: targetColor,
-  //             stagger: Number(el.getAttribute("data-splitting-stagger") ?? 0.2),
-  //             ease: "none",
-  //           }
-  //         );
-
-  //         opacityTimelines.push(tl);
-  //         if (tl.scrollTrigger) opacityTriggers.push(tl.scrollTrigger);
-  //       });
-
-  //       if (typeof ScrollTrigger !== "undefined" && ScrollTrigger.refresh) {
-  //         ScrollTrigger.refresh();
-  //       }
-  //     };
-
-  //     buildAnimations();
-
-  //     const htmlEl = document.documentElement;
-  //     if (!(htmlEl as any).__themeObserverAttached) {
-  //       const observer = new MutationObserver((mutations) => {
-  //         for (const m of mutations) {
-  //           if (m.attributeName === "data-theme") {
-  //             console.log("🌗 Theme changed → rebuilding opacity animations");
-  //             buildAnimations();
-  //             break;
-  //           }
-  //         }
-  //       });
-
-  //       observer.observe(htmlEl, {
-  //         attributes: true,
-  //         attributeFilter: ["data-theme"],
-  //       });
-
-  //       (htmlEl as any).__themeObserverAttached = true;
-  //     }
-  //   };
-
-  //   const initOpacityAnimations2 = () => {
-  //     const elems = Array.from(document.querySelectorAll<HTMLElement>("[data-splitting-opacity-anime2]"));
-
-  //     elems.forEach((el) => {
-  //       if ((el as any).__splitted2) return;
-
-  //       originalsAll.push({ el, html: el.innerHTML });
-  //       splitTextNodes(el);
-  //       (el as any).__splitted2 = true;
-
-  //       const fromColor = "rgba(68,68,68,0.5)";
-  //       const targetColor = "#ffffff";
-
-  //       const chars = Array.from(el.querySelectorAll<HTMLElement>(".spl-char"));
-  //       if (!chars.length) return;
-
-  //       const tl = gsap.timeline({
-  //         scrollTrigger: {
-  //           trigger: el,
-  //           start: el.getAttribute("data-splitting-start") || "top bottom",
-  //           end: el.getAttribute("data-splitting-end") || "top 80%",
-  //           scrub: Number(el.getAttribute("data-splitting-scrub") ?? 1),
-  //         },
-  //       });
-
-  //       tl.fromTo(
-  //         chars,
-  //         { color: fromColor },
-  //         {
-  //           color: targetColor,
-  //           stagger: Number(el.getAttribute("data-splitting-stagger") ?? 0.35),
-  //           ease: "none",
-  //         }
-  //       );
-
-  //       createdTriggers.push(tl.scrollTrigger!);
-  //     });
-  //   };
-
-  //   const initOtherAnimations = () => {
-  //     const comeUpElems = document.querySelectorAll("[data-come-up-anime]");
-  //     comeUpElems.forEach((el) => {
-  //       const tween = gsap.fromTo(
-  //         el,
-  //         { y: 80, opacity: 0 },
-  //         {
-  //           y: 0,
-  //           opacity: 1,
-  //           duration: 1,
-  //           ease: "power3.out",
-  //           scrollTrigger: {
-  //             trigger: el,
-  //             start: "top 90%",
-  //             end: "top 40%",
-  //             scrub: 1,
-  //             toggleActions: "play reverse play reverse",
-  //           },
-  //         }
-  //       );
-  //       createdTriggers.push(tween.scrollTrigger!);
-  //     });
-
-  //     const comeUpElems2 = document.querySelectorAll("[data-come-up-anime2]");
-  //     comeUpElems2.forEach((el) => {
-  //       const tween = gsap.fromTo(
-  //         el,
-  //         { y: 80, opacity: 0.1 },
-  //         {
-  //           y: 0,
-  //           opacity: 1,
-  //           duration: 1,
-  //           ease: "power3.out",
-  //           scrollTrigger: {
-  //             trigger: el,
-  //             start: "top 90%",
-  //             end: "top 40%",
-  //             scrub: 1,
-  //             toggleActions: "play reverse play reverse",
-  //           },
-  //         }
-  //       );
-  //       createdTriggers.push(tween.scrollTrigger!);
-  //     });
-  //   };
-
-  //   requestAnimationFrame(() => {
-  //     initOpacityAnimations();
-  //     initOpacityAnimations2();
-  //     initOtherAnimations();
-  //   });
-
-  //   const observer = new MutationObserver((mutations) => {
-  //     for (const m of mutations) {
-  //       if (m.type === "attributes" && m.attributeName === "data-theme") {
-  //         killOpacity();
-  //         requestAnimationFrame(() => initOpacityAnimations());
-  //       }
-  //     }
-  //   });
-
-  //   observer.observe(document.documentElement, {
-  //     attributes: true,
-  //     attributeFilter: ["data-theme"],
-  //   });
-
-  //   return () => {
-  //     observer.disconnect();
-  //     killOpacity();
-  //     createdTriggers.forEach((t) => (t as any).kill?.());
-  //     originalsAll.forEach(({ el, html }) => (el.innerHTML = html));
-  //   };
-  // }, []);
-
   useEffect(() => {
     const originalsAll: { el: HTMLElement; html: string }[] = [];
     const createdTriggers: Array<ScrollTrigger | gsap.core.Timeline> = [];
@@ -304,30 +90,26 @@ const useScrollAnimations = () => {
             (el as any).__splitted = true;
           }
 
-          const isLight = document.documentElement.getAttribute("data-theme") === "light";
-          const fromColor = isLight ? "rgba(136,136,136,0.5)" : "rgba(68,68,68,0.5)";
-          const targetColor = isLight ? "#000000" : "#ffffff";
-
           const chars = Array.from(el.querySelectorAll<HTMLElement>(".spl-char"));
           if (!chars.length) return;
-          chars.forEach((c) => (c.style.willChange = "color"));
+          chars.forEach((c) => (c.style.willChange = "opacity"));
 
           const tl = gsap.timeline({
             scrollTrigger: {
               trigger: el,
-              start: el.getAttribute("data-splitting-start") || "top 80%",
-              end: el.getAttribute("data-splitting-end") || "bottom 80%",
+              start: el.getAttribute("data-splitting-start") || "top bottom",
+              end: el.getAttribute("data-splitting-end") || "top 80%",
               scrub: Number(el.getAttribute("data-splitting-scrub") ?? 1),
             },
           });
 
           tl.fromTo(
             chars,
-            { color: fromColor },
+            { opacity: 0.5 },
             {
-              color: targetColor,
+              opacity: 1,
               stagger: Number(el.getAttribute("data-splitting-stagger") ?? 0.2),
-              ease: "none",
+              // ease: "none",
             }
           );
 
@@ -368,9 +150,6 @@ const useScrollAnimations = () => {
         splitTextNodes(el);
         (el as any).__splitted2 = true;
 
-        const fromColor = "rgba(68,68,68,0.5)";
-        const targetColor = "#ffffff";
-
         const chars = Array.from(el.querySelectorAll<HTMLElement>(".spl-char"));
         if (!chars.length) return;
 
@@ -385,9 +164,9 @@ const useScrollAnimations = () => {
 
         tl.fromTo(
           chars,
-          { color: fromColor },
+          { opacity: 0.5 },
           {
-            color: targetColor,
+            opacity: 1,
             stagger: Number(el.getAttribute("data-splitting-stagger") ?? 0.35),
             ease: "none",
           }
@@ -410,8 +189,8 @@ const useScrollAnimations = () => {
             ease: "power3.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 90%",
-              end: "top 40%",
+              start: "top 100%",
+              end: "top 70%",
               scrub: 1,
               toggleActions: "play reverse play reverse",
             },
@@ -432,8 +211,8 @@ const useScrollAnimations = () => {
             ease: "power3.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 90%",
-              end: "top 40%",
+              start: "top bottom",
+              end: "top 70%",
               scrub: 1,
               toggleActions: "play reverse play reverse",
             },

@@ -2,7 +2,7 @@
 .information-section { position: relative; overflow: hidden; z-index: 1; }
 .information-header-band {
   background-color: #ffd400;
-  color: #000;
+  color: rgba(var(--bg) / 100%);
   overflow: hidden;
   white-space: nowrap;
   display: flex;

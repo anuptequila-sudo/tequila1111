@@ -5,11 +5,13 @@ import styles from "@/styles/FaqsSection.module.css";
 import Button from "../ui/Button";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface Faq {
   question: string;
   answer: string;
   type: string;
+  answerHeight?: number;
 }
 const faqs: Faq[] = [
   {
@@ -71,6 +73,8 @@ const faqs: Faq[] = [
 
 export default function FaqsSection() {
   const [activeTab, setActiveTab] = useState("all");
+  const [heights, setHeights] = useState<number[]>([]);
+
   const categories = ["all", "branding", "design", "communication", "news"];
   const faqItems = useMemo(() => {
     if (activeTab === "all") {
@@ -80,11 +84,18 @@ export default function FaqsSection() {
     }
   }, [activeTab, faqs]);
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const toggleFaq = (index: number) => {
     setActiveIndex(activeIndex === index ? -1 : index);
   };
+
+  useEffect(() => {
+    // Measure heights after render
+    const allAnswers = document.querySelectorAll(`.${styles.faqAnswer}`);
+    const newHeights = Array.from(allAnswers).map((el) => (el as HTMLElement).scrollHeight);
+    setHeights(newHeights);
+  }, [faqItems]);
 
   return (
     <section className="faq-section">
@@ -108,7 +119,7 @@ export default function FaqsSection() {
               CONTACT US &nbsp; →
             </Button>
           </div>
-          <div className={styles.faqsDiv} data-come-up-anime2>
+          <div className={styles.faqsDiv}>
             <div className={styles.tabListWrapper}>
               {categories.map((type) => (
                 <button key={type} onClick={() => setActiveTab(type)} className={`${styles.tabBtn} ${activeTab === type ? `${styles.active}` : ""}`}>
@@ -117,14 +128,30 @@ export default function FaqsSection() {
               ))}
             </div>
             <AnimatePresence mode="wait">
-              <motion.div key={activeTab} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
+              <motion.div key={activeTab} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.5 }}>
                 {faqItems.map((faq, index) => (
-                  <div key={index} className={`${styles.faqItem} ${activeIndex === index ? styles.active : ""}`} onClick={() => toggleFaq(index)} data-come-up-anime2>
+                  <div key={index} className={`${styles.faqItem} ${activeIndex === index ? styles.active : ""}`} onClick={() => toggleFaq(index)}>
                     <div className={styles.faqQuestion}>
                       <p>{faq.question}</p>
-                      <p className={styles.arrow}>{activeIndex === index ? "∧" : "∨"}</p>
+                      <p className={`${styles.arrow}`}>
+                        <Image src="/images/icons/angle-down.svg" width={30} height={30} alt="Arrow" style={{ transform: `${activeIndex === index ? "rotate(180deg)" : "rotate(0deg)"}` }} />
+                      </p>
                     </div>
-                    <div className={`${styles.faqAnswerWrapper} ${activeIndex === index ? styles.open : ""}`}>
+                    <div
+                      className={`${styles.faqAnswerWrapper} ${activeIndex === index ? styles.open : ""}`}
+                      style={{
+                        maxHeight: activeIndex === index ? `${heights[index] || 0}px` : "0px",
+                        transition: "max-height 0.4s ease",
+                      }}
+                      ref={(el) => {
+                        if (el && activeIndex === index) {
+                          // Set dynamic max-height when active
+                          el.style.maxHeight = el.scrollHeight + "px";
+                        } else if (el) {
+                          el.style.maxHeight = "0px";
+                        }
+                      }}
+                    >
                       <div className={styles.faqAnswer}>{faq.answer}</div>
                     </div>
                   </div>

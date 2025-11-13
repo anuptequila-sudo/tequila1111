@@ -15,8 +15,8 @@
 .branding--services--list .branding--card { border: 1px solid rgba(255, 255, 255, 0.5); padding: 55px; }
 .branding--services--list .branding--card .branding--card--img { width: 150px; display: flex; margin-bottom: 120px; }
 .branding--services--list .branding--card .branding--card--img img { width: 100%; height: auto; object-fit: contain; }
-.branding--services--list .branding--card .h2 { font-size: 36px; font-weight: 400; color: #fff; margin-bottom: 24px; }
-.branding--services--list .branding--card p { font-size: 20px; font-weight: 400; color: #fff; margin-bottom: 0; }
+.branding--services--list .branding--card .h2 { font-size: 36px; font-weight: 400; color: rgba(var(--accent) / 100%); margin-bottom: 24px; }
+.branding--services--list .branding--card p { font-size: 20px; font-weight: 400; color: rgba(var(--accent) / 100%); margin-bottom: 0; }
 
 @media screen and (min-width: 2560px) {
 .BrandingServices-header .BrandingServices-header-description { font-size: 1.6rem; }

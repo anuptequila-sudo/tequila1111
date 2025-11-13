@@ -366,8 +366,8 @@ export default function Header() {
               <Link href="/contact">
                 <Button className="btn btn-secondary cta-btn">Get In Touch</Button>
               </Link>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer">
-                <Image className="phone-image" src="/images/phone.svg" alt="Phone" width={24} height={24} />
+              <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="phone-image">
+                <Image src="/images/phone.svg" alt="Phone" width={48} height={48} />
               </a>
               <button className="toggle-btn" onClick={toggleTheme}>
                 {dark ? "☀️" : "🌙"}

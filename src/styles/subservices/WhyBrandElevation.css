@@ -6,9 +6,9 @@
 .WhyBrandElevation-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
 
 .WhyBrandElevation-section .info { width: 50%; margin-left: auto; margin-top: 50px; }
-.WhyBrandElevation-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: #fff; margin-bottom: 48px; }
+.WhyBrandElevation-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
 .WhyBrandElevation-section .info .assets--list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 30px; list-style: none; padding: 0; margin-bottom: 40px; }
-.WhyBrandElevation-section .info .assets--list .h4 { color: #FFF; font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 16px; }
+.WhyBrandElevation-section .info .assets--list .h4 { color: rgba(var(--accent) / 100%); font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 16px; }
 .WhyBrandElevation-section .info .assets--list p { font-size: 18px; }
 
 @media screen and (min-width: 2560px) {

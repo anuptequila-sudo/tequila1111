@@ -113,7 +113,7 @@ export default function TestimonialsSlider() {
   ];
 
   return (
-    <section className={`TestimonialsSlider`}>
+    <section className={styles.TestimonialsSlider}>
       <div className="container-fixed">
         {/* Left Side */}
         <div className={styles.groupOne}>
@@ -128,9 +128,8 @@ export default function TestimonialsSlider() {
       <div className={styles.wrapper}>
         <Swiper
           modules={[Navigation]}
-          spaceBetween={20}
+          spaceBetween={32}
           slidesPerView={4}
-          slidesPerGroup={4}
           navigation={{
             nextEl: `.${styles.nextBtn}`,
             prevEl: `.${styles.prevBtn}`,

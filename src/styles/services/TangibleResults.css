@@ -6,11 +6,11 @@
 .TangibleResults-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
 
 .TangibleResults-section .info { width: 40%; margin-left: auto; }
-.TangibleResults-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: #fff; margin-bottom: 48px; }
+.TangibleResults-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
 .TangibleResults-section .info .assets--list { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 40px; list-style: none; padding: 0; margin-bottom: 40px; }
 .TangibleResults-section .info .assets--list .img--box { width: 200px; height: auto; margin-bottom: 16px; }
 .TangibleResults-section .info .assets--list .img--box img { width: 100%; height: auto; object-fit: contain; }
-.TangibleResults-section .info .assets--list .h4 { color: #FFF; font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 24px; }
+.TangibleResults-section .info .assets--list .h4 { color: rgba(var(--accent) / 100%); font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 24px; }
 .TangibleResults-section .info .assets--list p { font-size: 18px; }
 
 

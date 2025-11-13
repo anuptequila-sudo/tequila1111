@@ -94,7 +94,7 @@ const ServicesSection = () => {
 
       // ---- add capsule holes for tag + pills ----
       const capsuleTargets = card.querySelectorAll<HTMLElement>(
-        `.${styles.tag}.${styles.cutout}, .${styles.pills} .${styles.cutout}`
+        `.${styles.tag}.${styles.cutout}, .${styles.pills} .${styles.cutout}, .${styles.caption}`
       );
 
       capsuleTargets.forEach((el) => {
@@ -147,17 +147,13 @@ const ServicesSection = () => {
         const bbox = textEl.getBBox(); // SVG bbox of the cutout text
 
         // ---- position caption relative to that hole ----
-        const caption = card.querySelector<HTMLElement>(`.${styles.caption}`);
+        // const caption = card.querySelector<HTMLElement>(`.${styles.caption}`);
 
-        if (caption) {
-          caption.style.position = "absolute";
-          // caption.style.textAnchor = "end";
-          // caption.style.right = `${ ( bx + bbox.x ) / 100  + 6.5 * bbox.width}px`;
-          // caption.style.bottom = `${ by + bbox.y - bbox.height + 20}px`;
-          caption.style.fontSize = "20px";
-          caption.style.color = "#cecece";
-          caption.style.whiteSpace = "nowrap";
-        }
+        // if (caption) {
+        //   caption.style.fontSize = "20px";
+        //   caption.style.color = "#000";
+        //   caption.style.whiteSpace = "nowrap";
+        // }
       }
     };
 
@@ -246,7 +242,7 @@ const ServicesSection = () => {
             </div>
             {/* bigText is measured and then used to punch letter holes */}
             <div className={styles.bigTextContainer}>
-              <p className={styles.caption}>(technology)</p>
+              <p className={`${styles.caption} ${styles.cutout}`}>(technology)</p>
               <span
                 className={`${styles.bigText} ${styles.cutout}`}
                 aria-hidden="true"
@@ -284,7 +280,7 @@ const ServicesSection = () => {
               </div>
             </div>
             <div className={styles.bigTextContainer}>
-              <p className={styles.caption}>(user interface)</p>
+              <p className={`${styles.caption} ${styles.cutout}`}>(user interface)</p>
               <span
                 className={`${styles.bigText} ${styles.cutout}`}
                 aria-hidden="true"
@@ -319,7 +315,7 @@ const ServicesSection = () => {
               </div>
             </div>
             <div className={styles.bigTextContainer}>
-              <p className={styles.caption}>(la la land)</p>
+              <p className={`${styles.caption} ${styles.cutout}`}>(la la land)</p>
               <span
                 className={`${styles.bigText} ${styles.cutout}`}
                 aria-hidden="true"
