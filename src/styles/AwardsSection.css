@@ -1,4 +1,4 @@
-.awards-section { background: rgba(var(--bg) / 100%); color: #848484; padding: calc(var(--space-xxxl) * 2) 0; position: relative; }
+.awards-section { background: rgba(var(--bg) / 100%); padding: calc(var(--space-xxxl) * 2) 0; position: relative; }
 
 .award-row .company { color: #dcdbdb; }
 .award-row.active .company { color: rgba(var(--bg) / 100%); }

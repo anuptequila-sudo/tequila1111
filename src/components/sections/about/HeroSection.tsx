@@ -42,20 +42,16 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section
-      className="hero"
-      style={{ position: "relative", overflow: "hidden" }}
-    >
+    <section className="hero" style={{ position: "relative", overflow: "hidden" }}>
       <div className="hero-wrapper">
         <div className="hero-left">
-          <h1>
-            We are Tequila <span className="hero-highlight"></span> <br />a
-            Leading Branding & Web Design Company in Dubai
+          <h1 className="page--title">
+            We are Tequila <span className="hero-highlight"></span> <br />a Leading Branding & Web Design Company in Dubai
           </h1>
         </div>
         <div className="gap" />
         <div className="hero-middle">
-          <span className="page-title">About Us</span>
+          <span className="section--title">About Us</span>
           <div className="breadcrumb">
             <div className="breadcrumb-item">
               <a href="./">Home</a>
@@ -64,11 +60,7 @@ export default function HeroSection() {
               The Agency
             </div>
           </div>
-          <span>
-            We craft purposeful brand identities and engaging digital
-            experiences that connect, inspire, and perform — driven by insight,
-            precision, and creativity.
-          </span>
+          <h2 className="section--subtitle">We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform — driven by insight, precision, and creativity.</h2>
           <div className="hero-buttons" data-anime-hero-word-block>
             <Button variant="primary">Explore Services</Button>
             <Button variant="secondary">View Case Studies</Button>

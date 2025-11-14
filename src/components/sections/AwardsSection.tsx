@@ -121,7 +121,7 @@ export default function AwardsSection() {
       <div className="container-fixed">
         <div className="awards-header">
           <div className="awards-header-title">
-            <h2 data-splitting-opacity-anime> Honours & Mentions</h2>
+            <h2 className="section--title" data-splitting-opacity-anime>Honours & Mentions</h2>
             <span className="awards-header-title-highlight" data-come-up-anime>
               (21)
             </span>

@@ -1,5 +1,5 @@
 .BrandElevation-section { padding: 10vh 0; position: relative; overflow: hidden; }
-.BrandElevation-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.BrandElevation-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .BrandElevation-header .BrandElevation-header-title { width: 50%; }
 .BrandElevation-item-first .BrandElevation-header-description { width: 50%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
 .BrandElevation-section .about-left { width: 70%; }

@@ -30,18 +30,18 @@ export default function SuccessStories({ title, description }: ProvenProcessProp
     if (!cards.length) return;
 
     cards.forEach((card, i) => {
-      // const mod = i % 3; // determine column pattern
+      const mod = i % 3; // determine column pattern
 
-      // const fromX = mod === 0 ? "-100%" : mod === 1 ? "0%" : "100%";
-      // const fromRotate = mod === 0 ? -10 : mod === 1 ? 0 : 10;
+      const fromX = mod === 0 ? "-100%" : mod === 1 ? "0%" : "100%";
+      const fromRotate = mod === 0 ? -10 : mod === 1 ? 0 : 10;
 
       gsap.fromTo(
         card,
         {
-          // x: fromX,
-          // rotateZ: fromRotate,
+          x: fromX,
+          rotateZ: fromRotate,
           opacity: 0,
-          // scale: 0.95,
+          scale: 0.95,
         },
         {
           x: "0%",
@@ -67,23 +67,20 @@ export default function SuccessStories({ title, description }: ProvenProcessProp
   return (
     <section className="SuccessStories-section" ref={sectionRef}>
       <div className="container-fixed">
-        {title && (
-          <div className="SuccessStories-header">
-            <h2 className="SuccessStories-header-title" data-splitting-opacity-anime>
+        <div className="SuccessStories-header">
+          {title && (
+            <h2 className="section--title" data-splitting-opacity-anime>
               {title}
             </h2>
-          </div>
-        )}
-        {description && (
-          <div className="SuccessStories-container">
-            <div className="SuccessStories-item-first">
-              <p className="SuccessStories-header-description" data-splitting-opacity-anime>
-                <span className="description-highlight-space" data-come-up-anime></span>
-                {description}
-              </p>
-            </div>
-          </div>
-        )}
+          )}
+          {description && (
+            <p className="section--subtitle" data-splitting-opacity-anime>
+              <span className="description-highlight-space" data-come-up-anime></span>
+              {description}
+            </p>
+          )}
+        </div>
+
         <ul className="SuccessStories--list">
           <li>
             <Link className="story--box" href="/success-stories/brand-transformation">
@@ -152,7 +149,11 @@ export default function SuccessStories({ title, description }: ProvenProcessProp
             </Link>
           </li>
         </ul>
-        <Button variant="secondary">elevate Your Brand</Button>
+        <div className="button--wrapper">
+          <Link href="#">
+            <Button variant="secondary">elevate Your Brand</Button>
+          </Link>
+        </div>
       </div>
     </section>
   );

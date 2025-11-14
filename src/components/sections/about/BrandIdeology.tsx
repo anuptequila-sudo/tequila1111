@@ -17,14 +17,10 @@ export default function BrandIdeology() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    const wrapper = sectionRef.current.querySelector(
-      ".mission--vision"
-    ) as HTMLElement;
+    const wrapper = sectionRef.current.querySelector(".mission--vision") as HTMLElement;
     if (!wrapper) return;
 
-    const cards = Array.from(
-      wrapper.querySelectorAll(".ideology--box")
-    ) as HTMLElement[];
+    const cards = Array.from(wrapper.querySelectorAll(".ideology--box")) as HTMLElement[];
     if (!cards.length) return;
 
     sectionRef.current.style.perspective = "2000px";
@@ -70,69 +66,34 @@ export default function BrandIdeology() {
     <section className="BrandIdeology-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="BrandIdeology-header">
-          <h2
-            className="BrandIdeology-header-title"
-            data-splitting-opacity-anime
-          >
+          <h2 className="section--title BrandIdeology-header-title" data-splitting-opacity-anime>
             Tequila’s <br />
             Brand Ideology
           </h2>
-        </div>
-        <div className="BrandIdeology-container">
-          <div className="BrandIdeology-item-first">
-            <p
-              className="BrandIdeology-header-description"
-              data-splitting-opacity-anime
-            >
-              <span
-                className="description-highlight-space"
-                data-come-up-anime
-              ></span>
-              We’re shaping the future of how brands are seen, felt and
-              remembered.
-            </p>
-          </div>
+          <p className="section--subtitle" data-splitting-opacity-anime>
+            <span className="description-highlight-space" data-come-up-anime></span>
+            We’re shaping the future of how brands are seen, felt and remembered.
+          </p>
         </div>
         <div className="mission--vision">
           <div className="ideology--box">
             <div className="bg">
-              <video
-                className="bgVideo"
-                src="/images/what-we-do.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
+              <video className="bgVideo" src="/images/what-we-do.mp4" autoPlay muted loop playsInline />
             </div>
             <div className="top--text">WHAT WE DO</div>
             <div className="info--box">
               <h2 className="title">Mission</h2>
-              <h4 className="description">
-                To Elevate Brands Through Strategic Storytelling and Design,
-                Leaving a Lasting Impact on Target Audiences.
-              </h4>
+              <h4 className="description">To Elevate Brands Through Strategic Storytelling and Design, Leaving a Lasting Impact on Target Audiences.</h4>
             </div>
           </div>
           <div className="ideology--box">
             <div className="bg">
-              <video
-                className="bgVideo"
-                src="/images/what-we-do.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
+              <video className="bgVideo" src="/images/what-we-do.mp4" autoPlay muted loop playsInline />
             </div>
             <div className="top--text">WHERE WE ARE HEADED</div>
             <div className="info--box">
               <h2 className="title">Vision</h2>
-              <h4 className="description">
-                To be the Trusted Partner for Businesses Looking to Establish a
-                Strong Online Presence and Make a Lasting Impression in Their
-                Industries.
-              </h4>
+              <h4 className="description">To be the Trusted Partner for Businesses Looking to Establish a Strong Online Presence and Make a Lasting Impression in Their Industries.</h4>
             </div>
           </div>
         </div>

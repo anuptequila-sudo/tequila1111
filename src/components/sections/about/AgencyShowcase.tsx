@@ -42,12 +42,8 @@ export default function AgencyShowcase() {
     <section className="AgencyShowcase-section">
       <div className="container-fixed">
         <div className="AgencyShowcase-header">
-          <h2
-            className="AgencyShowcase-header-title"
-            data-splitting-opacity-anime
-          >
-            An Agency where Creatives Want to Work; and People Want to Work
-            With.
+          <h2 className="section--title" data-splitting-opacity-anime>
+            An Agency where Creatives Want to Work; and People Want to Work With.
           </h2>
         </div>
         <Swiper

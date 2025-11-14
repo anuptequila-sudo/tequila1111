@@ -42,7 +42,7 @@ export default function CraftingBrands() {
       <div className="container-fixed">
         {/* Left 30% */}
         <div className="about-left">
-          <h2 className="about-line" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             Crafting Iconic Brands that Resonate & Grow Worldwide
           </h2>
           <div className="about-description">

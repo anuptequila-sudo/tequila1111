@@ -82,19 +82,19 @@ function StickyDropdown() {
             <div className="sticky-maim-menu-load-item" data-attr="TEQ" style={{ display: activeAttr === "TEQ" ? "grid" : "none" }}>
               <ul>
                 <li>
-                  <Link href="/services">Custom Website Design & Development</Link>
+                  <Link href="/subservices">Custom Website Design & Development</Link>
                 </li>
                 <li>
-                  <Link href="/services">E-Commerce Website Design & Development</Link>
+                  <Link href="/subservices">E-Commerce Website Design & Development</Link>
                 </li>
                 <li>
-                  <Link href="/services">Web Applications Design & Development</Link>
+                  <Link href="/subservices">Web Applications Design & Development</Link>
                 </li>
                 <li>
-                  <Link href="/services">Domain & Hosting Management</Link>
+                  <Link href="/subservices">Domain & Hosting Management</Link>
                 </li>
                 <li>
-                  <Link href="/services">Website Maintenance & Support</Link>
+                  <Link href="/subservices">Website Maintenance & Support</Link>
                 </li>
               </ul>
             </div>
@@ -103,25 +103,25 @@ function StickyDropdown() {
             <div className="sticky-maim-menu-load-item" data-attr="UI" style={{ display: activeAttr === "UI" ? "grid" : "none" }}>
               <ul>
                 <li>
-                  <Link href="/services">Logo Design & Visual Identity</Link>
+                  <Link href="/subservices">Logo Design & Visual Identity</Link>
                 </li>
                 <li>
-                  <Link href="/services">Rebranding</Link>
+                  <Link href="/subservices">Rebranding</Link>
                 </li>
                 <li>
-                  <Link href="/services">Brand Elevation</Link>
+                  <Link href="/subservices">Brand Elevation</Link>
                 </li>
                 <li>
-                  <Link href="/services">Graphic Design</Link>
+                  <Link href="/subservices">Graphic Design</Link>
                 </li>
                 <li>
-                  <Link href="/services">Branding, Strategy & Development</Link>
+                  <Link href="/subservices">Branding, Strategy & Development</Link>
                 </li>
                 <li>
-                  <Link href="/services">Corporate Profile & Company Brochure</Link>
+                  <Link href="/subservices">Corporate Profile & Company Brochure</Link>
                 </li>
                 <li>
-                  <Link href="/services">UI/UX Design for Digital Products</Link>
+                  <Link href="/subservices">UI/UX Design for Digital Products</Link>
                 </li>
               </ul>
             </div>
@@ -129,16 +129,16 @@ function StickyDropdown() {
             <div className="sticky-maim-menu-load-item" data-attr="LA" style={{ display: activeAttr === "LA" ? "grid" : "none" }}>
               <ul>
                 <li>
-                  <Link href="/services">Social Media Strategy & Design</Link>
+                  <Link href="/subservices">Social Media Strategy & Design</Link>
                 </li>
                 <li>
-                  <Link href="/services">Search Engine Optimisation (SEO)</Link>
+                  <Link href="/subservices">Search Engine Optimisation (SEO)</Link>
                 </li>
                 <li>
-                  <Link href="/services">Photography & Visual Storytelling</Link>
+                  <Link href="/subservices">Photography & Visual Storytelling</Link>
                 </li>
                 <li>
-                  <Link href="/services">Video Storyboarding & Production</Link>
+                  <Link href="/subservices">Video Storyboarding & Production</Link>
                 </li>
               </ul>
             </div>
@@ -275,22 +275,22 @@ export default function Header() {
                           <h4>
                             TEQ <span className="line-footer-menu"></span>
                           </h4>
-                          <span>WEB DESIGN & DEVELOPMENT</span>
+                          <Link href="/services">WEB DESIGN & DEVELOPMENT</Link>
                           <ul>
                             <li>
-                              <Link href="/services">Custom Website Design & Development</Link>
+                              <Link href="/subservices">Custom Website Design & Development</Link>
                             </li>
                             <li>
-                              <Link href="/services">E-Commerce Website Design & Development</Link>
+                              <Link href="/subservices">E-Commerce Website Design & Development</Link>
                             </li>
                             <li>
-                              <Link href="/services">Web Applications Design & Development</Link>
+                              <Link href="/subservices">Web Applications Design & Development</Link>
                             </li>
                             <li>
-                              <Link href="/services">Domain & Hosting Management</Link>
+                              <Link href="/subservices">Domain & Hosting Management</Link>
                             </li>
                             <li>
-                              <Link href="/services">Website Maintenance & Support</Link>
+                              <Link href="/subservices">Website Maintenance & Support</Link>
                             </li>
                           </ul>
                         </div>
@@ -299,28 +299,28 @@ export default function Header() {
                           <h4>
                             UI <span className="line-footer-menu"></span>
                           </h4>
-                          <span>BRANDING</span>
+                          <Link href="/services">BRANDING</Link>
                           <ul>
                             <li>
-                              <Link href="/services">Logo Design & Visual Identity</Link>
+                              <Link href="/subservices">Logo Design & Visual Identity</Link>
                             </li>
                             <li>
-                              <Link href="/services">Rebranding</Link>
+                              <Link href="/subservices">Rebranding</Link>
                             </li>
                             <li>
-                              <Link href="/services">Brand Elevation</Link>
+                              <Link href="/subservices">Brand Elevation</Link>
                             </li>
                             <li>
-                              <Link href="/services">Graphic Design</Link>
+                              <Link href="/subservices">Graphic Design</Link>
                             </li>
                             <li>
-                              <Link href="/services">Branding, Strategy & Development</Link>
+                              <Link href="/subservices">Branding, Strategy & Development</Link>
                             </li>
                             <li>
-                              <Link href="/services">Corporate Profile & Company Brochure</Link>
+                              <Link href="/subservices">Corporate Profile & Company Brochure</Link>
                             </li>
                             <li>
-                              <Link href="/services">UI/UX Design for Digital Products</Link>
+                              <Link href="/subservices">UI/UX Design for Digital Products</Link>
                             </li>
                           </ul>
                         </div>
@@ -329,19 +329,19 @@ export default function Header() {
                           <h4>
                             LA <span className="line-footer-menu"></span>
                           </h4>
-                          <span>COMMUNICATION</span>
+                          <Link href="/services">COMMUNICATION</Link>
                           <ul>
                             <li>
-                              <Link href="/services">Social Media Strategy & Design</Link>
+                              <Link href="/subservices">Social Media Strategy & Design</Link>
                             </li>
                             <li>
-                              <Link href="/services">Search Engine Optimisation (SEO)</Link>
+                              <Link href="/subservices">Search Engine Optimisation (SEO)</Link>
                             </li>
                             <li>
-                              <Link href="/services">Photography & Visual Storytelling</Link>
+                              <Link href="/subservices">Photography & Visual Storytelling</Link>
                             </li>
                             <li>
-                              <Link href="/services">Video Storyboarding & Production</Link>
+                              <Link href="/subservices">Video Storyboarding & Production</Link>
                             </li>
                           </ul>
                         </div>
@@ -366,12 +366,12 @@ export default function Header() {
               <Link href="/contact">
                 <Button className="btn btn-secondary cta-btn">Get In Touch</Button>
               </Link>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="phone-image">
+              <Link href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="phone-image">
                 <Image src="/images/phone.svg" alt="Phone" width={48} height={48} />
-              </a>
-              <button className="toggle-btn" onClick={toggleTheme}>
+              </Link>
+              <Link href="javascript:void(0);" className="phone-image toggle-btn" onClick={toggleTheme}>
                 {dark ? "☀️" : "🌙"}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

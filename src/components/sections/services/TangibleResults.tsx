@@ -71,22 +71,21 @@ export default function TangibleResults({ title, description }: TangibleResultsP
   return (
     <section className="TangibleResults-section" ref={sectionRef}>
       <div className="container-fixed">
-        {title && (
-          <div className="TangibleResults-header">
-            <h2 className="TangibleResults-header-title" data-splitting-opacity-anime>
+        <div className="TangibleResults-header">
+          {title && (
+            <h2 className="section--title" data-splitting-opacity-anime>
               {title}
             </h2>
-          </div>
-        )}
-        <div className="TangibleResults-container">
-          {description && (
-            <div className="TangibleResults-item-first">
-              <p className="TangibleResults-header-description" data-splitting-opacity-anime>
-                <span className="description-highlight-space" data-come-up-anime></span>
-                {description}
-              </p>
-            </div>
           )}
+          {description && (
+            <p className="section--subtitle" data-splitting-opacity-anime>
+              <span className="description-highlight-space" data-come-up-anime></span>
+              {description}
+            </p>
+          )}
+        </div>
+
+        <div className="TangibleResults-container">
           <div className="info">
             <ul className="assets--list">
               <li>

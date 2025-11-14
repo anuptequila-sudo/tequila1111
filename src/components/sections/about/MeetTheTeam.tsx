@@ -17,14 +17,10 @@ export default function MeetTheTeam() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    const wrapper = sectionRef.current.querySelector(
-      ".team--list"
-    ) as HTMLElement;
+    const wrapper = sectionRef.current.querySelector(".team--list") as HTMLElement;
     if (!wrapper) return;
 
-    const cards = Array.from(
-      wrapper.querySelectorAll(".team--card")
-    ) as HTMLElement[];
+    const cards = Array.from(wrapper.querySelectorAll(".team--card")) as HTMLElement[];
     if (!cards.length) return;
 
     gsap.fromTo(
@@ -62,24 +58,15 @@ export default function MeetTheTeam() {
     <section className="MeetTheTeam-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="MeetTheTeam-header">
-          <h2 className="MeetTheTeam-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             Meet the Team
           </h2>
         </div>
         <div className="MeetTheTeam-container">
           <div className="MeetTheTeam-item-first">
-            <p
-              className="MeetTheTeam-header-description"
-              data-splitting-opacity-anime
-            >
-              <span
-                className="description-highlight-space"
-                data-come-up-anime
-              ></span>
-              Strategists, designers, developers, storytellers—and everything in
-              between. We’re a tight-knit group of curious minds who bring
-              diverse perspectives and deep expertise to the table. Different in
-              roles, aligned in vision: building brands that lead.
+            <p className="MeetTheTeam-header-description" data-splitting-opacity-anime>
+              <span className="description-highlight-space" data-come-up-anime></span>
+              Strategists, designers, developers, storytellers—and everything in between. We’re a tight-knit group of curious minds who bring diverse perspectives and deep expertise to the table. Different in roles, aligned in vision: building brands that lead.
             </p>
           </div>
         </div>

@@ -1,9 +1,9 @@
 .ProvenProcess-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
-.ProvenProcess-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.ProvenProcess-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .ProvenProcess-header .ProvenProcess-header-title { width: 75%; }
 .ProvenProcess-item-first { width: 35%; }
 .ProvenProcess-item-first .ProvenProcess-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.ProvenProcess-container { display: flex; gap: 4rem; padding: 0 2vw; scroll-behavior: smooth; }
+.ProvenProcess-container { display: flex; gap: 4rem; scroll-behavior: smooth; }
 .ProvenProcess-container .ProvenProcess-item-second { flex: 1; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
 .ProvenProcess-container .ProvenProcess-item-second .info { width: 100%; max-width: 300px; }
 .ProvenProcess-container .ProvenProcess-item-second .info .h4 { font-size: 36px; line-height: 1.1; font-weight: 400; text-transform: capitalize; margin-bottom: 24px; }

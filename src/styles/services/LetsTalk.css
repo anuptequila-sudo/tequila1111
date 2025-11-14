@@ -1,43 +1,6 @@
 .LetsTalk-section { padding: 10vh 0; position: relative; z-index: 1; }
-.LetsTalk-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
-.LetsTalk-header .LetsTalk-header-title { width: 80%; }
+.LetsTalk-header { display: flex; justify-content: space-between; align-items: flex-start; }
+.LetsTalk-header .section--title { line-height: 120%; font-family: InstrumentSerifRegular, serif; width: 80%; }
 .LetsTalk-item-first { width: 40%; }
-.LetsTalk-item-first .LetsTalk-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; margin-bottom: 24px; }
-.LetsTalk-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
 
 .lets--talk--bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }
-
-
-@media screen and (min-width: 2560px) {
-.LetsTalk-header .LetsTalk-header-description { font-size: 1.6rem; }
-.LetsTalk-container { gap: 12rem; }
-}
-
-@media screen and (max-width: 1440px) {
-.LetsTalk-header .LetsTalk-header-description { font-size: 1.1rem; }
-.LetsTalk-container { gap: 8rem; }
-.LetsTalk-item-first { width: 35%; }
-}
-
-@media screen and (max-width: 1024px) {
-.LetsTalk-header { flex-direction: column; margin-bottom: 40px; }
-.LetsTalk-header .LetsTalk-header-title,
-.LetsTalk-item-first .LetsTalk-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
-.LetsTalk-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
-.LetsTalk-item-first,
-.LetsTalk-item-second { width: 100%; margin-top: 0; }
-}
-
-@media screen and (max-width: 768px) {
-.LetsTalk-section { padding: 6vh 0; }
-.LetsTalk-header { padding: 0 5vw; }
-.LetsTalk-header .LetsTalk-header-title { font-size: 1.2rem; }
-.LetsTalk-item-first .LetsTalk-header-description { font-size: 0.95rem; }
-}
-
-@media screen and (max-width: 480px) {
-.LetsTalk-section { padding: 5vh 0; }
-.LetsTalk-header .LetsTalk-header-title { font-size: 1rem; }
-.LetsTalk-item-first .LetsTalk-header-description { font-size: 0.9rem; }
-.LetsTalk-container { gap: 2rem; }
-}

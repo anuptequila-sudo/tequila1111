@@ -10,25 +10,15 @@ export default function JoinTheWorkspace() {
     <section className="JoinTheWorkspace-section">
       <div className="container-fixed">
         <div className="JoinTheWorkspace-header">
-          <h2
-            className="JoinTheWorkspace-header-title"
-            data-splitting-opacity-anime
-          >
+          <h2 className="section--title" data-splitting-opacity-anime>
             Join the Workforce
           </h2>
         </div>
         <div className="JoinTheWorkspace-container">
           <div className="JoinTheWorkspace-item-first">
-            <p
-              className="JoinTheWorkspace-header-description"
-              data-splitting-opacity-anime
-            >
-              <span
-                className="description-highlight-space"
-                data-come-up-anime
-              ></span>
-              We’re always on the lookout for fresh talent, sharp minds, and
-              passionate creators who want to make bold things happen.
+            <p className="JoinTheWorkspace-header-description" data-splitting-opacity-anime>
+              <span className="description-highlight-space" data-come-up-anime></span>
+              We’re always on the lookout for fresh talent, sharp minds, and passionate creators who want to make bold things happen.
             </p>
           </div>
           <div className="JoinTheWorkspace-item-second">

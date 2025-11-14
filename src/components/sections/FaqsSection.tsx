@@ -110,10 +110,10 @@ export default function FaqsSection() {
         </div>
         <div className={styles.wrapper}>
           <div className={styles.groupOne}>
-            <h2 data-splitting-opacity-anime>FAQ</h2>
-            <span data-splitting-opacity-anime>
+            <h2 className="section--title" data-splitting-opacity-anime>FAQ</h2>
+            <h3 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space"></span> Got questions about branding & web design? We’ve answered the most common ones right here for you.
-            </span>
+            </h3>
             <h2></h2>
             <Button variant="secondary" data-come-up-anime>
               CONTACT US &nbsp; →

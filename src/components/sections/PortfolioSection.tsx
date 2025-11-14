@@ -134,14 +134,14 @@ export default function PortfolioSection() {
     <section className={styles.portfolioSection} ref={sectionRef}>
       <div className="container-fixed">
         <div className={styles.headerWrapper}>
-          <h2 className={styles.headerTitle} data-splitting-opacity-anime>
+          <h2 className={`${styles.headerTitle} section--title`} data-splitting-opacity-anime>
             What we've Built
           </h2>
           <div className={styles.headerGap}></div>
-          <div className={styles.headerText} data-come-up-anime>
+          <p className={styles.headerText} data-come-up-anime>
             <span className="description-highlight-space"></span>
             We've teamed up with founders, innovators, and ambitious brands to create work that leads. From first spark to final screen — this is where strategy meets creative craft, with impact built in.
-          </div>
+          </p>
         </div>
         <div className={`${styles.portfolioDetail} portfolioDetail`}>
           {portfolioItems.map((item, i) => (

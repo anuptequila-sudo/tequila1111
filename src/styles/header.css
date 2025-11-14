@@ -52,6 +52,8 @@
 .sticky-sub-menu li:hover { opacity: 1; }
 .sticky-sub-menu h4 { margin-bottom: 1.5rem; }
 
+.sticky-sub-menu h4 + a { font-size: 1.5rem; color: rgba(var(--text) / 100%); font-family: "InstrumentSerifRegular"; }
+
 .dropdown-columns { display: flex; gap: 40px; }
 .dropdown-columns ul { list-style: none; padding: 0; }
 .header-dropdown { position: relative; }

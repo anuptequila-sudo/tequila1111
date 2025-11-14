@@ -56,7 +56,7 @@ export default function Ceo() {
     <section className="ceo-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="ceo-header">
-          <h2 className="ceo-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             Message from the CEO
           </h2>
         </div>
@@ -65,7 +65,7 @@ export default function Ceo() {
             <img src="/images/about/ceo.webp" alt="Img" />
           </div>
           <div className="right">
-            <h3 className="hero--text" data-splitting-opacity-anime>
+            <h3 className="section--subtitle" data-splitting-opacity-anime>
               Here’s how 25 years in the game shaped what we do at Tequila.
             </h3>
             <p data-splitting-opacity-anime>

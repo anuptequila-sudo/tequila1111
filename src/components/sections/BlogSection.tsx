@@ -71,7 +71,7 @@ export default function BlogSection() {
     <section className="blogs-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="blogs-header">
-          <h2 className="blogs-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             From the Journal
           </h2>
           <p className="blogs-header-description" data-come-up-anime>
@@ -84,7 +84,7 @@ export default function BlogSection() {
           <div className="blogs-list">
             <div className="blogs-item" data-cursor-text="View Blog">
               <p className="blogs-year">2024</p>
-              <span className="blogs-title">The Seven Pillars of Building a Premium Brand in UAE</span>
+              <h3 className="blogs-title">The Seven Pillars of Building a Premium Brand in UAE</h3>
               <div className="blogs-image-container">
                 <div className="blogs-details">
                   <p className="blogs-tag">BRANDING, BUSINESS</p>

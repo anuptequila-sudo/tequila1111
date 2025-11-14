@@ -105,7 +105,7 @@ const useScrollAnimations = () => {
 
           tl.fromTo(
             chars,
-            { opacity: 0.5 },
+            { opacity: 0.3 },
             {
               opacity: 1,
               stagger: Number(el.getAttribute("data-splitting-stagger") ?? 0.2),
@@ -164,7 +164,7 @@ const useScrollAnimations = () => {
 
         tl.fromTo(
           chars,
-          { opacity: 0.5 },
+          { opacity: 0.3 },
           {
             opacity: 1,
             stagger: Number(el.getAttribute("data-splitting-stagger") ?? 0.35),

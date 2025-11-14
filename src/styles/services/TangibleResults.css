@@ -1,9 +1,7 @@
 .TangibleResults-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
-.TangibleResults-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
-.TangibleResults-header .TangibleResults-header-title { width: 80%; }
-.TangibleResults-item-first { width: 40%; }
-.TangibleResults-item-first .TangibleResults-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.TangibleResults-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+.TangibleResults-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: -60px; }
+.TangibleResults-header .section--title { width: 80%; }
+.TangibleResults-header .section--subtitle { width: 40%; }
 
 .TangibleResults-section .info { width: 40%; margin-left: auto; }
 .TangibleResults-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }

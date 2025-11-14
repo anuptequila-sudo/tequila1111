@@ -26,7 +26,7 @@ export default function OurBrand() {
     ScrollTrigger.create({
       trigger: section,
       start: "top top",
-      end: "+=4800", // total scroll length
+      end: "+=3500", // total scroll length
       pin: brand,
       pinSpacing: true,
     });
@@ -83,8 +83,18 @@ export default function OurBrand() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: section,
-          start: `+=${1600 + i * 800}`,
-          end: `+=${800 + i * 800}`,
+          start: `+=${1600 + i * 300}`,
+          end: `+=${300 + i * 150}`,
+          scrub: true,
+        },
+      });
+      gsap.to(left.querySelector("img"), {
+        clipPath: "inset(0% 0% 0% 120%)",
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: `+=${1600 + i * 300}`,
+          end: `+=${300 + i * 150}`,
           scrub: true,
         },
       });
@@ -95,8 +105,8 @@ export default function OurBrand() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: section,
-          start: `+=${1600 + i * 800}`,
-          end: `+=${800 + i * 600}`,
+          start: `+=${1600 + i * 300}`,
+          end: `+=${300 + i * 150}`,
           scrub: true,
         },
       });
@@ -107,13 +117,11 @@ export default function OurBrand() {
     <section className="OurBrand-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="OurBrand-header">
-          <h2 className="OurBrand-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             Our Brand DNA
           </h2>
-        </div>
-        <div className="OurBrand-container">
           <div className="OurBrand-item-first">
-            <p className="OurBrand-header-description" data-splitting-opacity-anime>
+            <p className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               At our core lies a triad that defines everything we do: technology that performs, design that speaks, and storytelling that connects. These three pillars come together to form our DNA — the foundation of how we build brands with impact.
             </p>

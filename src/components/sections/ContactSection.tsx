@@ -73,7 +73,7 @@ export default function ContactSection() {
     <section className="contact-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="contact-header">
-          <h2 className="contact-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             Say Hello!
           </h2>
         </div>

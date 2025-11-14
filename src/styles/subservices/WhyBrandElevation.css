@@ -1,9 +1,9 @@
 .WhyBrandElevation-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
-.WhyBrandElevation-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.WhyBrandElevation-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .WhyBrandElevation-header .WhyBrandElevation-header-title { width: 80%; }
 .WhyBrandElevation-item-first { width: 40%; }
 .WhyBrandElevation-item-first .WhyBrandElevation-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.WhyBrandElevation-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+.WhyBrandElevation-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
 .WhyBrandElevation-section .info { width: 50%; margin-left: auto; margin-top: 50px; }
 .WhyBrandElevation-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }

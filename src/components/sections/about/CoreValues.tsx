@@ -17,14 +17,10 @@ export default function CoreValues() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    const wrapper = sectionRef.current.querySelector(
-      ".CoreValues--list"
-    ) as HTMLElement;
+    const wrapper = sectionRef.current.querySelector(".CoreValues--list") as HTMLElement;
     if (!wrapper) return;
 
-    const cards = Array.from(
-      wrapper.querySelectorAll(".CoreValues--box")
-    ) as HTMLElement[];
+    const cards = Array.from(wrapper.querySelectorAll(".CoreValues--box")) as HTMLElement[];
     if (!cards.length) return;
 
     sectionRef.current.style.perspective = "2000px";
@@ -71,51 +67,31 @@ export default function CoreValues() {
     <section className="CoreValues-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="CoreValues-header">
-          <h2 className="CoreValues-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             Core Values
           </h2>
-        </div>
-        <div className="CoreValues-container">
-          <div className="CoreValues-item-first">
-            <p
-              className="CoreValues-header-description"
-              data-splitting-opacity-anime
-            >
-              <span
-                className="description-highlight-space"
-                data-come-up-anime
-              ></span>
-              Our values that define how we work, connect and build meaningful
-              partnerships.
-            </p>
-          </div>
+          <p className="section--subtitle" data-splitting-opacity-anime>
+            <span className="description-highlight-space" data-come-up-anime></span>
+            Our values that define how we work, connect and build meaningful partnerships.
+          </p>
         </div>
         <div className="CoreValues--list">
           <div className="CoreValues--box">
             <div className="info--box">
               <h2 className="title">Synergy</h2>
-              <h4 className="description">
-                Bringing together diverse minds to create better, bolder
-                outcomes — collectively.
-              </h4>
+              <h4 className="description">Bringing together diverse minds to create better, bolder outcomes — collectively.</h4>
             </div>
           </div>
           <div className="CoreValues--box">
             <div className="info--box">
               <h2 className="title">Integrity</h2>
-              <h4 className="description">
-                Doing the right thing — with honesty, transparency, and
-                accountability at every step.
-              </h4>
+              <h4 className="description">Doing the right thing — with honesty, transparency, and accountability at every step.</h4>
             </div>
           </div>
           <div className="CoreValues--box">
             <div className="info--box">
               <h2 className="title">Empathy</h2>
-              <h4 className="description">
-                Leading with understanding, listening deeply, and creating with
-                intention.
-              </h4>
+              <h4 className="description">Leading with understanding, listening deeply, and creating with intention.</h4>
             </div>
           </div>
         </div>

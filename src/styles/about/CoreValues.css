@@ -1,11 +1,8 @@
 .CoreValues-section { padding: 10vh 0; position: relative; overflow: hidden; }
-.CoreValues-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
-.CoreValues-header .CoreValues-header-title { width: 50%; }
-.CoreValues-item-first { width: 40%; }
-.CoreValues-item-first .CoreValues-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.CoreValues-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+.CoreValues-header { display: flex; display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
+.CoreValues-header .section--subtitle { width: 40%; }
 
-.CoreValues--list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 120px; }
+.CoreValues--list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
 .CoreValues--list .CoreValues--box { transform-origin: center center; position: relative; overflow: hidden; width: 100%; padding-bottom: 125%; border: 1px solid rgba(var(--accent) / 100%); }
 .CoreValues--list .CoreValues--box .info--box { display: flex; flex-flow: column wrap; justify-content: space-between; position: absolute; bottom: 0; left: 0; color: rgba(var(--accent) / 100%); z-index: 2; padding: 50px; }
 .CoreValues--list .CoreValues--box .info--box .title { font-size: 60px; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 40px; }

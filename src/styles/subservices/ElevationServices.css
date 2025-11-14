@@ -1,9 +1,9 @@
 .ElevationServices-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
-.ElevationServices-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.ElevationServices-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .ElevationServices-header .ElevationServices-header-title { width: 70%; }
 .ElevationServices-item-first { width: 40%; }
 .ElevationServices-item-first .ElevationServices-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.ElevationServices-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+.ElevationServices-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
 .ElevationServices-section .info { width: 50%; margin-left: auto; margin-top: 50px; }
 .ElevationServices-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }

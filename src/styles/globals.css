@@ -22,9 +22,11 @@ body p { font-size: 20px; color: rgba(var(--text) / 70%); margin-bottom: var(--s
 .fluid-container { position: fixed; top: 0; left: 0; z-index: 2; }
 .fluid-canvas { width: 100vw; height: 100vh; }
 
-h2 { font-size: 96px; line-height: 100%; font-weight: 200; margin-bottom: var(--space-xxl); }
+.section--title { font-size: 96px; line-height: 100%; font-weight: 200; margin-bottom: var(--space-xxl); }
+.section--subtitle { font-size: 36px; line-height: 122%; font-family: "InstrumentSerifRegular"; margin-bottom: var(--space-md); }
 h5.title { font-family: "ClashGroteskVariable", sans-serif; }
 .subtitle { font-family: "OverusedGroteskLight", sans-serif; font-size: 1.2rem; margin-bottom: 2rem; text-align: right; font-weight: 100; text-transform: uppercase; }
+.page--title { font-size: 64px; line-height: 1; margin-bottom: 0; }
 
 a { color: inherit; text-decoration: none; }
 
@@ -49,15 +51,12 @@ button { font-family: inherit; border: none; cursor: pointer; background: none; 
 .hero-wrapper { display: flex; align-items: flex-end; justify-content: flex-start; position: relative; z-index: 2; padding: 0 var(--space-lg); margin-bottom: -60px; }
 
 .hero-left { width: 40%; text-align: right; margin-top: 4rem; padding-right: 2rem; }
-.hero-left h1 { font-size: 64px; line-height: 1; margin-bottom: 0; }
-.hero-left .hero-highlight { padding: 0 5rem; position: relative; margin-left: 2.5rem; }
+.hero-left .hero-highlight { padding: 0 5rem; position: relative; margin: 0 2.5rem; }
 .hero-left .hero-highlight::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: 5px; background: rgba(var(--accent) / 100%); }
 
 .gap { width: 8%; }
 
-.hero-middle { width: 37.5%; text-align: left; margin: auto; margin-bottom: 120px; }
-.hero-middle span, .hero-text.about-line { display: block; font-size: 36px; line-height: 122%; margin-bottom: var(--space-md); }
-.hero-text { font-size: 1.5rem; margin-bottom: 2rem; }
+.hero-middle { width: 35%; text-align: left; margin: auto; margin-bottom: 120px; }
 .hero-buttons { display: flex; gap: var(--space-sm); margin-top: 2rem; }
 
 .hero-right { width: 20%; }
@@ -77,7 +76,7 @@ button { font-family: inherit; border: none; cursor: pointer; background: none; 
 .about-gap { width: 4%; }
 
 .about-right { width: 48%; text-align: left; }
-.about-left .hero-text.about-line { width: 80%; }
+.about-left .section--subtitle.about-line { width: 80%; }
 .about-grid { padding: 0 calc(var(--space-xxxl) * 2); display: grid; grid-template-columns: repeat(2, 1fr); gap: calc(var(--space-xxxl)); }
 .about-line-description { margin-bottom: 2rem; width: 90%; }
 .about-line.subtitle { padding: 0 calc(var(--space-xxxl) * 2); margin-bottom: 6rem; }
@@ -143,5 +142,5 @@ button { font-family: inherit; border: none; cursor: pointer; background: none; 
 
 .breadcrumb { display: flex; align-items: center; font-size: 16px; margin: 1rem 0 0; }
 .breadcrumb:has(+ *) { margin-bottom: 1rem; }
-.breadcrumb-item { position: relative; padding: 0; margin-right: 10px; color: rgb(255, 255, 255, 0.5); }
+.breadcrumb-item { position: relative; font-size: 20px; padding: 0; margin-right: 10px; color: rgb(255, 255, 255, 0.5); }
 .breadcrumb-item:not(:last-child)::after { content: "/"; margin-left: 10px; }

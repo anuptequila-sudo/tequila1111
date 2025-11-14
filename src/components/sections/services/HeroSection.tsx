@@ -43,36 +43,28 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section
-      className="hero"
-      style={{ position: "relative", overflow: "hidden" }}
-    >
+    <section className="hero" style={{ position: "relative", overflow: "hidden" }}>
       <div className="hero-wrapper">
         <div className="hero-left">
-          <h1>
-            Strategic Design <span className="hero-highlight"></span> <br />&
-            Branding Agency in Dubai
+          <h1 className="page--title">
+            Strategic Design <span className="hero-highlight"></span> <br />& Branding Agency in Dubai
           </h1>
         </div>
         <div className="gap" />
         <div className="hero-middle">
-          <span className="page-title">Branding</span>
-          <div className="breadcrumb">
-            <div className="breadcrumb-item">
-              <a href="./">Home</a>
-            </div>
-            <div className="breadcrumb-item active" aria-current="page">
+          <span className="section--title">Branding</span>
+          <a className="breadcrumb">
+            <a href="./" className="breadcrumb-item">
+              Home
+            </a>
+            <a href="/services" className="breadcrumb-item active" aria-current="page">
               what we do
-            </div>
+            </a>
             <div className="breadcrumb-item active" aria-current="page">
               Branding
             </div>
-          </div>
-          <span>
-            We’re more than a branding agency in Dubai—we create category
-            leaders. With strategy, storytelling, and unique design, we craft
-            identities that capture attention and build trust.
-          </span>
+          </a>
+          <h2 className="section--subtitle">We’re more than a branding agency in Dubai—we create category leaders. With strategy, storytelling, and unique design, we craft identities that capture attention and build trust.</h2>
           <div className="hero-buttons" data-anime-hero-word-block>
             <Button variant="primary">build my brand</Button>
             <Button variant="secondary">build my brand</Button>
@@ -80,14 +72,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="hero--bg" ref={videoWraRef}>
-        <Image priority
-          width={1920}
-          height={1080}
-          placeholder="blur"
-          blurDataURL="/images/services/services.webp"
-          src="/images/services/services.webp"
-          alt="About Banner"
-        />
+        <Image priority width={1920} height={1080} placeholder="blur" blurDataURL="/images/services/services.webp" src="/images/services/services.webp" alt="About Banner" />
       </div>
     </section>
   );

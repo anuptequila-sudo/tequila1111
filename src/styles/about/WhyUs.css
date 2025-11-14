@@ -1,11 +1,11 @@
 .WhyUs-section { padding: 10vh 0; position: relative; overflow: hidden; }
-.WhyUs-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
-.WhyUs-header .WhyUs-header-title { width: 50%; }
+.WhyUs-header { display: flex; flex-flow: column wrap; align-items: flex-start; margin-bottom: 60px; }
+.WhyUs-header .section--subtitle { width: 50%; }
 .WhyUs-item-first { width: 40%; }
 .WhyUs-item-first .WhyUs-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.WhyUs-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+.WhyUs-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
-.why--us--wrapper { position: relative; margin-top: 120px; display: flex; flex-flow: row wrap; padding: 0 2vw; }
+.why--us--wrapper { position: relative; margin-top: 120px; display: flex; flex-flow: row wrap; }
 .why--us--wrapper .why--us--list { width: 100%; list-style: none; display: flex; flex-flow: row wrap; gap: 40px 20px; }
 .why--us--wrapper .why--us--list li { flex: 1 1 48%; display: flex; flex-flow: row wrap; padding: 24px 0; border-bottom: 1px solid #6E6E6E; }
 .why--us--wrapper .why--us--list li .number { width: 25%; font-family: ClashGroteskVariable, sans-serif; font-size: 22px; color: rgba(var(--accent) / 100%); opacity: 0.5; }

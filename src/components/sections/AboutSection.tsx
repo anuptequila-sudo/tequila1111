@@ -57,18 +57,19 @@ export default function AboutSection() {
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
   }, []);
+
   return (
     <section className="about-section-full" ref={sectionRef}>
       <div className="container-fixed">
         <div className="about-section">
           {/* Left 30% */}
           <div className="about-left">
-            <h2 className="about-line " data-splitting-opacity-anime>
+            <h2 className="section--title about-line" data-splitting-opacity-anime>
               The Agency
             </h2>
-            <span className="hero-text about-line" data-splitting-opacity-anime>
+            <h3 className="section--subtitle about-line" data-splitting-opacity-anime>
               We built brands. We engineer experiences that think smart, feel right, and lead with purpose.
-            </span>
+            </h3>
             <div className="about-description">
               <p className="about-line-description" data-splitting-opacity-anime>
                 <span className="description-highlight-space"></span>A &quot;Creative Intelligence Studio&quot; - an agency that not only designs and builds, but crafts brands with intellect, heart, and future-readiness. Not just aesthetic designs or websites, but strategic experiences.

@@ -15,14 +15,10 @@ export default function ValuableAssets() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    const wrapper = sectionRef.current.querySelector(
-      ".assets--list"
-    ) as HTMLElement;
+    const wrapper = sectionRef.current.querySelector(".assets--list") as HTMLElement;
     if (!wrapper) return;
 
-    const cards = Array.from(
-      wrapper.querySelectorAll(".assets--list li")
-    ) as HTMLElement[];
+    const cards = Array.from(wrapper.querySelectorAll(".assets--list li")) as HTMLElement[];
     if (!cards.length) return;
 
     sectionRef.current.style.perspective = "2000px";
@@ -67,28 +63,13 @@ export default function ValuableAssets() {
     <section className="ValuableAssets-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="ValuableAssets-header">
-          <h2
-            className="ValuableAssets-header-title"
-            data-splitting-opacity-anime
-          >
+          <h2 className="section--title" data-splitting-opacity-anime>
             Why a Powerful Brand is your most Valuable Asset
           </h2>
-        </div>
-        <div className="ValuableAssets-container">
-          <div className="ValuableAssets-item-first">
-            <p
-              className="ValuableAssets-header-description"
-              data-splitting-opacity-anime
-            >
-              <span
-                className="description-highlight-space"
-                data-come-up-anime
-              ></span>
-              In today's dynamic global landscape, your brand is more than just
-              a visual identity—it's your promise, your personality, and your
-              competitive edge.
-            </p>
-          </div>
+          <p className="section--subtitle" data-splitting-opacity-anime>
+            <span className="description-highlight-space" data-come-up-anime></span>
+            In today's dynamic global landscape, your brand is more than just a visual identity—it's your promise, your personality, and your competitive edge.
+          </p>
         </div>
         <div className="info">
           <h3 className="h3" data-splitting-opacity-anime>
@@ -97,31 +78,19 @@ export default function ValuableAssets() {
           <ul className="assets--list">
             <li>
               <h4 className="h4">Command Attention</h4>
-              <p>
-                Make an instant, memorable impression that sets you apart from
-                the competition, wherever your audience may be.
-              </p>
+              <p>Make an instant, memorable impression that sets you apart from the competition, wherever your audience may be.</p>
             </li>
             <li>
               <h4 className="h4">Forge Deep Connections</h4>
-              <p>
-                Evoke genuine emotion and build unwavering loyalty with your
-                ideal audience, fostering a global community.
-              </p>
+              <p>Evoke genuine emotion and build unwavering loyalty with your ideal audience, fostering a global community.</p>
             </li>
             <li>
               <h4 className="h4">Build Unshakable Trust</h4>
-              <p>
-                Establish instant credibility and authority, turning curious
-                prospects into passionate advocates worldwide.
-              </p>
+              <p>Establish instant credibility and authority, turning curious prospects into passionate advocates worldwide.</p>
             </li>
             <li>
               <h4 className="h4">Tangible Growth</h4>
-              <p>
-                Evoke genuine emotion and build unwavering loyalty with your
-                ideal audience, fostering a global community.
-              </p>
+              <p>Evoke genuine emotion and build unwavering loyalty with your ideal audience, fostering a global community.</p>
             </li>
           </ul>
         </div>

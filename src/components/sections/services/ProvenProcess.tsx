@@ -62,13 +62,13 @@ export default function ProvenProcess({ title, description }: ProvenProcessProps
     <section className="ProvenProcess-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="ProvenProcess-header">
-          <h2 className="ProvenProcess-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             {title}
           </h2>
         </div>
         <div className="ProvenProcess-container">
           <div className="ProvenProcess-item-first">
-            <p className="ProvenProcess-header-description" data-splitting-opacity-anime>
+            <p className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               {description}
             </p>

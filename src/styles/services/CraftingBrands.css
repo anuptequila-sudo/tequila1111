@@ -1,6 +1,6 @@
 
 .CraftingBrands-section { padding: 10vh 0; position: relative; overflow: hidden; }
-.CraftingBrands-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.CraftingBrands-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .CraftingBrands-header .CraftingBrands-header-title { width: 50%; }
 .CraftingBrands-section .about-left { width: 70%; }
 .CraftingBrands-section .about-description { width: 50%; padding-left: 0; }

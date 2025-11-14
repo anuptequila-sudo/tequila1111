@@ -9,9 +9,9 @@
 .blogs-list { display: flex; gap: var(--space-xl); flex-direction: row; min-width: 100%; flex-shrink: 0; }
 .blogs-item { display: flex; flex-direction: column; flex-shrink: 0; width: 50%; }
 
-.blogs-title { font-size: 2.2rem; line-height: 1; width: 50%; margin-bottom: var(--space-sm); }
+.blogs-title { font-family: InstrumentSerifRegular, serif; font-size: 2.2rem; line-height: 1; width: 50%; margin-bottom: var(--space-md); }
 .blogs-image { width: fit-content; width: -webkit-fill-available; }
 .blogs-details { position: absolute; padding: 0 10px 5px 0; background: rgba(var(--bg) / 100%); }
-.blogs-tag,
-.blogs-year { font-size: 0.85rem; font-weight: 300; margin-bottom: 0; }
+.blogs-tag { font-size: 16px; font-weight: 300; margin-bottom: 0; }
+.blogs-year { font-size: 16px; font-weight: 300; }
 .blogs-button { margin-top: 40px; display: flex; flex-flow: row wrap; justify-content: center; margin-top: calc(var(--space-xxl) * 2); }

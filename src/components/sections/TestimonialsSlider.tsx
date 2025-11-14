@@ -117,10 +117,12 @@ export default function TestimonialsSlider() {
       <div className="container-fixed">
         {/* Left Side */}
         <div className={styles.groupOne}>
-          <h2 data-splitting-opacity-anime>What Our Clients Say: Voices of Success</h2>
-          <span className={styles.spandescription} data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
+            What Our Clients Say: Voices of Success
+          </h2>
+          <h3 className="section--subtitle" data-splitting-opacity-anime>
             <span className="description-highlight-space"></span> Partnerships that last, stories that resonate—from clients and partners turned brand ambassadors.
-          </span>
+          </h3>
         </div>
       </div>
 

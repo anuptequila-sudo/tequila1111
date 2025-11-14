@@ -1,9 +1,7 @@
 .SuccessStories-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow-x: hidden; }
-.SuccessStories-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
-.SuccessStories-header .SuccessStories-header-title { width: 80%; }
-.SuccessStories-item-first { width: 40%; }
-.SuccessStories-item-first .SuccessStories-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.SuccessStories-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+.SuccessStories-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; }
+.SuccessStories-header .section--title { width: 70%; }
+.SuccessStories-header .section--subtitle { width: 40%; }
 
 .SuccessStories-section .SuccessStories--list { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px 24px; padding: 60px 0; }
 .SuccessStories-section .SuccessStories--list .img--box { display: flex; width: 100%; margin-bottom: 24px; }
@@ -11,38 +9,3 @@
 .SuccessStories-section .SuccessStories--list .info { width: 100%; }
 .SuccessStories-section .SuccessStories--list .info .h3 { font-size: 36px; font-weight: 400; color: rgba(var(--accent) / 100%); text-transform: capitalize; margin-bottom: 0; }
 .SuccessStories-section .SuccessStories--list .info .h4 { font-size: 36px; font-weight: 400; color: rgba(var(--accent) / 100%); text-transform: capitalize; font-family: InstrumentSerifRegular, serif; margin-bottom: 0; }
-
-
-@media screen and (min-width: 2560px) {
-.SuccessStories-header .SuccessStories-header-description { font-size: 1.6rem; }
-.SuccessStories-container { gap: 12rem; }
-}
-
-@media screen and (max-width: 1440px) {
-.SuccessStories-header .SuccessStories-header-description { font-size: 1.1rem; }
-.SuccessStories-container { gap: 8rem; }
-.SuccessStories-item-first { width: 35%; }
-}
-
-@media screen and (max-width: 1024px) {
-.SuccessStories-header { flex-direction: column; margin-bottom: 40px; }
-.SuccessStories-header .SuccessStories-header-title,
-.SuccessStories-item-first .SuccessStories-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
-.SuccessStories-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
-.SuccessStories-item-first,
-.SuccessStories-item-second { width: 100%; margin-top: 0; }
-}
-
-@media screen and (max-width: 768px) {
-.SuccessStories-section { padding: 6vh 0; }
-.SuccessStories-header { padding: 0 5vw; }
-.SuccessStories-header .SuccessStories-header-title { font-size: 1.2rem; }
-.SuccessStories-item-first .SuccessStories-header-description { font-size: 0.95rem; }
-}
-
-@media screen and (max-width: 480px) {
-.SuccessStories-section { padding: 5vh 0; }
-.SuccessStories-header .SuccessStories-header-title { font-size: 1rem; }
-.SuccessStories-item-first .SuccessStories-header-description { font-size: 0.9rem; }
-.SuccessStories-container { gap: 2rem; }
-}

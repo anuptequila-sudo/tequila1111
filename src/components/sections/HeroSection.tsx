@@ -42,25 +42,17 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section
-      className="hero"
-      style={{ position: "relative", overflow: "hidden" }}
-    >
+    <section className="hero" style={{ position: "relative", overflow: "hidden" }}>
       <div className="hero-wrapper">
         <div className="hero-left">
-          <h1 data-anime-hero-word-block>
+          <h1 className="page--title" data-anime-hero-word-block>
             An Award Winning <br />
             Branding and Web Design <br />
-            Company in Dubai.{" "}
-            <span className="hero-highlight" data-anime-hero-line-block></span>
+            Company in Dubai. <span className="hero-highlight" data-anime-hero-line-block></span>
           </h1>
         </div>
         <div className="hero-middle">
-          <span data-anime-hero-sentence-line-block>
-            We craft purposeful brand identities and engaging digital
-            experiences that connect, inspire, and perform — driven by insight,
-            precision, and creativity.
-          </span>
+          <span data-anime-hero-sentence-line-block>We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform — driven by insight, precision, and creativity.</span>
           <div className="hero-buttons" data-anime-hero-word-block>
             <Button variant="primary">Explore Services</Button>
             <Button variant="secondary">View Case Studies</Button>

@@ -17,14 +17,10 @@ export default function WhyWorkWithUs() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    const wrapper = sectionRef.current.querySelector(
-      ".why--us--list"
-    ) as HTMLElement;
+    const wrapper = sectionRef.current.querySelector(".why--us--list") as HTMLElement;
     if (!wrapper) return;
 
-    const cards = Array.from(
-      wrapper.querySelectorAll(".why--us--list li")
-    ) as HTMLElement[];
+    const cards = Array.from(wrapper.querySelectorAll(".why--us--list li")) as HTMLElement[];
     if (!cards.length) return;
 
     sectionRef.current.style.perspective = "2000px";
@@ -70,10 +66,7 @@ export default function WhyWorkWithUs() {
     <section className="WhyWorkWithUs-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="WhyWorkWithUs-header">
-          <h2
-            className="WhyWorkWithUs-header-title"
-            data-splitting-opacity-anime
-          >
+          <h2 className="section--title" data-splitting-opacity-anime>
             Why Work with Us?
           </h2>
         </div>

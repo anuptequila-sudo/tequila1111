@@ -1,9 +1,8 @@
 .BrandIdeology-section { padding-bottom: 10vh; position: relative; overflow: hidden; }
-.BrandIdeology-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; padding: 0 2vw; }
+.BrandIdeology-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .BrandIdeology-header .BrandIdeology-header-title { width: 50%; }
-.BrandIdeology-item-first { width: 40%; }
-.BrandIdeology-item-first .BrandIdeology-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.BrandIdeology-container { display: flex; gap: 10rem; padding: 0 2vw; scroll-behavior: smooth; }
+.BrandIdeology-header .section--subtitle { width: 40%; }
+.BrandIdeology-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
 .mission--vision { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: -60px; }
 .mission--vision > *:first-child { grid-column: 3 / 4; }
