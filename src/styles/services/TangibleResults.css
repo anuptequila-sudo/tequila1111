@@ -1,10 +1,10 @@
-.TangibleResults-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
+.TangibleResults-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
 .TangibleResults-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: -60px; }
 .TangibleResults-header .section--title { width: 80%; }
 .TangibleResults-header .section--subtitle { width: 40%; }
 
 .TangibleResults-section .info { width: 40%; margin-left: auto; }
-.TangibleResults-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
+.TangibleResults-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
 .TangibleResults-section .info .assets--list { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 40px; list-style: none; padding: 0; margin-bottom: 40px; }
 .TangibleResults-section .info .assets--list .img--box { width: 200px; height: auto; margin-bottom: 16px; }
 .TangibleResults-section .info .assets--list .img--box img { width: 100%; height: auto; object-fit: contain; }

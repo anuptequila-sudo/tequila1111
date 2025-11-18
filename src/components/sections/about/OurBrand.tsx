@@ -59,6 +59,17 @@ export default function OurBrand() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: section,
+          start: "top top",
+          end: "+=800",
+          scrub: true,
+        },
+      });
+
+      gsap.to(right, {
+        clipPath: "inset(0% 0% 0% 0%)",
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
           start: "+=800",
           end: "+=800",
           scrub: true,
@@ -121,10 +132,10 @@ export default function OurBrand() {
             Our Brand DNA
           </h2>
           <div className="OurBrand-item-first">
-            <p className="section--subtitle" data-splitting-opacity-anime>
+            <h2 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               At our core lies a triad that defines everything we do: technology that performs, design that speaks, and storytelling that connects. These three pillars come together to form our DNA — the foundation of how we build brands with impact.
-            </p>
+            </h2>
           </div>
         </div>
         <ul className="brand--reveal" ref={brandRef}>

@@ -106,8 +106,8 @@ export default function BlogSection() {
         </div>
         <div className="blogs-button-container">
           <div className="blogs-button">
-            <Button variant="secondary" data-come-up-anime>
-              Read what's new &nbsp; →
+            <Button href="/blogs" variant="secondary" data-come-up-anime>
+              Read what's new
             </Button>
           </div>
         </div>

@@ -1,8 +1,8 @@
-.BrandingServices-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
+.BrandingServices-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
 .BrandingServices-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .BrandingServices-header .section--title { width: 45%; }
 .BrandingServices-header .section--subtitle { width: 35%; }
-.BrandingServices-item-first .BrandingServices-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.BrandingServices-item-first .BrandingServices-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
 .BrandingServices-container { display: flex; gap: 4rem; scroll-behavior: smooth; }
 .BrandingServices-container .BrandingServices-item-second { flex: 1; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
 .BrandingServices-container .BrandingServices-item-second .info { width: 100%; max-width: 300px; }

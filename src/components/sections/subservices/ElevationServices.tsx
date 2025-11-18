@@ -1,7 +1,6 @@
 "use client";
 
 import "@/styles/subservices/ElevationServices.css";
-import useScrollAnimations from "@/components/hooks/useScrollAnimations";
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -10,8 +9,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Button from "../../ui/Button";
 
 export default function ElevationServices() {
-  useScrollAnimations();
-
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -61,20 +58,21 @@ export default function ElevationServices() {
       ScrollTrigger.getAll().forEach((st) => st.kill());
     };
   }, []);
+
   return (
     <section className="ElevationServices-section" ref={sectionRef}>
       <div className="container-fixed">
         <div className="ElevationServices-header">
-          <h2 className="ElevationServices-header-title" data-splitting-opacity-anime>
+          <h2 className="section--title ElevationServices-header-title" data-splitting-opacity-anime>
             Our Brand Elevation Services in Dubai 
           </h2>
         </div>
         <div className="ElevationServices-container">
           <div className="ElevationServices-item-first">
-            <p className="ElevationServices-header-description" data-splitting-opacity-anime>
+            <h2 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               When we elevate a brand, we look at it from every angle — not just the visuals, but also the story, the tone, and the way it connects with people.
-            </p>
+            </h2>
           </div>
         </div>
         <div className="info">
@@ -103,8 +101,8 @@ export default function ElevationServices() {
               <p>From presentations to social media, every touchpoint feels premium and cohesive.</p>
             </li>
           </ul>
-          <Button variant="secondary" data-come-up-anime>
-            MEET TEQUILA &nbsp; →
+          <Button href="/about" variant="secondary" data-come-up-anime>
+            MEET TEQUILA
           </Button>
         </div>
       </div>

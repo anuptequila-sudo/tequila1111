@@ -99,11 +99,11 @@ export default function BlogDetails() {
         </h4>
         <div className="prev--next--blogs">
           <div className="info">
-            <Button variant="primary">← &nbsp; PREVIOUS BLOG</Button>
+            <Button href="#" variant="primary">PREVIOUS BLOG</Button>
             <h2 className="title">How Dubai’s Market Shapes Modern Branding Strategies</h2>
           </div>
           <div className="info">
-            <Button variant="primary">NEXT BLOG &nbsp; →</Button>
+            <Button href="#" variant="primary">NEXT BLOG</Button>
             <h2 className="title">Strategic Website Design Process from Discovery to Launch</h2>
           </div>
         </div>

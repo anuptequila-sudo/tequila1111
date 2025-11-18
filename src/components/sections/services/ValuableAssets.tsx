@@ -66,10 +66,10 @@ export default function ValuableAssets() {
           <h2 className="section--title" data-splitting-opacity-anime>
             Why a Powerful Brand is your most Valuable Asset
           </h2>
-          <p className="section--subtitle" data-splitting-opacity-anime>
+          <h2 className="section--subtitle" data-splitting-opacity-anime>
             <span className="description-highlight-space" data-come-up-anime></span>
             In today's dynamic global landscape, your brand is more than just a visual identity—it's your promise, your personality, and your competitive edge.
-          </p>
+          </h2>
         </div>
         <div className="info">
           <h3 className="h3" data-splitting-opacity-anime>

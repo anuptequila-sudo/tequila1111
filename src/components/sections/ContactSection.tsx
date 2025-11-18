@@ -8,7 +8,11 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-export default function ContactSection() {
+type FaqProps = {
+  topSpace: string;
+};
+
+export default function ContactSection({ topSpace }: FaqProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -70,7 +74,7 @@ export default function ContactSection() {
   }, []);
 
   return (
-    <section className="contact-section" ref={sectionRef}>
+    <section className="contact-section" ref={sectionRef} style={{ paddingTop: topSpace }}>
       <div className="container-fixed">
         <div className="contact-header">
           <h2 className="section--title" data-splitting-opacity-anime>
@@ -96,7 +100,9 @@ export default function ContactSection() {
               <div className="info--box">
                 <h3 className="title">Address</h3>
                 <address>A904, Tamani Arts Offices, Business Bay, Downtown Dubai, UAE</address>
-                <Button variant="primary">GET DIRECTIONS &nbsp; →</Button>
+                <Button href="/contact" variant="primary">
+                  GET DIRECTIONS
+                </Button>
               </div>
               <div className="info--box">
                 <h3 className="title">Social</h3>
@@ -146,7 +152,9 @@ export default function ContactSection() {
             </div>
             <div className="contact-button-container">
               <div className="contact-button">
-                <Button variant="secondary">HIT SEND &nbsp; →</Button>
+                <Button href="#" variant="secondary">
+                  HIT SEND
+                </Button>
               </div>
             </div>
           </div>

@@ -92,38 +92,22 @@ export default function AboutSection() {
 
           {/* Right 40% */}
           <div className="about-right">
-            <div className="about-grid" data-come-up-anime>
+            <div className="about-grid">
               <div className="grid-item about-line">
-                <h5 className="title" data-come-up-anime>
-                  YEARS OF EXPERIENCE
-                </h5>
-                <span className="number" data-come-up-anime>
-                  25+
-                </span>
+                <h5 className="title">YEARS OF EXPERIENCE</h5>
+                <span className="number">25+</span>
               </div>
               <div className="grid-item about-line">
-                <h5 className="title" data-come-up-anime>
-                  PROJECTS DELIVERED
-                </h5>
-                <span className="number" data-come-up-anime>
-                  800+
-                </span>
+                <h5 className="title">PROJECTS DELIVERED</h5>
+                <span className="number">800+</span>
               </div>
               <div className="grid-item about-line">
-                <h5 className="title" data-come-up-anime>
-                  CLIENT RETENTTION RATE
-                </h5>
-                <span className="number" data-come-up-anime>
-                  100%
-                </span>
+                <h5 className="title">CLIENT RETENTTION RATE</h5>
+                <span className="number">100%</span>
               </div>
               <div className="grid-item about-line">
-                <h5 className="title" data-come-up-anime>
-                  PROJECTS PER YEAR
-                </h5>
-                <span className="number" data-come-up-anime>
-                  30+
-                </span>
+                <h5 className="title">PROJECTS PER YEAR</h5>
+                <span className="number">30+</span>
               </div>
             </div>
           </div>

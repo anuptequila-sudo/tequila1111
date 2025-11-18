@@ -19,7 +19,7 @@ const allItems = [
     type: "branding",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     description: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/1.webp",
   },
@@ -28,7 +28,7 @@ const allItems = [
     type: "design",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/2.webp",
   },
@@ -37,7 +37,7 @@ const allItems = [
     type: "communication",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/3.webp",
   },
@@ -46,7 +46,7 @@ const allItems = [
     type: "news",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/4.webp",
   },
@@ -55,7 +55,7 @@ const allItems = [
     type: "branding",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/5.webp",
   },
@@ -64,7 +64,7 @@ const allItems = [
     type: "design",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/6.webp",
   },
@@ -73,7 +73,7 @@ const allItems = [
     type: "communication",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     description: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/1.webp",
   },
@@ -82,7 +82,7 @@ const allItems = [
     type: "news",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/2.webp",
   },
@@ -91,7 +91,7 @@ const allItems = [
     type: "branding",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/3.webp",
   },
@@ -100,7 +100,7 @@ const allItems = [
     type: "design",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/4.webp",
   },
@@ -109,7 +109,7 @@ const allItems = [
     type: "communication",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/5.webp",
   },
@@ -118,7 +118,7 @@ const allItems = [
     type: "news",
     title: "The Seven Pillars of Building a Premium Brand in UAE.",
     category: "The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.",
-    year: "2025",
+    year: "21 Jan 2025",
     tags: "branding, business",
     image: "/images/blogs/6.webp",
   },
@@ -199,12 +199,12 @@ export default function BlogsList() {
           </div>
         </div>
         <div className="headerWrapper">
-          <h2 className="headerTitle" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             From the Journal
           </h2>
-          <div className="headerText" data-come-up-anime>
+          <p className="headerText" data-come-up-anime>
             <span className="description-highlight-space"></span>The Journal is where we unpack what we’re learning, exploring, and building—from branding and digital trends to behind-the-scenes glimpses of our process.
-          </div>
+          </p>
         </div>
         <div className="tab-list-wrapper">
           {categories.map((type) => (
@@ -236,7 +236,7 @@ export default function BlogsList() {
             </motion.div>
           </AnimatePresence>
           <div className="button--wrapper">
-            <Button variant="secondary">LOAD MORE &nbsp; ↓</Button>
+            <Button href="#" variant="secondary">LOAD MORE &nbsp; ↓</Button>
           </div>
         </div>
       </div>

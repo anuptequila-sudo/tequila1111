@@ -1,9 +1,9 @@
-.OurBrand-section { padding-bottom: 10vh; position: relative; overflow: hidden; }
+.OurBrand-section { padding-bottom: calc(var(--space-xxxl) * 2); position: relative; overflow: hidden; }
 .OurBrand-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .OurBrand-header .section--title { width: 100%; }
 .OurBrand-header .OurBrand-header-title { width: 50%; }
 .OurBrand-item-first { width: 40%; }
-.OurBrand-item-first .OurBrand-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.OurBrand-item-first .OurBrand-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
 .OurBrand-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
 .brand--reveal { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; list-style: none; margin: 15vh 0; }
@@ -13,7 +13,8 @@
 .brand--reveal li .title--wrapper .left { height: 90px; padding-right: 24px; position: relative; }
 .brand--reveal li .title--wrapper .left img { height: 100%; width: auto; }
 .brand--reveal li .title--wrapper .left .active--icon { position: absolute; left: 0; top: 0; width: auto; height: 100%; }
-.brand--reveal li .title--wrapper .right { height: 64px; }
+.brand--reveal li .title--wrapper .right { height: 64px; clip-path: inset(100% 0% 0% 0%); }
+.brand--reveal li:nth-child(even) .title--wrapper .right { clip-path: inset(0% 0% 100% 0%); }
 .brand--reveal li .title--wrapper .right img { height: 100%; width: auto; }
 
 .brand--reveal li .info { position: absolute; left: 0; z-index: 1; width: 100%; max-width: 350px; opacity: 0; pointer-events: none; }

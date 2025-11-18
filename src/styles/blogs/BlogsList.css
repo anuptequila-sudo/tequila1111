@@ -1,20 +1,20 @@
 .BlogsList { padding: 180px 0 120px; min-height: 100vh; }
 .BlogsList .headerWrapper { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; margin-bottom: 120px; }
 .BlogsList .headerTitle { flex: 0 0 50%; }
-.BlogsList .headerText { width: 30%; font-size: 1.3rem; font-weight: 300; margin-top: 24px; }
+.BlogsList .headerText { width: 30%; font-size: 1.3rem; font-weight: 300; }
 
-.tab-list-wrapper { display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 24px; margin-bottom: 80px; }
+.tab-list-wrapper { display: flex; flex-flow: row wrap; align-items: center; justify-content: center; gap: 24px; margin-bottom: calc(var(--space-xxxl) * 2); }
 .tab-list-wrapper .tab-btn { color: rgba(var(--accent) / 50%); font-size: 18px; text-transform: uppercase; transition: color 0.3s ease; }
 .tab-list-wrapper .tab-btn.active { color: rgba(var(--accent) / 100%); text-decoration: underline; text-underline-offset: 10px; }
 
 
-.blogs--list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px 24px; overflow: hidden; }
+.blogs--list { display: grid; grid-template-columns: repeat(3, 1fr); gap: calc(var(--space-xxl) * 2) var(--space-xl); overflow: hidden; }
 .blogs--list li { list-style: none; }
 .blogs--list a { width: 100%; display: flex; flex-wrap: wrap; }
 .blogs--list a .info { width: 70%; margin-bottom: 24px; }
-.tab-content a .h2 { font-size: 36px; line-height: 122%; font-family: InstrumentSerifRegular, serif; margin-bottom: var(--space-sm); }
+.tab-content a .h2 { font-size: 36px; line-height: 122%; font-family: "InstrumentSerifRegular"; margin-bottom: var(--space-sm); }
 .blogs--list a .year { width: 100%; font-size: 16px; font-weight: 400; color: #F9F8FC; margin-bottom: 8px; }
-.blogs--list a .description { width: 100%; font-size: 18px; font-weight: 400; color: #F9F8FC; }
+.blogs--list a .description { width: 100%; margin-bottom: 0; }
 .blogs--list a .img-box { width: 100%; padding-bottom: 62.25%; position: relative; }
 .blogs--list a .img-box img { width: 100%; height: 100%; object-fit: cover; position: absolute; left: 0; top: 0; }
 .blogs--list a .img-box .tags { position: absolute; top: 0; left: 0; z-index: 1; padding: 4px 12px 4px 2px; text-transform: uppercase; background: rgba(var(--bg) / 100%); }

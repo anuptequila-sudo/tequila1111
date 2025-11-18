@@ -74,10 +74,10 @@ export default function SuccessStories({ title, description }: ProvenProcessProp
             </h2>
           )}
           {description && (
-            <p className="section--subtitle" data-splitting-opacity-anime>
+            <h2 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               {description}
-            </p>
+            </h2>
           )}
         </div>
 
@@ -150,9 +150,9 @@ export default function SuccessStories({ title, description }: ProvenProcessProp
           </li>
         </ul>
         <div className="button--wrapper">
-          <Link href="#">
-            <Button variant="secondary">elevate Your Brand</Button>
-          </Link>
+          <Button href="/contact" variant="secondary">
+            elevate Your Brand
+          </Button>
         </div>
       </div>
     </section>

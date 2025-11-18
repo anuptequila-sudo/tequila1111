@@ -1,6 +1,6 @@
-.LetsTalk-section { padding: 10vh 0; position: relative; z-index: 1; }
+.LetsTalk-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; z-index: 1; }
 .LetsTalk-header { display: flex; justify-content: space-between; align-items: flex-start; }
-.LetsTalk-header .section--title { line-height: 120%; font-family: InstrumentSerifRegular, serif; width: 80%; }
+.LetsTalk-header .section--title { line-height: 120%; font-family: "InstrumentSerifRegular"; width: 80%; }
 .LetsTalk-item-first { width: 40%; }
 
 .lets--talk--bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }

@@ -70,10 +70,10 @@ export default function BrandIdeology() {
             Tequila’s <br />
             Brand Ideology
           </h2>
-          <p className="section--subtitle" data-splitting-opacity-anime>
+          <h2 className="section--subtitle" data-splitting-opacity-anime>
             <span className="description-highlight-space" data-come-up-anime></span>
             We’re shaping the future of how brands are seen, felt and remembered.
-          </p>
+          </h2>
         </div>
         <div className="mission--vision">
           <div className="ideology--box">

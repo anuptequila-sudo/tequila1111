@@ -52,10 +52,10 @@ export default function HeroSection() {
           </h1>
         </div>
         <div className="hero-middle">
-          <span data-anime-hero-sentence-line-block>We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform — driven by insight, precision, and creativity.</span>
+          <h2 className="section--subtitle" data-anime-hero-sentence-line-block>We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform — driven by insight, precision, and creativity.</h2>
           <div className="hero-buttons" data-anime-hero-word-block>
-            <Button variant="primary">Explore Services</Button>
-            <Button variant="secondary">View Case Studies</Button>
+            <Button href="/services" variant="primary">Explore Services</Button>
+            <Button href="/portfolios" variant="secondary">View Case Studies</Button>
           </div>
         </div>
       </div>

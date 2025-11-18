@@ -9,14 +9,14 @@ import TangibleResults from "@/components/sections/services/TangibleResults";
 import WhyWorkWithUs from "@/components/sections/about/WhyWorkWithUs";
 import TestimonialsSlider from "@/components/sections/TestimonialsSlider";
 import SuccessStories from "@/components/sections/services/SuccessStories";
-import FaqsSection from "@/components/sections/FaqsSection";
+import FaqSection from "@/components/sections/FaqSection";
 import ContactSection from "@/components/sections/ContactSection";
 import InformationSection from "@/components/sections/InformationSection";
 import Footer from "@/components/layout/Footer";
 
 export default function SubServicesPage() {
   return (
-    <div>
+    <>
       <HeroSection />
       <BrandElevation />
       <ElevationServices />
@@ -30,10 +30,10 @@ export default function SubServicesPage() {
       <WhyWorkWithUs />
       <TestimonialsSlider />
       <SuccessStories title="Case Highlights" description="" />
-      <FaqsSection />
+      <FaqSection />
       <ContactSection />
       <InformationSection />
       <Footer />
-    </div>
+    </>
   );
 }

@@ -24,7 +24,7 @@ export default function Portfolios() {
       title: "Nour Sabi",
       subtitle: "Bridal Couture UAE",
       height: "60dvh",
-      width: "44.5dvw",
+      flex: "1 1 calc(60% - var(--gap))",
       className: "horizontalVideo",
     },
     {
@@ -33,7 +33,7 @@ export default function Portfolios() {
       title: "At The Top",
       subtitle: "Burj Khalifa Observatory, Dubai",
       height: "85dvh",
-      width: "25dvw",
+      flex: "1 1 calc(40% - var(--gap))",
       className: "verticalVideo",
     },
     {
@@ -42,7 +42,7 @@ export default function Portfolios() {
       title: "Czn Burak",
       subtitle: "Restaurants, Turkiye, UAE",
       height: "85dvh",
-      width: "25dvw",
+      flex: "1 1 calc(40% - var(--gap))",
       className: "verticalVideo",
     },
     {
@@ -51,7 +51,7 @@ export default function Portfolios() {
       title: "Illuminati Vodka",
       subtitle: "Food & Beverages, UK",
       height: "60dvh",
-      width: "44.5dvw",
+      flex: "1 1 calc(60% - var(--gap))",
       className: "horizontalVideo",
     },
     {
@@ -60,7 +60,7 @@ export default function Portfolios() {
       title: "Yakut Global",
       subtitle: "Real Estate Turkiye, UAE, Russia",
       height: "60dvh",
-      width: "44.5dvw",
+      flex: "1 1 calc(60% - var(--gap))",
       className: "horizontalVideo",
     },
     {
@@ -69,7 +69,7 @@ export default function Portfolios() {
       title: "Virtual Asset Regulatory Authority(VARA)",
       subtitle: "Regulator of Virtual Assets, Dubai",
       height: "85dvh",
-      width: "25dvw",
+      flex: "1 1 calc(40% - var(--gap))",
       className: "verticalVideo",
     },
   ];
@@ -144,17 +144,17 @@ export default function Portfolios() {
           </div>
         </div>
         <div className="headerWrapper">
-          <h2 className="headerTitle" data-splitting-opacity-anime>
+          <h2 className="section--title" data-splitting-opacity-anime>
             Case Studies
           </h2>
-          <div className="headerText" data-come-up-anime>
+          <p className="headerText" data-come-up-anime>
             <span className="description-highlight-space"></span>A "Creative Intelligence Studio" - an agency that not only designs and builds, but crafts brands with intellect, heart, and future-readiness. Not just aesthetic designs or websites, but strategic experiences.
-          </div>
+          </p>
         </div>
 
         <div className="portfolioList">
           {portfolioItems.map((item, i) => (
-            <Link href="/portfolioDetails" key={i} className={`$"portfolioCard" portfolioCard`} data-cursor-text="View Portfolio">
+            <Link href="/portfolioDetails" key={i} className="portfolioCard" data-cursor-text="View Portfolio" style={{ flex: item.flex }}>
               <p className="cardTag">{item.tag}</p>
 
               <div className={item.className} style={{ height: item.height }}>
@@ -173,7 +173,7 @@ export default function Portfolios() {
 
         <ul className="pagination">
           <li className="page-item">
-            <Button variant="secondary">← &nbsp; Prev</Button>
+            <Button href="#" variant="secondary">Prev</Button>
           </li>
           <li className="page-item">
             <a className="page-link active" href="#">
@@ -191,7 +191,7 @@ export default function Portfolios() {
             </a>
           </li>
           <li className="page-item">
-            <Button variant="secondary">Next &nbsp; →</Button>
+            <Button href="#" variant="secondary">Next</Button>
           </li>
         </ul>
       </div>

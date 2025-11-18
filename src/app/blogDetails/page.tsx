@@ -8,12 +8,12 @@ import BlogDetails from "@/components/sections/blogDetails/BlogDetails";
 
 export default function Blogs() {
   return (
-    <div>
+    <>
       <HeroSection />
       <BlogDetails />
       <ContactSection />
       <InformationSection />
       <Footer />
-    </div>
+    </>
   );
 }

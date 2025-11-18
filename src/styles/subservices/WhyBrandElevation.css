@@ -1,46 +1,12 @@
-.WhyBrandElevation-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
-.WhyBrandElevation-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
+.WhyBrandElevation-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
+.WhyBrandElevation-header { display: flex; justify-content: space-between; align-items: flex-start; }
 .WhyBrandElevation-header .WhyBrandElevation-header-title { width: 80%; }
 .WhyBrandElevation-item-first { width: 40%; }
-.WhyBrandElevation-item-first .WhyBrandElevation-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.WhyBrandElevation-item-first .WhyBrandElevation-header-description { width: 100%; }
 .WhyBrandElevation-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
 .WhyBrandElevation-section .info { width: 50%; margin-left: auto; margin-top: 50px; }
-.WhyBrandElevation-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
+.WhyBrandElevation-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
 .WhyBrandElevation-section .info .assets--list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 30px; list-style: none; padding: 0; margin-bottom: 40px; }
 .WhyBrandElevation-section .info .assets--list .h4 { color: rgba(var(--accent) / 100%); font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 16px; }
 .WhyBrandElevation-section .info .assets--list p { font-size: 18px; }
-
-@media screen and (min-width: 2560px) {
-.WhyBrandElevation-header .WhyBrandElevation-header-description { font-size: 1.6rem; }
-.WhyBrandElevation-container { gap: 12rem; }
-}
-
-@media screen and (max-width: 1440px) {
-.WhyBrandElevation-header .WhyBrandElevation-header-description { font-size: 1.1rem; }
-.WhyBrandElevation-container { gap: 8rem; }
-.WhyBrandElevation-item-first { width: 35%; }
-}
-
-@media screen and (max-width: 1024px) {
-.WhyBrandElevation-header { flex-direction: column; margin-bottom: 40px; }
-.WhyBrandElevation-header .WhyBrandElevation-header-title,
-.WhyBrandElevation-item-first .WhyBrandElevation-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
-.WhyBrandElevation-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
-.WhyBrandElevation-item-first,
-.WhyBrandElevation-item-second { width: 100%; margin-top: 0; }
-}
-
-@media screen and (max-width: 768px) {
-.WhyBrandElevation-section { padding: 6vh 0; }
-.WhyBrandElevation-header { padding: 0 5vw; }
-.WhyBrandElevation-header .WhyBrandElevation-header-title { font-size: 1.2rem; }
-.WhyBrandElevation-item-first .WhyBrandElevation-header-description { font-size: 0.95rem; }
-}
-
-@media screen and (max-width: 480px) {
-.WhyBrandElevation-section { padding: 5vh 0; }
-.WhyBrandElevation-header .WhyBrandElevation-header-title { font-size: 1rem; }
-.WhyBrandElevation-item-first .WhyBrandElevation-header-description { font-size: 0.9rem; }
-.WhyBrandElevation-container { gap: 2rem; }
-}

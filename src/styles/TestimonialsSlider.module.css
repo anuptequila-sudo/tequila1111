@@ -1,5 +1,5 @@
 .TestimonialsSlider { padding: calc(var(--space-xxxl) * 2) 0; overflow: hidden; }
-.wrapper { position: relative; width: 100%; background: rgba(var(--bg) / 100%); margin-top: var(--space-xxxl); justify-content: space-between; align-items: flex-start; background: rgba(var(--bg) / 100%); padding: 0px; gap: 20px; }
+.wrapper { position: relative; width: 100%; background: rgba(var(--bg) / 100%); margin-top: calc(var(--space-xxxl) * 2); justify-content: space-between; align-items: flex-start; background: rgba(var(--bg) / 100%); padding: 0px; gap: 20px; }
 
 .swiper { width: 100%; }
 .slide { display: flex; align-items: center; justify-content: center; height: 65vh; }
@@ -29,4 +29,6 @@
 
 span.testiDescriptionHighlight { font-size: 3rem; margin-bottom: 1.5rem; display: block; }
 .testiDescriptiontext { font-size: 1.2rem; font-weight: 400; margin-bottom: 20px; }
+
+.author { margin-bottom: 0; }
 .roletesti { opacity: 0.5; }

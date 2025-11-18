@@ -1,11 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState, useMemo } from "react";
-import styles from "@/styles/FaqsSection.module.css";
+import styles from "@/styles/FaqSection.module.css";
 import Button from "../ui/Button";
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+
+type FaqProps = {
+  topSpace: string;
+};
 
 interface Faq {
   question: string;
@@ -13,7 +17,7 @@ interface Faq {
   type: string;
   answerHeight?: number;
 }
-const faqs: Faq[] = [
+const faq: Faq[] = [
   {
     type: "branding",
     question: "What is a responsive web design, and why is it crucial for my Dubai website?",
@@ -71,18 +75,18 @@ const faqs: Faq[] = [
   },
 ];
 
-export default function FaqsSection() {
+export default function Faqection({ topSpace }: FaqProps) {
   const [activeTab, setActiveTab] = useState("all");
   const [heights, setHeights] = useState<number[]>([]);
 
   const categories = ["all", "branding", "design", "communication", "news"];
   const faqItems = useMemo(() => {
     if (activeTab === "all") {
-      return faqs;
+      return faq;
     } else {
-      return faqs.filter((item) => item.type === activeTab);
+      return faq.filter((item) => item.type === activeTab);
     }
-  }, [activeTab, faqs]);
+  }, [activeTab, faq]);
 
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -98,28 +102,30 @@ export default function FaqsSection() {
   }, [faqItems]);
 
   return (
-    <section className="faq-section">
+    <section className="faq-section" style={{ paddingTop: topSpace }}>
       <div className="container-fixed">
         <div className="breadcrumb" style={{ marginBottom: 0 }}>
           <div className="breadcrumb-item">
             <a href="./">Home</a>
           </div>
           <div className="breadcrumb-item active" aria-current="page">
-            FAQs
+            FAQ
           </div>
         </div>
         <div className={styles.wrapper}>
           <div className={styles.groupOne}>
-            <h2 className="section--title" data-splitting-opacity-anime>FAQ</h2>
+            <h2 className="section--title" data-splitting-opacity-anime>
+              FAQ
+            </h2>
             <h3 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space"></span> Got questions about branding & web design? We’ve answered the most common ones right here for you.
             </h3>
             <h2></h2>
-            <Button variant="secondary" data-come-up-anime>
-              CONTACT US &nbsp; →
+            <Button href="/contact" variant="secondary" data-come-up-anime>
+              CONTACT US
             </Button>
           </div>
-          <div className={styles.faqsDiv}>
+          <div className={styles.faqDiv}>
             <div className={styles.tabListWrapper}>
               {categories.map((type) => (
                 <button key={type} onClick={() => setActiveTab(type)} className={`${styles.tabBtn} ${activeTab === type ? `${styles.active}` : ""}`}>

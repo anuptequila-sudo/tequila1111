@@ -52,8 +52,8 @@ export default function HeroSection() {
         </div>
         <div className="gap" />
         <div className="hero-middle">
-          <span className="section--title">Branding</span>
-          <a className="breadcrumb">
+          <h2 className="section--title">Branding</h2>
+          <div className="breadcrumb">
             <a href="./" className="breadcrumb-item">
               Home
             </a>
@@ -63,11 +63,11 @@ export default function HeroSection() {
             <div className="breadcrumb-item active" aria-current="page">
               Branding
             </div>
-          </a>
+          </div>
           <h2 className="section--subtitle">We’re more than a branding agency in Dubai—we create category leaders. With strategy, storytelling, and unique design, we craft identities that capture attention and build trust.</h2>
           <div className="hero-buttons" data-anime-hero-word-block>
-            <Button variant="primary">build my brand</Button>
-            <Button variant="secondary">build my brand</Button>
+            <Button href="/contact" variant="primary">build my brand</Button>
+            <Button href="/contact" variant="secondary">build my brand</Button>
           </div>
         </div>
       </div>

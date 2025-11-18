@@ -1,4 +1,4 @@
-.wrapper { display: flex; justify-content: space-between; align-items: flex-start; background: rgba(var(--bg) / 100%); gap: 20px; }
+.wrapper { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
 .groupOne { flex: 0 0 35%; }
 
 .tabListWrapper { display: flex; flex-flow: row wrap; align-items: center; gap: 24px; margin-bottom: 80px; }
@@ -11,16 +11,16 @@
 
 .gap { flex: 0 0 20%; }
 
-.faqsDiv { flex: 0 0 55%; display: flex; flex-direction: column; margin-top: 6rem; }
+.faqDiv { flex: 0 0 55%; display: flex; flex-direction: column; margin-top: 6rem; }
 .faqItem { border-bottom: 1px solid #444; cursor: pointer; transition: all 0.5s; }
-.faqItem p { font-size: 22px; color: rgba(var(--accent) / 70%); margin-bottom: 0; transition: all 0.5s; }
+.faqItem p { font-size: 22px; color: rgba(var(--accent) / 50%); margin-bottom: 0; transition: all 0.5s; }
 .faqQuestion { display: flex; justify-content: space-between; align-items: center; font-weight: 400; padding: calc(var(--space-xs) / 2 * 5) 0; }
 
 .faqItem.active { padding: 0 0 var(--space-xl); }
 .faqItem.active p { color: rgba(var(--accent) / 100%); }
 
 
-.arrow { margin-left: 10px; }
+.arrow { margin-left: 10px; opacity: 0.7; }
 .arrow img { transition: all 0.5s; }
 
 .faqAnswerWrapper { max-height: 0; overflow: hidden; transition: all 0.5s; }

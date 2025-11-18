@@ -7,11 +7,11 @@ import Footer from "@/components/layout/Footer";
 
 export default function PortfolioDetails() {
   return (
-    <div>
+    <>
       <HeroSection />
-      <ContactSection />
+      <ContactSection topSpace="" />
       <InformationSection />
       <Footer />
-    </div>
+    </>
   );
 }

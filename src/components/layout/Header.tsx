@@ -13,7 +13,7 @@ const menuItems = [
   { key: "what-we-do", label: "What We Do" },
   { key: "about", label: "The Agency", href: "about" },
   { key: "insights", label: "Insights", href: "blogs" },
-  { key: "faq", label: "FAQs", href: "faqs" },
+  { key: "faq", label: "FAQ", href: "faq" },
   { key: "contact", label: "Contact", href: "contact" },
 ];
 
@@ -363,9 +363,9 @@ export default function Header() {
             </nav>
 
             <div className="cta-wrapper">
-              <Link href="/contact">
-                <Button className="btn btn-secondary cta-btn">Get In Touch</Button>
-              </Link>
+              <Button href="/contact" className="btn btn-secondary cta-btn">
+                Get In Touch
+              </Button>
               <Link href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="phone-image">
                 <Image src="/images/phone.svg" alt="Phone" width={48} height={48} />
               </Link>

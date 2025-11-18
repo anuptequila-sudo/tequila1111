@@ -72,10 +72,10 @@ export default function BrandingServices() {
           <h2 className="section--title" data-splitting-opacity-anime>
             Our Tailored Branding Services
           </h2>
-          <p className="section--subtitle" data-splitting-opacity-anime>
+          <h2 className="section--subtitle" data-splitting-opacity-anime>
             <span className="description-highlight-space" data-come-up-anime></span>
             Tequila offers a full spectrum of strategic branding solutions designed to meet your unique needs:
-          </p>
+          </h2>
         </div>
         <div className="branding--services--list">
           <div className="branding--card">

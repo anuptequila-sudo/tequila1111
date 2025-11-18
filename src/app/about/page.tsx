@@ -18,7 +18,7 @@ import InformationSection from "@/components/sections/InformationSection";
 
 export default function AboutPage() {
   return (
-    <div>
+    <>
       <HeroSection />
       <AboutSection />
       <OurBrand />
@@ -33,6 +33,6 @@ export default function AboutPage() {
       <ContactSection />
       <InformationSection />
       <Footer />
-    </div>
+    </>
   );
 }

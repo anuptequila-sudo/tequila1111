@@ -74,8 +74,8 @@ export default function AboutSection() {
               <p className="about-line-description" data-splitting-opacity-anime>
                 <span className="description-highlight-space"></span>A &quot;Creative Intelligence Studio&quot; - an agency that not only designs and builds, but crafts brands with intellect, heart, and future-readiness. Not just aesthetic designs or websites, but strategic experiences.
               </p>
-              <Button variant="secondary" data-come-up-anime>
-                MEET TEQUILA &nbsp; →
+              <Button href="/about" variant="secondary" data-come-up-anime>
+                MEET TEQUILA
               </Button>
             </div>
           </div>

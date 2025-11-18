@@ -5,7 +5,7 @@ const menuItems = [
   { key: "what-we-do", label: "What we do" }, // has dropdown
   { key: "about", label: "The agency", href: "about" },
   { key: "insights", label: "Insights", href: "/blogs" },
-  { key: "faq", label: "FAQ", href: "/faqs" },
+  { key: "faq", label: "FAQ", href: "/faq" },
   { key: "contact", label: "Contact", href: "/contact" },
 ];
 

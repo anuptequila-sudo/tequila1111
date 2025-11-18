@@ -7,11 +7,11 @@ import Footer from "@/components/layout/Footer";
 
 export default function Blogs() {
   return (
-    <div>
+    <>
       <BlogsList />
       <ContactSection />
       <InformationSection />
       <Footer />
-    </div>
+    </>
   );
 }

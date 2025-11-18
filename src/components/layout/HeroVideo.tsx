@@ -80,7 +80,7 @@ export default function HeroVideo() {
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
-    // ScrollTrigger → control uScroll
+    // ScrollTrigger  control uScroll
     gsap.to(uniforms.uScroll, {
       value: 1,
       scrollTrigger: {

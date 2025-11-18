@@ -1,4 +1,4 @@
-.BrandIdeology-section { padding-bottom: 10vh; position: relative; overflow: hidden; }
+.BrandIdeology-section { padding-bottom: calc(var(--space-xxxl) * 2); position: relative; overflow: hidden; }
 .BrandIdeology-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .BrandIdeology-header .BrandIdeology-header-title { width: 50%; }
 .BrandIdeology-header .section--subtitle { width: 40%; }
@@ -11,7 +11,7 @@
 .mission--vision .ideology--box .bg .bgVideo { width: 100%; height: 100%; object-fit: cover; }
 .mission--vision .ideology--box .top--text { position: absolute; top: 0; left: 0; color: rgba(var(--accent) / 100%); background: rgba(var(--bg) / 100%); z-index: 2; padding: 4px 15px 10px 0px; }
 .mission--vision .ideology--box .info--box { min-height: 300px; display: flex; flex-flow: column wrap; justify-content: space-between; position: absolute; bottom: 0; left: 0; color: rgba(var(--accent) / 100%); z-index: 2; padding: 40px; }
-.mission--vision .ideology--box .info--box .title { font-size: 60px; font-family: InstrumentSerifRegular, serif; color: rgba(var(--accent) / 100%); margin-bottom: 40px; }
+.mission--vision .ideology--box .info--box .title { font-size: 60px; font-family: "InstrumentSerifRegular"; color: rgba(var(--accent) / 100%); margin-bottom: 40px; }
 .mission--vision .ideology--box .info--box .description { font-size: 21px; color: rgba(var(--accent) / 100%); margin-bottom: 0; }
 
 @media screen and (min-width: 2560px) {

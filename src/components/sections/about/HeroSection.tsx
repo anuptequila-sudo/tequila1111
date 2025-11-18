@@ -46,12 +46,12 @@ export default function HeroSection() {
       <div className="hero-wrapper">
         <div className="hero-left">
           <h1 className="page--title">
-            We are Tequila <span className="hero-highlight"></span> <br />a Leading Branding & Web Design Company in Dubai
+            We are Tequila <span className="hero-highlight"></span> <br />a Leading Branding & Web <br />Design Company in Dubai
           </h1>
         </div>
         <div className="gap" />
         <div className="hero-middle">
-          <span className="section--title">About Us</span>
+          <h2 className="section--title">About Us</h2>
           <div className="breadcrumb">
             <div className="breadcrumb-item">
               <a href="./">Home</a>
@@ -62,8 +62,12 @@ export default function HeroSection() {
           </div>
           <h2 className="section--subtitle">We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform — driven by insight, precision, and creativity.</h2>
           <div className="hero-buttons" data-anime-hero-word-block>
-            <Button variant="primary">Explore Services</Button>
-            <Button variant="secondary">View Case Studies</Button>
+            <Button href="/services" variant="primary">
+              Explore Services
+            </Button>
+            <Button href="/portfolios" variant="secondary">
+              View Case Studies
+            </Button>
           </div>
         </div>
       </div>

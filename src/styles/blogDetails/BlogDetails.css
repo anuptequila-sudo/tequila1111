@@ -1,14 +1,14 @@
 .blog--details { padding: 60px 0; }
-.blog--details .hero--text { font-size: 36px; line-height: 122%; font-family: InstrumentSerifRegular, serif; margin-bottom: 70px; }
-.blog--details .conclusion--title { font-size: 36px; line-height: 122%; font-family: InstrumentSerifRegular, serif; margin-bottom: 20px; }
-.blog--details h4 { font-size: 34px; line-height: 122%; font-family: InstrumentSerifRegular, serif; color: #F9F8FC; margin-bottom: 16px; }
+.blog--details .hero--text { font-size: 36px; line-height: 122%; font-family: "InstrumentSerifRegular"; margin-bottom: 70px; }
+.blog--details .conclusion--title { font-size: 36px; line-height: 122%; font-family: "InstrumentSerifRegular"; margin-bottom: 20px; }
+.blog--details h4 { font-size: 34px; line-height: 122%; font-family: "InstrumentSerifRegular"; color: #F9F8FC; margin-bottom: 16px; }
 
 .details--list { display: flex; flex-flow: row wrap; row-gap: 80px; margin-bottom: 80px; }
 .details--list li { display: flex; flex-flow: row wrap; gap: 100px; }
 .details--list li:nth-child(even) { flex-direction: row-reverse; }
 .details--list li .info { flex: 1; display: flex; flex-flow: row wrap; row-gap: 40px; }
 .details--list li .info .details--box { width: 100%; }
-.details--list li .info .details--box h3 { font-size: 36px; line-height: 122%; font-family: InstrumentSerifRegular, serif; margin-bottom: 16px; }
+.details--list li .info .details--box h3 { font-size: 36px; line-height: 122%; font-family: "InstrumentSerifRegular"; margin-bottom: 16px; }
 .details--list li .info .details--box p { font-size: 21px; line-height: 122%; margin-bottom: 16px; }
 .details--list li .img-box { flex: 1; position: relative; width: 100%; height: 100%; }
 .details--list li .img-box img { width: 100%; height: 100%; object-fit: cover; position: absolute; left: 0; top: 0; }
@@ -17,4 +17,4 @@
 .prev--next--blogs .info { max-width: 400px; }
 .prev--next--blogs .info .btn-primary { margin-bottom: 16px; }
 .prev--next--blogs .info + .info { text-align: right; }
-.prev--next--blogs .title { font-size: 36px; line-height: 122%; font-family: InstrumentSerifRegular, serif; margin-bottom: 0; }
+.prev--next--blogs .title { font-size: 36px; line-height: 122%; font-family: "InstrumentSerifRegular"; margin-bottom: 0; }

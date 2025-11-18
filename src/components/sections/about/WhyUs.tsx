@@ -65,10 +65,10 @@ export default function WhyUs() {
           <h2 className="section--title" data-splitting-opacity-anime>
             Why Us?
           </h2>
-          <p className="section--subtitle" data-splitting-opacity-anime>
+          <h2 className="section--subtitle" data-splitting-opacity-anime>
             <span className="description-highlight-space" data-come-up-anime></span>
             We’re a mindset, a method and a team that works differently. Here’s what sets us apart.
-          </p>
+          </h2>
         </div>
         <div className="why--us--wrapper">
           <ul className="why--us--list">

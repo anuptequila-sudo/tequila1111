@@ -5,11 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 
-import useScrollAnimations from "@/components/hooks/useScrollAnimations";
 import { Autoplay } from "swiper/modules";
 
 export default function AgencyShowcase() {
-  useScrollAnimations();
 
   const testimonials = [
     {

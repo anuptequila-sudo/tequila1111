@@ -3,11 +3,12 @@
 import Image from "next/image";
 
 import "@/styles/services/ProvenProcess.css";
-import useScrollAnimations from "@/components/hooks/useScrollAnimations";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+
+import { Autoplay, Mousewheel } from "swiper/modules";
 
 // Define all your props here
 type ProvenProcessProps = {
@@ -16,50 +17,36 @@ type ProvenProcessProps = {
 };
 
 export default function ProvenProcess({ title, description }: ProvenProcessProps) {
-  useScrollAnimations();
-
-  const sectionRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const wrapper = sectionRef.current.querySelector(".ProvenProcess-item-second") as HTMLElement | null;
-    if (!wrapper) return;
-
-    const ceoImg = wrapper.querySelector(".img-box") as HTMLElement | null;
-    if (!ceoImg) return;
-
-    gsap.fromTo(
-      ceoImg,
-      {
-        x: "100%",
-        rotateZ: -10,
-        opacity: 0,
-        scale: 0.8,
-      },
-      {
-        x: "0%",
-        rotateZ: 0,
-        scale: 1,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: wrapper,
-          start: "top 100%",
-          end: "bottom 75%",
-          scrub: 1,
-          toggleActions: "play reverse play reverse",
-        },
-      }
-    );
-
-    return () => {
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
-  }, []);
+  const processSteps = [
+    {
+      title: "01 Discovery & Strategy",
+      description: "We begin with in-depth Branding Workshops and tailored analyses to deeply understand your vision, market, and unique challenges.",
+      img: "/images/services/ProvenProcess.webp",
+    },
+    {
+      title: "02 Discovery & Strategy",
+      description: "We begin with in-depth Branding Workshops and tailored analyses to deeply understand your vision, market, and unique challenges.",
+      img: "/images/services/ProvenProcess.webp",
+    },
+    {
+      title: "03 Discovery & Strategy",
+      description: "We begin with in-depth Branding Workshops and tailored analyses to deeply understand your vision, market, and unique challenges.",
+      img: "/images/services/ProvenProcess.webp",
+    },
+    {
+      title: "04 Discovery & Strategy",
+      description: "We begin with in-depth Branding Workshops and tailored analyses to deeply understand your vision, market, and unique challenges.",
+      img: "/images/services/ProvenProcess.webp",
+    },
+    {
+      title: "05 Discovery & Strategy",
+      description: "We begin with in-depth Branding Workshops and tailored analyses to deeply understand your vision, market, and unique challenges.",
+      img: "/images/services/ProvenProcess.webp",
+    },
+  ];
 
   return (
-    <section className="ProvenProcess-section" ref={sectionRef}>
+    <section className="ProvenProcess-section">
       <div className="container-fixed">
         <div className="ProvenProcess-header">
           <h2 className="section--title" data-splitting-opacity-anime>
@@ -73,16 +60,30 @@ export default function ProvenProcess({ title, description }: ProvenProcessProps
               {description}
             </p>
           </div>
-          <div className="ProvenProcess-item-second">
-            <div className="info">
-              <h4 className="h4" data-splitting-opacity-anime>
-                01 Discovery & Strategy
-              </h4>
-              <p data-come-up-anime>We begin with in-depth Branding Workshops and tailored analyses to deeply understand your vision, market, and unique challenges.</p>
-            </div>
-            <div className="img-box">
-              <Image priority width={500} height={300} src="images/services/ProvenProcess.webp" alt="Description of image" />
-            </div>
+          <div
+            className="ProvenProcess-item-second"
+            onMouseEnter={() => {
+              window.lenis?.stop?.();
+            }}
+            onMouseLeave={() => {
+              window.lenis?.start?.();
+            }}
+          >
+            <Swiper modules={[Autoplay, Mousewheel]} spaceBetween={40} slidesPerView={1} loop={true} direction="vertical" mousewheel={{ forceToAxis: true }} speed={500} className="swiper process-slider">
+              {processSteps.map((item, idx) => (
+                <SwiperSlide key={idx}>
+                  <div className="info--wrapper">
+                    <div className="info">
+                      <h4 className="h4">{item.title}</h4>
+                      <p>{item.description}</p>
+                    </div>
+                    <div className="img-box">
+                      <Image priority width={500} height={300} src={item.img} alt="Description of image" />
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

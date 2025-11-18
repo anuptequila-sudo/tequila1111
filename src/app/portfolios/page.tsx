@@ -7,11 +7,11 @@ import Footer from "@/components/layout/Footer";
 
 export default function PortfolioCollection() {
   return (
-    <div>
+    <>
       <Portfolios />
       <ContactSection />
       <InformationSection />
       <Footer />
-    </div>
+    </>
   );
 }

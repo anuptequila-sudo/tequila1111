@@ -78,10 +78,10 @@ export default function TangibleResults({ title, description }: TangibleResultsP
             </h2>
           )}
           {description && (
-            <p className="section--subtitle" data-splitting-opacity-anime>
+            <h2 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               {description}
-            </p>
+            </h2>
           )}
         </div>
 
@@ -117,7 +117,9 @@ export default function TangibleResults({ title, description }: TangibleResultsP
                 <p>Powerful, visually cohesive marketing materials and a unique brand language designed to captivate, convert, and command attention.</p>
               </li>
             </ul>
-            <Button className="btn btn-secondary cta-btn">elevate Your Brand</Button>
+            <Button href="/contact" variant="secondary">
+              elevate Your Brand
+            </Button>
           </div>
         </div>
       </div>

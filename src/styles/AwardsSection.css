@@ -1,9 +1,10 @@
 .awards-section { background: rgba(var(--bg) / 100%); padding: calc(var(--space-xxxl) * 2) 0; position: relative; }
+.awards-section * { transition: all 0.5s; }
 
+.award-row { display: flex; align-items: center; position: relative; padding: var(--space-md) var(--space-lg); border-bottom: 1px solid rgba(var(--accent) / 40%); cursor: pointer; z-index: 1; justify-content: center; }
 .award-row .company { color: #dcdbdb; }
 .award-row.active .company { color: rgba(var(--bg) / 100%); }
 .award-row.active { color: rgba(var(--bg) / 100%); border-bottom: 1px solid rgba(var(--bg) / 100%); }
-.award-row { display: flex; align-items: center; position: relative; padding: 2rem 2vw; border-bottom: 1px solid rgba(var(--accent) / 40%); cursor: pointer; z-index: 1; justify-content: center; }
 
 [data-theme="light"] .awards-section { color: rgba(var(--bg) / 100%); }
 [data-theme="light"] .award-row .company { color: rgba(var(--bg) / 100%); }
@@ -24,7 +25,7 @@
 .award-row .company { width: 25%; font-size: 1.4rem; }
 .award-row .title { width: 63%; font-size: 1.4rem; }
 .award-row .image-container { width: 30%; max-width: 500px; position: absolute; right: 10%; bottom: 100%; overflow: hidden; pointer-events: none; display: flex; }
-.award-row .image-container img { width: 100%; opacity: 0; transform: translateY(10px); transition: opacity 0.3s ease, transform 0.3s ease; }
+.award-row .image-container img { width: 100%; opacity: 0; transform: translateY(20px); transition: all 0.5s ease; }
 .award-row.active .image-container img { opacity: 1; transform: translateY(0); }
 
-.highlight { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; background: transparent; border-bottom: 2px solid rgba(var(--accent) / 100%); opacity: 0; z-index: 0; }
+.highlight { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; background: transparent; border-bottom: 2px solid rgba(var(--accent) / 100%); opacity: 0; z-index: 0; transition: none; }

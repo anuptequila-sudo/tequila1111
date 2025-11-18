@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "@/styles/ServicesSection.module.css";
@@ -176,26 +177,21 @@ const ServicesSection = () => {
             <span className={styles.spaceparagraph}></span>We help your brand show up smarter, sharper, and stronger at every touchpoint.
           </h2>
         </div>
-
         <div className={styles.overlay}>
           {/* Card 1 */}
           <div className={styles.card}>
-            {/* SVG (level 2 background) is injected by JS */}
             <div className={styles.insidecard}>
               <p className={`${styles.tag} ${styles.cutout}`}>TEQNOLOGY</p>
-
-              <h2>Web Design & Development</h2>
+              <Link href="/services" className={styles.title}>Web Design & Development</Link>
               <p className={styles.paragraph}>Building your digital headquarters — websites that think smart, and feel right.</p>
-
               <div className={styles.pills}>
-                <p className={styles.cutout}>Custom Website Design & Development</p>
-                <p className={styles.cutout}>Domain & Hosting Management</p>
-                <p className={styles.cutout}>Ecommerce Website Design & Development</p>
-                <p className={styles.cutout}>Website Maintenance & Support</p>
-                <p className={styles.cutout}>Web Applications Design & Development</p>
+                <Link href="/subServices" className={styles.cutout}>Custom Website Design & Development</Link>
+                <Link href="/subServices" className={styles.cutout}>Domain & Hosting Management</Link>
+                <Link href="/subServices" className={styles.cutout}>Ecommerce Website Design & Development</Link>
+                <Link href="/subServices" className={styles.cutout}>Website Maintenance & Support</Link>
+                <Link href="/subServices" className={styles.cutout}>Web Applications Design & Development</Link>
               </div>
             </div>
-            {/* bigText is measured and then used to punch letter holes */}
             <div className={styles.bigTextContainer}>
               <p className={`${styles.caption} ${styles.cutout}`}>(technology)</p>
               <span className={`${styles.bigText} ${styles.cutout}`} aria-hidden="true">
@@ -203,21 +199,19 @@ const ServicesSection = () => {
               </span>
             </div>
           </div>
-
-          {/* Card 2 */}
           <div className={styles.card}>
             <div className={styles.insidecard}>
               <p className={`${styles.tag} ${styles.cutout}`}>IDENTITY & DESIGN</p>
-              <h2>Branding</h2>
+              <Link href="/services" className={styles.title}>Branding</Link>
               <p className={styles.paragraph}>Crafting strategic brands with purpose, clarity, and emotion — built to lead everywhere.</p>
               <div className={styles.pills}>
-                <p className={styles.cutout}>Logo Design & Visual Identity</p>
-                <p className={styles.cutout}>Branding, Strategy & Development</p>
-                <p className={styles.cutout}>Rebranding</p>
-                <p className={styles.cutout}>Brand Elevation</p>
-                <p className={styles.cutout}>UI/UX Design for Digital Products</p>
-                <p className={styles.cutout}>Corporate Profile & Company Brochure</p>
-                <p className={styles.cutout}>Graphic Design</p>
+                <Link href="/subServices" className={styles.cutout}>Logo Design & Visual Identity</Link>
+                <Link href="/subServices" className={styles.cutout}>Branding, Strategy & Development</Link>
+                <Link href="/subServices" className={styles.cutout}>Rebranding</Link>
+                <Link href="/subServices" className={styles.cutout}>Brand Elevation</Link>
+                <Link href="/subServices" className={styles.cutout}>UI/UX Design for Digital Products</Link>
+                <Link href="/subServices" className={styles.cutout}>Corporate Profile & Company Brochure</Link>
+                <Link href="/subServices" className={styles.cutout}>Graphic Design</Link>
               </div>
             </div>
             <div className={styles.bigTextContainer}>
@@ -227,18 +221,16 @@ const ServicesSection = () => {
               </span>
             </div>
           </div>
-
-          {/* Card 3 */}
           <div className={styles.card}>
             <div className={styles.insidecard}>
               <p className={`${styles.tag} ${styles.cutout}`}>VISUAL STORYTELLING</p>
-              <h2>Communication</h2>
+              <Link href="/services" className={styles.title}>Communication</Link>
               <p className={styles.paragraph}>Elevating your brand&apos;s social presence with strategy &amp; design.</p>
               <div className={styles.pills}>
-                <p className={styles.cutout}>Video Storyboarding & Production</p>
-                <p className={styles.cutout}>Photography & Visual Storytelling</p>
-                <p className={styles.cutout}>Social Media Strategy & Design</p>
-                <p className={styles.cutout}>Search Engine Oprimisation (SEO)</p>
+                <Link href="/subServices" className={styles.cutout}>Video Storyboarding & Production</Link>
+                <Link href="/subServices" className={styles.cutout}>Photography & Visual Storytelling</Link>
+                <Link href="/subServices" className={styles.cutout}>Social Media Strategy & Design</Link>
+                <Link href="/subServices" className={styles.cutout}>Search Engine Oprimisation (SEO)</Link>
               </div>
             </div>
             <div className={styles.bigTextContainer}>

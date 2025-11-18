@@ -43,7 +43,7 @@ export default function HeroSection() {
       <div className="hero-wrapper">
         <div className="hero-left">
           <div className="date">02 July 2025</div>
-          <h1>The 7 Pillars of Building a Premium Brand in The UAE</h1>
+          <h1 className="page--title">The 7 Pillars of Building a Premium Brand in The UAE</h1>
         </div>
       </div>
       <div className="hero--bg" ref={videoWraRef}>

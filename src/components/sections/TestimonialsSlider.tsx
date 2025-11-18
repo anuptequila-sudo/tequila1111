@@ -125,8 +125,6 @@ export default function TestimonialsSlider() {
           </h3>
         </div>
       </div>
-
-      <div className={styles.gap}></div>
       <div className={styles.wrapper}>
         <Swiper
           modules={[Navigation]}
@@ -148,7 +146,7 @@ export default function TestimonialsSlider() {
                 <div className={styles.textBox}>
                   <span className={styles.testiDescriptionHighlight}>"{item.title}"</span>
                   <p className={styles.testiDescriptiontext}>{item.desc}</p>
-                  <p>{item.author}</p>
+                  <p className={styles.author}>{item.author}</p>
                   <p className={styles.roletesti}>
                     {item.role}, {item.company}
                   </p>

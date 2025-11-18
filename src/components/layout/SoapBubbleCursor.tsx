@@ -71,7 +71,7 @@ const SoapBubbleCursor: React.FC = () => {
       const speed = Math.sqrt(velocityX * velocityX + velocityY * velocityY);
       const angle = Math.atan2(velocityY, velocityX);
 
-      // Outer layer acceleration → stronger when faster
+      // Outer layer acceleration  stronger when faster
       const stretchFactor = Math.min(speed * 2.5, 200);
 
       // Update blob points with lightning-like irregularities

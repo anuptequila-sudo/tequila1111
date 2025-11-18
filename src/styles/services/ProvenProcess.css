@@ -1,45 +1,21 @@
-.ProvenProcess-section { padding: 10vh 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
-.ProvenProcess-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
+.ProvenProcess-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
+.ProvenProcess-header { width: 100%; display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .ProvenProcess-header .ProvenProcess-header-title { width: 75%; }
-.ProvenProcess-item-first { width: 35%; }
-.ProvenProcess-item-first .ProvenProcess-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
-.ProvenProcess-container { display: flex; gap: 4rem; scroll-behavior: smooth; }
-.ProvenProcess-container .ProvenProcess-item-second { flex: 1; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
+.ProvenProcess-container { width: 100%; display: flex; flex-flow: row wrap; gap: var(--space-lg); overflow: hidden; }
+
+.ProvenProcess-container .ProvenProcess-item-first { width: 35%; }
+.ProvenProcess-container .ProvenProcess-item-first .ProvenProcess-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
+
+.ProvenProcess-container .ProvenProcess-item-second { display: flex; flex-flow: row wrap; overflow: hidden; flex: 1; height: 465px; }
+.ProvenProcess-container .ProvenProcess-item-second .swiper { width: 100%; height: 100%; }
+
+.ProvenProcess-container .ProvenProcess-item-second .info--wrapper { width: 100%; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
 .ProvenProcess-container .ProvenProcess-item-second .info { width: 100%; max-width: 300px; }
-.ProvenProcess-container .ProvenProcess-item-second .info .h4 { font-size: 36px; line-height: 1.1; font-weight: 400; text-transform: capitalize; margin-bottom: 24px; }
-.ProvenProcess-container .ProvenProcess-item-second .info p { font-size: 16px; line-height: 1.4; font-weight: 400; }
+.ProvenProcess-container .ProvenProcess-item-second .info .h4 { font-size: 36px; line-height: 1.1; font-weight: 400; margin-bottom: 24px; }
+.ProvenProcess-container .ProvenProcess-item-second .info p { font-size: 16px; line-height: 1.4; font-weight: 400; margin-bottom: 0; }
 .ProvenProcess-container .ProvenProcess-item-second .img-box { display: flex; flex: 1; }
 .ProvenProcess-container .ProvenProcess-item-second .img-box img { width: 100%; height: auto; object-fit: contain; }
 
-
-@media screen and (min-width: 2560px) {
-.ProvenProcess-header .ProvenProcess-header-description { font-size: 1.6rem; }
-}
-
-@media screen and (max-width: 1440px) {
-.ProvenProcess-header .ProvenProcess-header-description { font-size: 1.1rem; }
-.ProvenProcess-item-first { width: 35%; }
-}
-
-@media screen and (max-width: 1024px) {
-.ProvenProcess-header { flex-direction: column; margin-bottom: 40px; }
-.ProvenProcess-header .ProvenProcess-header-title,
-.ProvenProcess-item-first .ProvenProcess-header-description { width: 100%; margin-bottom: 20px; font-size: 1rem; }
-.ProvenProcess-container { flex-direction: column; gap: 3rem; padding: 0 5vw; }
-.ProvenProcess-item-first,
-.ProvenProcess-item-second { width: 100%; margin-top: 0; }
-}
-
-@media screen and (max-width: 768px) {
-.ProvenProcess-section { padding: 6vh 0; }
-.ProvenProcess-header { padding: 0 5vw; }
-.ProvenProcess-header .ProvenProcess-header-title { font-size: 1.2rem; }
-.ProvenProcess-item-first .ProvenProcess-header-description { font-size: 0.95rem; }
-}
-
-@media screen and (max-width: 480px) {
-.ProvenProcess-section { padding: 5vh 0; }
-.ProvenProcess-header .ProvenProcess-header-title { font-size: 1rem; }
-.ProvenProcess-item-first .ProvenProcess-header-description { font-size: 0.9rem; }
-.ProvenProcess-container { gap: 2rem; }
-}
+.process-slider .swiper-wrapper { transition-timing-function: linear; }
+.process-slider .swiper-slide { height: auto; width: auto; }
+.process-slider .swiper-slide img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }

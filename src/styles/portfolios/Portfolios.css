@@ -1,8 +1,8 @@
 .portfolioSection { padding: 180px 0 120px; min-height: 100vh; }
 .portfolioSection .headerWrapper { display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; margin-bottom: 4rem; }
 .portfolioSection .headerTitle { flex: 0 0 50%; }
-.portfolioSection .headerText { width: 30%; margin-top: 24px; }
-.portfolioSection .portfolioList { display: flex; gap: 80px 20px; position: relative; transform-style: preserve-3d; overflow: hidden; flex-flow: row wrap; margin-top: 100px; }
+.portfolioSection .headerText { width: 30%; }
+.portfolioSection .portfolioList { display: flex; flex-flow: row wrap; --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--space-xl) * 2) calc(var(--gap) * 2); position: relative; transform-style: preserve-3d; overflow: hidden; margin-top: calc(var(--space-lg) * 2); }
 .portfolioSection .portfolioCard { position: relative; transform-style: preserve-3d; backface-visibility: hidden; }
 .portfolioSection .cardTag { position: absolute; top: 0; left: 0; background: rgba(var(--bg) / 100%); padding: 0.3rem 1rem; font-size: 0.9rem; z-index: 10; text-transform: uppercase; font-weight: 200; margin: -1px; }
 

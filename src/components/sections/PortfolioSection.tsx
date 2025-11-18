@@ -163,8 +163,8 @@ export default function PortfolioSection() {
         </div>
 
         <div className={styles.portfolioButton}>
-          <Button variant="secondary" data-come-up-anime>
-            View all case studies &nbsp; →
+          <Button href="/portfolios" variant="secondary" data-come-up-anime>
+            View all case studies
           </Button>
         </div>
       </div>

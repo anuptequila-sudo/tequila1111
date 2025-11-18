@@ -19,7 +19,9 @@ export default function Footer() {
             <p className="footer-address">
               A904, Tamani Arts, Business <br /> Bay, Downtown Dubai, UAE
             </p>
-            <Button variant="primary">Get Direction →</Button>
+            <Button href="/contact" variant="primary">
+              Get Direction{" "}
+            </Button>
             <span className="footer-text">Lots to talk? Then call us!</span>
             <a href="tel:971509372493" className="footer-phone">
               +971 50 937 2493
@@ -111,8 +113,9 @@ export default function Footer() {
 
           <div className="footer-group footer-right">
             <div className="footer-col">
-              <h4>&nbsp;</h4>
-              <Link className="footer-menu-subtitle" href="#">QUICK LINKS</Link>
+              <Link className="footer-menu-subtitle" href="#">
+                QUICK LINKS
+              </Link>
               <ul>
                 <li>
                   <Link href="/">Home</Link>
@@ -121,35 +124,36 @@ export default function Footer() {
                   <Link href="/portfolios">Cases</Link>
                 </li>
                 <li>
-                  <Link href="#">Services</Link>
+                  <Link href="/services">Services</Link>
                 </li>
                 <li>
                   <Link href="/about">The Agency</Link>
                 </li>
                 <li>
-                  <Link href="#">Blog</Link>
+                  <Link href="/blogs">Blog</Link>
                 </li>
                 <li>
-                  <Link href="#">FAQs</Link>
+                  <Link href="/faq">FAQ</Link>
                 </li>
                 <li>
-                  <Link href="#">Contact</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
 
             <div className="footer-col">
-              <h4>&nbsp;</h4>
-              <Link className="footer-menu-subtitle" href="#">SOCIALS</Link>
+              <Link className="footer-menu-subtitle" href="#">
+                SOCIALS
+              </Link>
               <ul>
                 <li>
-                  <Link href="#">Instagram</Link>
+                  <Link href="#" target="_blank">Instagram</Link>
                 </li>
                 <li>
-                  <Link href="#">LinkedIn</Link>
+                  <Link href="#" target="_blank">LinkedIn</Link>
                 </li>
                 <li>
-                  <Link href="#">Facebook</Link>
+                  <Link href="#" target="_blank">Facebook</Link>
                 </li>
               </ul>
             </div>

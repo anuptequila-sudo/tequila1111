@@ -13,27 +13,17 @@ export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-
-
     if (!containerRef.current) return;
 
     // THREE setup
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      45,
-      containerRef.current.clientWidth / containerRef.current.clientHeight,
-      1,
-      1000
-    );
+    const camera = new THREE.PerspectiveCamera(45, containerRef.current.clientWidth / containerRef.current.clientHeight, 1, 1000);
     camera.position.z = 2.5;
 
-   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // enable alpha
-renderer.setClearColor(0x000000, 0); // fully transparent
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // enable alpha
+    renderer.setClearColor(0x000000, 0); // fully transparent
 
-    renderer.setSize(
-      containerRef.current.clientWidth,
-      containerRef.current.clientHeight
-    );
+    renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
     containerRef.current.appendChild(renderer.domElement);
 
     // video texture
@@ -48,8 +38,7 @@ renderer.setClearColor(0x000000, 0); // fully transparent
     const videoTexture = new THREE.VideoTexture(video);
 
     // geometry covers full hero-video
-    const aspect =
-      containerRef.current.clientWidth / containerRef.current.clientHeight;
+    const aspect = containerRef.current.clientWidth / containerRef.current.clientHeight;
     const geometry = new THREE.PlaneGeometry(aspect * 2, 2, 120, 120);
 
     const uniforms = {
@@ -91,29 +80,23 @@ renderer.setClearColor(0x000000, 0); // fully transparent
     const mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
-   // scroll animation
-const scrollTL = gsap.timeline({
-  scrollTrigger: {
-    trigger: videoWraRef.current,
-    start: "top 40%",
-    end: "bottom 105%",
-    scrub: 1.5,
-  },
-});
+    // scroll animation
+    const scrollTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: videoWraRef.current,
+        start: "top 40%",
+        end: "bottom 105%",
+        scrub: 1.5,
+      },
+    });
 
-// wrapper width 70% → 100%
-scrollTL.fromTo(
-  videoWraRef.current,
-  { width: "70%" },
-  { width: "100%", ease: "power3.inOut" },
-  0
-);
+    // wrapper width 70%  100%
+    scrollTL.fromTo(videoWraRef.current, { width: "70%" }, { width: "100%", ease: "power3.inOut" }, 0);
 
-// wave just once during that scroll
-// scrollTL
-//   .fromTo(uniforms.uScroll, { value: 0 }, { value: 1, duration: 1, ease: "power3.inOut" }, 0)
-//   .to(uniforms.uScroll, { value: 0, duration: 1, ease: "power3.inOut" }, 1);
-
+    // wave just once during that scroll
+    // scrollTL
+    //   .fromTo(uniforms.uScroll, { value: 0 }, { value: 1, duration: 1, ease: "power3.inOut" }, 0)
+    //   .to(uniforms.uScroll, { value: 0, duration: 1, ease: "power3.inOut" }, 1);
 
     // animate loop
     const clock = new THREE.Clock();
@@ -155,14 +138,14 @@ scrollTL.fromTo(
         </div>
         <div className="gap" />
         <div className="hero-middle">
-          <span>
-           We craft purposeful brand identities and engaging
-digital experiences that connect, inspire, and perform
-driven by insight, precision, and creativity.
-          </span>
+          <span>We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform driven by insight, precision, and creativity.</span>
           <div className="hero-buttons">
-            <Button variant="primary">Explore Services</Button>
-            <Button variant="secondary">View Case Studies</Button>
+            <Button href="/services" variant="primary">
+              Explore Services
+            </Button>
+            <Button href="/portfolios" variant="secondary">
+              View Case Studies
+            </Button>
           </div>
         </div>
       </div>

@@ -86,7 +86,7 @@ export default function AwardsSection() {
             opacity: 1,
             backgroundColor: colors.bg,
             borderBottom: colors.border,
-            duration: 0.3,
+            duration: 0.5,
             ease: "power3.out",
           });
         }
@@ -95,7 +95,7 @@ export default function AwardsSection() {
           opacity: 0,
           backgroundColor: "transparent",
           borderBottom: colors.border,
-          duration: 0.3,
+          duration: 0.5,
         });
       }
     };
@@ -121,7 +121,9 @@ export default function AwardsSection() {
       <div className="container-fixed">
         <div className="awards-header">
           <div className="awards-header-title">
-            <h2 className="section--title" data-splitting-opacity-anime>Honours & Mentions</h2>
+            <h2 className="section--title" data-splitting-opacity-anime>
+              Honours & Mentions
+            </h2>
             <span className="awards-header-title-highlight" data-come-up-anime>
               (21)
             </span>

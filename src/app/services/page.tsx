@@ -12,13 +12,13 @@ import SuccessStories from "@/components/sections/services/SuccessStories";
 import TestimonialsSlider from "@/components/sections/TestimonialsSlider";
 import BlogSection from "@/components/sections/BlogSection";
 import ContactSection from "@/components/sections/ContactSection";
-import FaqsSection from "@/components/sections/FaqsSection";
+import FaqSection from "@/components/sections/FaqSection";
 import LetsTalk from "@/components/sections/services/LetsTalk";
 import InformationSection from "@/components/sections/InformationSection";
 
 export default function ServicesPage() {
   return (
-    <div>
+    <>
       <HeroSection />
       <CraftingBrands />
       <ValuableAssets />
@@ -31,11 +31,11 @@ export default function ServicesPage() {
       <SuccessStories title="Our Branding Success Stories: See the Impact" description="Don't just take our word for it. Explore how Tequila has transformed visions into iconic, impactful brands for our diverse clientele around the world." />
       <TestimonialsSlider />
       <LetsTalk />
-      <FaqsSection />
+      <FaqSection />
       <BlogSection />
       <ContactSection />
       <InformationSection />
       <Footer />
-    </div>
+    </>
   );
 }

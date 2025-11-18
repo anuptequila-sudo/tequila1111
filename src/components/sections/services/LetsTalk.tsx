@@ -20,11 +20,11 @@ export default function LetsTalk() {
         </div>
         <div className="LetsTalk-container">
           <div className="LetsTalk-item-first">
-            <p className="section--subtitle" data-splitting-opacity-anime>
+            <h2 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               It's time to transform your business and leave an indelible mark. Connect with the experts at Tequila today and let's craft a brand that truly reflects your ambition and captivates your audience.
-            </p>
-            <Button variant="secondary">Schedule a call</Button>
+            </h2>
+            <Button href="#" variant="secondary">Schedule a call</Button>
           </div>
         </div>
       </div>

@@ -1,15 +1,15 @@
-.portfolio--details { display: flex; flex-flow: row wrap; width: 100%; overflow: hidden; }
-.portfolio--details .bg, .portfolio--info .img--box { display: flex; width: 100%; height: 100%; max-height: 100vh; overflow: hidden; }
-.portfolio--details img, .portfolio--info .img--box img { width: 100%; height: 100%; object-fit: cover; }
+.portfolio--info { display: flex; flex-flow: row wrap; width: 100%; overflow: hidden; }
+.portfolio--info .bg { display: flex; width: 100%; height: calc(100vh - var(--header-height)); overflow: hidden; margin: 0 0 calc(var(--space-xxxl) * 2); }
+.portfolio--info .img--box { display: flex; width: 100%; height: 100%; max-height: 100vh; overflow: hidden; }
+.portfolio--info img, .portfolio--info .img--box img { width: 100%; height: 100%; object-fit: cover; }
 
-.portfolio--info { padding: 120px 0; }
+.portfolio--info { padding: calc(var(--header-height)  + var(--space-xxxl)) 0; }
 .portfolio--info .portfolio--details-left { width: 100%; display: flex; flex-wrap: wrap; }
 .portfolio--info .portfolio--details-left .year { color: rgba(var(--accent) / 100%); font-size: 14px; font-style: normal; font-weight: 500; line-height: 44px; letter-spacing: 0.185px; width: 100%; margin-bottom: 0; }
 .portfolio--info .portfolio--details-left .tags { display: flex; flex-flow: row wrap; align-items: center; list-style: none; gap: 40px; width: 100%; margin-top: 24px; }
-.portfolio--info .portfolio--details-left .tags li { color: rgba(var(--accent) / 100%); font-size: 14px; font-style: normal; font-weight: 500; line-height: 44px; letter-spacing: 0.185px; margin-bottom: 0; }
-.portfolio--details-line { width: 50%; }
-.portfolio--details-description { width: 43%; margin-left: auto; margin-right: 10%; padding: 120px 0; }
-.portfolio--details-description .portfolio--details-line-description { font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: InstrumentSerifRegular, serif; }
+.portfolio--info .portfolio--details-left .tags li { color: rgba(var(--accent) / 60%); font-size: 14px; font-style: normal; font-weight: 500; line-height: 44px; letter-spacing: 0.185px; margin-bottom: 0; }
+.portfolio--details-line { width: 50%; margin-bottom: 0; }
+.portfolio--details-description { width: 43%; margin-left: auto; margin-right: 10%; padding: calc(var(--space-xxl) * 2) 0 var(--space-lg); }
 .portfolio--details-description .about-description { width: 100%; padding-left: 0; }
 .portfolio--details-description .about-description a { text-decoration: underline; }
 

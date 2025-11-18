@@ -70,10 +70,10 @@ export default function CoreValues() {
           <h2 className="section--title" data-splitting-opacity-anime>
             Core Values
           </h2>
-          <p className="section--subtitle" data-splitting-opacity-anime>
+          <h2 className="section--subtitle" data-splitting-opacity-anime>
             <span className="description-highlight-space" data-come-up-anime></span>
             Our values that define how we work, connect and build meaningful partnerships.
-          </p>
+          </h2>
         </div>
         <div className="CoreValues--list">
           <div className="CoreValues--box">

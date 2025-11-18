@@ -21,7 +21,7 @@
 .contact--info--list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 50px; margin-top: 60px; }
 .contact--info--list .title { font-size: 21px; font-weight: 300; color: #f9f8fc30; text-transform: uppercase; margin-bottom: 12px; }
 .contact--info--list .info--box { display: flex; flex-direction: column; align-items: flex-start; }
-.contact--info--list a,
+.contact--info--list a:not(.btn),
 .contact--info--list address { width: 100%; font-size: 21px; font-weight: 300; color: #f9f8fc; margin-bottom: var(--space-sm); position: relative; font-style: normal; }
 .contact--info--list a::before { position: absolute; content: ""; right: 0; top: 100%; width: 0; height: 1px; background: rgba(var(--accent) / 100%); transition: all 0.5s; }
 .contact--info--list a:hover::before { width: 100%; left: 0; right: auto; }
