@@ -173,7 +173,9 @@ export default function Portfolios() {
 
         <ul className="pagination">
           <li className="page-item">
-            <Button href="#" variant="secondary">Prev</Button>
+            <Button href="#" variant="secondary">
+              Prev
+            </Button>
           </li>
           <li className="page-item">
             <a className="page-link active" href="#">
@@ -191,7 +193,9 @@ export default function Portfolios() {
             </a>
           </li>
           <li className="page-item">
-            <Button href="#" variant="secondary">Next</Button>
+            <Button href="#" variant="secondary">
+              Next
+            </Button>
           </li>
         </ul>
       </div>

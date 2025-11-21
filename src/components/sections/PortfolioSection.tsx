@@ -147,11 +147,9 @@ export default function PortfolioSection() {
           {portfolioItems.map((item, i) => (
             <div key={i} className={`${styles.portfolioCard} portfolioCard`} data-cursor-text="View Portfolio" style={{ flex: item.flex }}>
               <p className={styles.cardTag}>{item.tag}</p>
-
-              <div className={item.className} style={{ height: item.height }}>
+              <div className={styles[item.className]} style={{ height: item.height }}>
                 <video src={item.video} muted loop playsInline className={styles.video} />
               </div>
-
               <h3 className={styles.cardTitle} data-splitting-opacity-anime>
                 {item.title}
               </h3>

@@ -3,16 +3,17 @@
 .portfolioSection .headerTitle { flex: 0 0 50%; }
 .portfolioSection .headerText { width: 30%; }
 .portfolioSection .portfolioList { display: flex; flex-flow: row wrap; --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--space-xl) * 2) calc(var(--gap) * 2); position: relative; transform-style: preserve-3d; overflow: hidden; margin-top: calc(var(--space-lg) * 2); }
-.portfolioSection .portfolioCard { position: relative; transform-style: preserve-3d; backface-visibility: hidden; }
+.portfolioSection .portfolioCard { display: flex; flex-flow: row wrap; align-items: flex-start; align-content: flex-start; position: relative; transform-style: preserve-3d; backface-visibility: hidden; }
+.portfolioSection .portfolioCard .verticalVideo, .portfolioSection .portfolioCard .horizontalVideo { width: 100%; display: flex; }
 .portfolioSection .cardTag { position: absolute; top: 0; left: 0; background: rgba(var(--bg) / 100%); padding: 4px 12px 4px 0px; font-size: 16px; color: #f5f5f5; z-index: 10; text-transform: uppercase; }
 
 .portfolioSection .breadcrumb { margin-bottom: 0; }
 
 .portfolioSection .pagination { display: flex; flex-flow: row wrap; align-items: center; justify-content: center; list-style: none; gap: 40px; margin-top: 120px; }
-.portfolioSection .pagination .page-link { display: flex; padding: 8px 16px; }
+.portfolioSection .pagination .page-link { display: flex; padding: 8px 16px; background: transparent; color: #f5f5f5; border: none; }
 .portfolioSection .pagination .page-link.active { border-bottom: 1px solid rgba(var(--accent) / 100%); }
 
 .portfolioSection .video { width: 100%; height: 100%; object-fit: cover; }
-.portfolioSection .cardTitle { margin-top: 1.5rem; font-size: 2rem; }
-.portfolioSection .cardSubtitle { margin-top: 0.5rem; font-size: 2rem; font-weight: 100; }
+.portfolioSection .cardTitle { width: 100%; margin-top: 1.5rem; font-size: 44px; margin-top: var(--space-sm); }
+.portfolioSection .cardSubtitle { width: 100%; opacity: 0.7; margin-top: 0; font-size: 40px; font-weight: 100; }
 .portfolioSection .spaceparagraph { padding: 0px 3rem; }
