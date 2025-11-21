@@ -5,24 +5,22 @@
 .logo-wrapper { flex: 0 0 auto; }
 .logo { font-size: var(--font-lg); font-weight: bold; }
 
-.right-wrapper { flex: 1; display: flex; justify-content: space-between; align-items: center; }
+.right-wrapper { flex: 1; display: flex; align-items: center; }
 
-.menu { width: 70%; }
-.menu ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: flex-end; margin: 0; padding: 0; margin-right: var(--space-xxl); }
+.menu ul { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; margin-right: var(--space-xxl); }
 .menu li a { position: relative; padding: var(--space-xs) 0; font-size: 20px; font-weight: 400; color: rgba(var(--text) / 50%); transition: all 0.5s; }
 .menu li a::after { content: ""; position: absolute; width: 0%; height: 2px; bottom: 0; left: 0; background-color: rgba(var(--accent) / 100%); transition: width 0.3s ease; }
 .menu li a:hover::after { width: 0%; }
 .menu li a:hover { color: rgba(var(--text) / 100%); }
 
-.menu { flex: 1; }
-.menu ul li.primary-menu-list { padding: 16px; transition: all 0.5s; }
+.menu ul li.primary-menu-list { padding: var(--space-sm); transition: all 0.5s; }
 .menu .header-dropdown { border: 1px solid rgba(255, 255, 255, 0); border-bottom: none; }
 .menu .header-dropdown.mega-visible-header:hover { border: 1px solid rgba(var(--accent) / 40%); border-bottom: none; }
 
 .cta-wrapper { display: flex; flex-flow: row wrap; justify-content: flex-end; align-items: center; gap: var(--space-sm); }
 .cta-wrapper a { display: inline-flex; }
 
-.phone-image { width: 48px; height: 48px; border: 1px solid rgba(var(--accent) / 100%); border-radius: 50%; padding: var(--space-xs); transition: all 0.5s; }
+.phone-image { width: 48px; height: 48px; border: 1px solid rgba(var(--accent) / 30%); border-radius: 50%; padding: var(--space-xs); transition: all 0.5s; }
 .phone-image:hover { background-color: rgba(var(--accent) / 100%); }
 .phone-image img { width: 100%; height: 100%; object-fit: contain; transition: filter 0.5s; }
 .phone-image:hover img { filter: invert(1); }
@@ -36,7 +34,8 @@
 
 .phone-icon { font-size: var(--font-md); color: rgba(var(--accent) / 100%); }
 
-.sticky-header { padding: 0 var(--space-xl); position: fixed; bottom: 4vh; z-index: 999; display: flex; justify-content: center; align-items: center; justify-self: center; border-radius: 65px; left: 50%; transform: translate(-50%, -50%); }
+.sticky-header { padding: 0 var(--space-xl); position: fixed; bottom: 0vh; z-index: 999; display: flex; justify-content: center; align-items: center; justify-self: center; border-radius: 65px; left: 50%; transform: translate(-50%, 50%) scale(0.8); opacity: 0; transition: all 0.5s; }
+.sticky-header.show { bottom: 4vh; transform: translate(-50%, 0%) scale(1); opacity: 1; }
 .sticky-header .sticky-container { position: relative; }
 .sticky-header.light { color: rgba(var(--accent) / 100%); background-color: rgb(0 0 0 / 23%); }
 .sticky-header.dark { color: rgba(var(--accent) / 100%); background-color: rgb(0 0 0 / 23%); }

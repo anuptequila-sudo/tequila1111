@@ -91,7 +91,7 @@ const ServicesSection = () => {
       const toY = (px: number) => (px / cardRect.height) * 100;
 
       // ---- add capsule holes for tag + pills ----
-      const capsuleTargets = card.querySelectorAll<HTMLElement>(`.${styles.tag}.${styles.cutout}, .${styles.pills} .${styles.cutout}, .${styles.caption}`);
+      const capsuleTargets = card.querySelectorAll<HTMLElement>(`.${styles.tag}.${styles.cutout}, .${styles.pills} .${styles.cutout}`);
 
       capsuleTargets.forEach((el) => {
         const r = el.getBoundingClientRect();
@@ -193,7 +193,7 @@ const ServicesSection = () => {
               </div>
             </div>
             <div className={styles.bigTextContainer}>
-              <p className={`${styles.caption} ${styles.cutout}`}>(technology)</p>
+              <p className={`${styles.caption}`}>technology</p>
               <span className={`${styles.bigText} ${styles.cutout}`} aria-hidden="true">
                 TEQ
               </span>
@@ -215,7 +215,7 @@ const ServicesSection = () => {
               </div>
             </div>
             <div className={styles.bigTextContainer}>
-              <p className={`${styles.caption} ${styles.cutout}`}>(user interface)</p>
+              <p className={`${styles.caption}`}>user interface</p>
               <span className={`${styles.bigText} ${styles.cutout}`} aria-hidden="true">
                 UI
               </span>
@@ -234,7 +234,7 @@ const ServicesSection = () => {
               </div>
             </div>
             <div className={styles.bigTextContainer}>
-              <p className={`${styles.caption} ${styles.cutout}`}>(la la land)</p>
+              <p className={`${styles.caption}`}>la la land</p>
               <span className={`${styles.bigText} ${styles.cutout}`} aria-hidden="true">
                 LA
               </span>

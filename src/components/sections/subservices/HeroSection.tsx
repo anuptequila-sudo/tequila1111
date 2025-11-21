@@ -29,7 +29,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="hero" style={{ position: "relative", overflow: "hidden" }}>
+    <section className="services--banner hero" style={{ position: "relative", overflow: "hidden" }}>
       <div className="hero-wrapper">
         <div className="hero-left">
           <h1 className="page--title">

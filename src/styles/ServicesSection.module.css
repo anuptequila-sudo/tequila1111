@@ -3,7 +3,8 @@
 .overlay { position: relative; z-index: 1; gap: 1.2rem; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr; grid-column-gap: 0px; grid-row-gap: 0px; }
 
 .card { display: flex; flex-flow: column wrap; width: 100%; min-width: 34rem; overflow: hidden; transform: translateY(80px); opacity: 0; position: relative; }
-.card .title { display: flex; font-size: 3rem; font-weight: 500; line-height: 1; min-height: 2.2em; margin-bottom: 1rem; color: #0b0b0b; }
+.card .title { display: flex; font-size: 3rem; font-weight: 500; line-height: 1; min-height: 2.2em; margin-bottom: 1rem; color: #0b0b0b; transition: all 0.5s; }
+.card:hover .title:hover { color: #004aec; }
 
 .cardMaskSvg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .insidecard { flex: 1; position: relative; z-index: 1; padding: var(--space-xxxl) var(--space-lg) var(--space-lg); }
@@ -11,14 +12,14 @@
 .paragraph { font-size: 1.1rem; margin-bottom: 1.5rem; margin-right: 8rem; color: #222; }
 .pills { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .pills .cutout { color: rgba(var(--accent) / 100%); text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35); background: transparent; margin-bottom: 0; }
-.pills .cutout { padding: 0.4rem 1rem; font-size: 0.9rem; border-radius: 30px; background: transparent; color: rgba(var(--accent) / 100%); text-shadow: 0 0 6px rgba(0, 0, 0, 0.4), 0 0 2px rgba(0, 0, 0, 0.6); transition: all 0.5s; }
+.pills .cutout { padding: 0.4rem 1rem; font-size: 0.9rem; border-radius: 30px; background: transparent; color: rgba(var(--accent) / 100%); transition: all 0.5s; }
 
 .tag { font-size: 0.7rem; font-weight: 100; display: inline-block; margin-bottom: 2rem; letter-spacing: 0; border-radius: 0; position: absolute; top: 0; left: 0; }
 .tag.cutout { border-radius: 0; }
 .tag.cutout,
-.tag.cutout { font-size: 0.9rem; font-weight: 400; padding: 0px 15px 5px 5px; letter-spacing: 0; background: transparent; color: rgba(var(--accent) / 100%); text-shadow: 0 0 6px rgba(0, 0, 0, 0.4), 0 0 2px rgba(0, 0, 0, 0.6); }
+.tag.cutout { font-size: 16px; font-weight: 400; padding: 4px 12px 4px 0; letter-spacing: 0; background: transparent; color: #f5f5f5; }
 
-.caption { font-size: 14px; color: #fff; white-space: nowrap; line-height: 1; padding: var(--space-xs) var(--space-sm); }
+.caption { font-size: 20px; text-transform: capitalize; color: #000; white-space: nowrap; line-height: 1; padding: var(--space-xs) var(--space-sm); }
 
 .bigTextContainer { display: flex; flex-flow: column wrap; align-items: flex-end; padding: var(--space-md); position: relative; z-index: 1; }
 .bigText { transform-origin: top right; margin-left: auto; margin-top: auto; font-size: 2rem; font-weight: 100; color: transparent; opacity: 0; text-align: right; height: 150px; }

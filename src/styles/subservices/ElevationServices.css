@@ -10,4 +10,4 @@
 .ElevationServices-section .info .assets--list { display: flex; flex-flow: row wrap; list-style: none; padding: 0; margin: 0; }
 .ElevationServices-section .info .assets--list li { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid rgba(var(--accent) / 50%); width: 100%; }
 .ElevationServices-section .info .assets--list .h4 { color: rgba(var(--accent) / 100%); font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 16px; }
-.ElevationServices-section .info .assets--list p { font-size: 18px; }
+.ElevationServices-section .info .assets--list p { font-size: 18px; margin-bottom: 0; }

@@ -10,11 +10,11 @@
 .contact-item-second { width: 60%; }
 
 .contact-form { display: inline-flex; display: ruby; font-size: 2.4rem; display: flex; flex-flow: wrap; row-gap: var(--space-sm); font-family: "InstrumentSerifRegular",serif; }
-.contact-form .input--wrapper { width: 100%; display: flex; flex-flow: row wrap; align-items: center; }
+.contact-form .input--wrapper { width: 100%; display: flex; flex-flow: row wrap; align-items: center; font-family: "InstrumentSerifRegular"; }
 .contact-form .form-group { flex: 1; padding: 0 0 0 var(--space-sm); }
 .contact-form .contact-message { flex: 100%; padding: 0; }
 
-.form-control { display: flex; width: 100%; background: none; border: none; border-bottom: 1px solid rgba(var(--accent) / 30%); padding: var(--space-xs) 0; font-size: 18px; color: rgba(var(--accent) / 100%); }
+.form-control { display: flex; width: 100%; background: none; border: none; border-bottom: 1px solid rgba(var(--accent) / 30%); padding: var(--space-xs) 0; border-radius: 0; font-size: 18px; color: rgba(var(--accent) / 100%); }
 .form-control:focus { outline: none; box-shadow: none; border-bottom: 1px solid rgba(var(--accent) / 100%); }
 .contact-message .form-control { width: 100%; align-content: end; padding-bottom: 20px; margin-bottom: 2rem; }
 

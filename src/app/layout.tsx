@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../styles/bootstrap.min.css";
 import "../styles/globals.css";
 import Header from "../components/layout/Header";
 import SoapBubbleCursor from "@/components/layout/SoapBubbleCursor";

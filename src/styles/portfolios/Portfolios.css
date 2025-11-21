@@ -4,7 +4,7 @@
 .portfolioSection .headerText { width: 30%; }
 .portfolioSection .portfolioList { display: flex; flex-flow: row wrap; --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--space-xl) * 2) calc(var(--gap) * 2); position: relative; transform-style: preserve-3d; overflow: hidden; margin-top: calc(var(--space-lg) * 2); }
 .portfolioSection .portfolioCard { position: relative; transform-style: preserve-3d; backface-visibility: hidden; }
-.portfolioSection .cardTag { position: absolute; top: 0; left: 0; background: rgba(var(--bg) / 100%); padding: 0.3rem 1rem; font-size: 0.9rem; z-index: 10; text-transform: uppercase; font-weight: 200; margin: -1px; }
+.portfolioSection .cardTag { position: absolute; top: 0; left: 0; background: rgba(var(--bg) / 100%); padding: 4px 12px 4px 0px; font-size: 16px; color: #f5f5f5; z-index: 10; text-transform: uppercase; }
 
 .portfolioSection .breadcrumb { margin-bottom: 0; }
 

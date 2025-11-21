@@ -41,9 +41,15 @@ export default function HeroSection() {
   return (
     <section className="hero" style={{ position: "relative", overflow: "hidden", minHeight: "50vh" }}>
       <div className="hero-wrapper">
-        <div className="hero-left">
-          <div className="date">02 July 2025</div>
-          <h1 className="page--title">The 7 Pillars of Building a Premium Brand in The UAE</h1>
+        <div className="container-fluid">
+          <div className="row align-items-end">
+            <div className="col-lg-6">
+              <div className="hero-left">
+                <div className="date">02 July 2025</div>
+                <h1 className="page--title">The 7 Pillars of Building a Premium Brand in The UAE</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="hero--bg" ref={videoWraRef}>

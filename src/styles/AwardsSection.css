@@ -1,5 +1,4 @@
 .awards-section { background: rgba(var(--bg) / 100%); padding: calc(var(--space-xxxl) * 2) 0; position: relative; }
-.awards-section * { transition: all 0.5s; }
 
 .award-row { display: flex; align-items: center; position: relative; padding: var(--space-md) var(--space-lg); border-bottom: 1px solid rgba(var(--accent) / 40%); cursor: pointer; z-index: 1; justify-content: center; }
 .award-row .company { color: #dcdbdb; }

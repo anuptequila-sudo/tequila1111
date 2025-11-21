@@ -82,8 +82,8 @@ export default function BlogSection() {
 
         <div className="blogs-container">
           <div className="blogs-list">
-            <div className="blogs-item" data-cursor-text="View Blog">
-              <p className="blogs-year">2024</p>
+            <a href="#" className="blogs-item" data-cursor-text="View Blog">
+              <p className="blogs-year">21 Jan 2025</p>
               <h3 className="blogs-title">The Seven Pillars of Building a Premium Brand in UAE</h3>
               <div className="blogs-image-container">
                 <div className="blogs-details">
@@ -91,9 +91,9 @@ export default function BlogSection() {
                 </div>
                 <img src="/images/blog1.png" alt="Blog 1" className="blogs-image" />
               </div>
-            </div>
-            <div className="blogs-item" data-cursor-text="View Blog">
-              <p className="blogs-year">2024</p>
+            </a>
+            <a href="#" className="blogs-item" data-cursor-text="View Blog">
+              <p className="blogs-year">21 Jan 2025</p>
               <span className="blogs-title">The Seven Pillars of Building a premium Brand in UAE</span>
               <div className="blogs-image-container">
                 <div className="blogs-details">
@@ -101,7 +101,7 @@ export default function BlogSection() {
                 </div>
                 <img src="/images/blog2.png" alt="Blog 1" className="blogs-image" />
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className="blogs-button-container">

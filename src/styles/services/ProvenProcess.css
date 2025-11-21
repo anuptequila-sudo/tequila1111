@@ -1,12 +1,12 @@
 .ProvenProcess-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
 .ProvenProcess-header { width: 100%; display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .ProvenProcess-header .ProvenProcess-header-title { width: 75%; }
-.ProvenProcess-container { width: 100%; display: flex; flex-flow: row wrap; gap: var(--space-lg); overflow: hidden; }
+.ProvenProcess-container { width: 100%; display: flex; flex-flow: row wrap; gap: var(--space-lg); }
 
 .ProvenProcess-container .ProvenProcess-item-first { width: 35%; }
 .ProvenProcess-container .ProvenProcess-item-first .ProvenProcess-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
 
-.ProvenProcess-container .ProvenProcess-item-second { display: flex; flex-flow: row wrap; overflow: hidden; flex: 1; height: 465px; }
+.ProvenProcess-container .ProvenProcess-item-second { display: flex; flex-flow: row wrap; flex: 1; height: 465px; }
 .ProvenProcess-container .ProvenProcess-item-second .swiper { width: 100%; height: 100%; }
 
 .ProvenProcess-container .ProvenProcess-item-second .info--wrapper { width: 100%; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
@@ -19,3 +19,7 @@
 .process-slider .swiper-wrapper { transition-timing-function: linear; }
 .process-slider .swiper-slide { height: auto; width: auto; }
 .process-slider .swiper-slide img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+
+.swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets { top: calc(100% + var(--space-md)); display: flex; flex-flow: row wrap; gap: var(--space-sm); }
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet { width: 10px; height: 10px; margin: 0; background: rgba(var(--text) / 50%); opacity: 1; border-radius: 20px; transition: all 0.5s; }
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active, .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active { width: 25px; background: rgba(var(--text) / 100%); opacity: 1; }

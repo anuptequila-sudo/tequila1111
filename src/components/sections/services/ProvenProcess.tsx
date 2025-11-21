@@ -2,13 +2,15 @@
 
 import Image from "next/image";
 
-import "@/styles/services/ProvenProcess.css";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
 
-import { Autoplay, Mousewheel } from "swiper/modules";
+import "@/styles/services/ProvenProcess.css";
+
+import { Autoplay, Mousewheel, EffectFlip, Pagination } from "swiper/modules";
 
 // Define all your props here
 type ProvenProcessProps = {
@@ -69,7 +71,7 @@ export default function ProvenProcess({ title, description }: ProvenProcessProps
               window.lenis?.start?.();
             }}
           >
-            <Swiper modules={[Autoplay, Mousewheel]} spaceBetween={40} slidesPerView={1} loop={true} direction="vertical" mousewheel={{ forceToAxis: true }} speed={500} className="swiper process-slider">
+            <Swiper effect={"flip"} modules={[Autoplay, Mousewheel, EffectFlip, Pagination]} pagination={{ clickable: true }} spaceBetween={40} slidesPerView={1} loop={true} direction="vertical" mousewheel={{ forceToAxis: true }} speed={1000} className="swiper process-slider">
               {processSteps.map((item, idx) => (
                 <SwiperSlide key={idx}>
                   <div className="info--wrapper">

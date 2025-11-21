@@ -44,30 +44,38 @@ export default function HeroSection() {
   return (
     <section className="hero" style={{ position: "relative", overflow: "hidden" }}>
       <div className="hero-wrapper">
-        <div className="hero-left">
-          <h1 className="page--title">
-            We are Tequila <span className="hero-highlight"></span> <br />a Leading Branding & Web <br />Design Company in Dubai
-          </h1>
-        </div>
-        <div className="gap" />
-        <div className="hero-middle">
-          <h2 className="section--title">About Us</h2>
-          <div className="breadcrumb">
-            <div className="breadcrumb-item">
-              <a href="./">Home</a>
+        <div className="container-fluid">
+          <div className="row align-items-end">
+            <div className="col-lg-6">
+              <div className="hero-left">
+                <h1 className="page--title">
+                  We are Tequila <span className="hero-highlight"></span> <br />a Leading Branding & Web <br />
+                  Design Company in Dubai
+                </h1>
+              </div>
             </div>
-            <div className="breadcrumb-item active" aria-current="page">
-              The Agency
+            <div className="col-lg-4">
+              <div className="hero-middle">
+                <h2 className="section--title">About Us</h2>
+                <div className="breadcrumb">
+                  <div className="breadcrumb-item">
+                    <a href="./">Home</a>
+                  </div>
+                  <div className="breadcrumb-item active" aria-current="page">
+                    The Agency
+                  </div>
+                </div>
+                <h2 className="section--subtitle">We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform — driven by insight, precision, and creativity.</h2>
+                <div className="hero-buttons" data-anime-hero-word-block>
+                  <Button href="/services" variant="primary">
+                    Explore Services
+                  </Button>
+                  <Button href="/portfolios" variant="secondary">
+                    View Case Studies
+                  </Button>
+                </div>
+              </div>
             </div>
-          </div>
-          <h2 className="section--subtitle">We craft purposeful brand identities and engaging digital experiences that connect, inspire, and perform — driven by insight, precision, and creativity.</h2>
-          <div className="hero-buttons" data-anime-hero-word-block>
-            <Button href="/services" variant="primary">
-              Explore Services
-            </Button>
-            <Button href="/portfolios" variant="secondary">
-              View Case Studies
-            </Button>
           </div>
         </div>
       </div>

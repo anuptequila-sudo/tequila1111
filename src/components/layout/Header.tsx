@@ -64,7 +64,6 @@ function StickyDropdown() {
               </span>
             ))}
           </div>
-
           <div className="sticky-maim-menu-load">
             {/* Default message */}
             <div
@@ -240,178 +239,183 @@ export default function Header() {
     <>
       {/* Main Header */}
       <header className="header" ref={headerRef}>
-        <div className="container container-fixed">
-          <div className="logo-wrapper">
-            <Link href="/">
-              <div className="logo">
-                <img src="/images/Logo.svg" alt="Logo" />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-4 offset-lg-2">
+              <div className="logo-wrapper">
+                <Link href="/">
+                  <div className="logo">
+                    <img src="/images/Logo.svg" alt="Logo" />
+                  </div>
+                </Link>
               </div>
-            </Link>
-          </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="right-wrapper">
+                <nav className="menu" ref={menuRef}>
+                  <ul>
+                    <li className="primary-menu-list">
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li className="primary-menu-list">
+                      <Link href="/portfolios">Case Studies</Link>
+                    </li>
 
-          <div className="right-wrapper">
-            <nav className="menu" ref={menuRef}>
-              <ul>
-                <li className="primary-menu-list">
-                  <Link href="/portfolios">Case Studies</Link>
-                </li>
+                    {/* Dropdown Item */}
+                    <li className={`header-dropdown primary-menu-list ${isMegaVisible ? "mega-visible-header" : ""}`} onMouseEnter={() => setIsMegaVisible(true)} onMouseLeave={() => setIsMegaVisible(false)} onClick={() => setIsMegaVisible((prev) => !prev)}>
+                      <a>What We Do</a>
 
-                {/* Dropdown Item */}
-                <li className={`header-dropdown primary-menu-list ${isMegaVisible ? "mega-visible-header" : ""}`} onMouseEnter={() => setIsMegaVisible(true)} onMouseLeave={() => setIsMegaVisible(false)} onClick={() => setIsMegaVisible((prev) => !prev)}>
-                  <a>What We Do</a>
+                      {/* Mega Menu */}
 
-                  {/* Mega Menu */}
-
-                  <div className="mega-menu">
-                    <div className="col-first">
-                      <span className="col-first-text">
-                        We are there for any and <br /> everyone of your needs.
-                      </span>
-                    </div>
-
-                    <div className="col-second dropdown-columns">
-                      <div className="sticky-sub-group sticky-sub-middle">
-                        <div className="sticky-sub-menu">
-                          <h4>
-                            TEQ <span className="line-footer-menu"></span>
-                          </h4>
-                          <Link href="/services">WEB DESIGN & DEVELOPMENT</Link>
-                          <ul>
-                            <li>
-                              <Link href="/subservices">Custom Website Design & Development</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">E-Commerce Website Design & Development</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Web Applications Design & Development</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Domain & Hosting Management</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Website Maintenance & Support</Link>
-                            </li>
-                          </ul>
+                      <div className="mega-menu">
+                        <div className="col-first">
+                          <span className="col-first-text">
+                            We are there for any and <br /> everyone of your needs.
+                          </span>
                         </div>
 
-                        <div className="sticky-sub-menu">
-                          <h4>
-                            UI <span className="line-footer-menu"></span>
-                          </h4>
-                          <Link href="/services">BRANDING</Link>
-                          <ul>
-                            <li>
-                              <Link href="/subservices">Logo Design & Visual Identity</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Rebranding</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Brand Elevation</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Graphic Design</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Branding, Strategy & Development</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Corporate Profile & Company Brochure</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">UI/UX Design for Digital Products</Link>
-                            </li>
-                          </ul>
-                        </div>
+                        <div className="col-second dropdown-columns">
+                          <div className="sticky-sub-group sticky-sub-middle">
+                            <div className="sticky-sub-menu">
+                              <h4>
+                                TEQ <span className="line-footer-menu"></span>
+                              </h4>
+                              <Link href="/services">WEB DESIGN & DEVELOPMENT</Link>
+                              <ul>
+                                <li>
+                                  <Link href="/subservices">Custom Website Design & Development</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">E-Commerce Website Design & Development</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Web Applications Design & Development</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Domain & Hosting Management</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Website Maintenance & Support</Link>
+                                </li>
+                              </ul>
+                            </div>
 
-                        <div className="sticky-sub-menu">
-                          <h4>
-                            LA <span className="line-footer-menu"></span>
-                          </h4>
-                          <Link href="/services">COMMUNICATION</Link>
-                          <ul>
-                            <li>
-                              <Link href="/subservices">Social Media Strategy & Design</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Search Engine Optimisation (SEO)</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Photography & Visual Storytelling</Link>
-                            </li>
-                            <li>
-                              <Link href="/subservices">Video Storyboarding & Production</Link>
-                            </li>
-                          </ul>
+                            <div className="sticky-sub-menu">
+                              <h4>
+                                UI <span className="line-footer-menu"></span>
+                              </h4>
+                              <Link href="/services">BRANDING</Link>
+                              <ul>
+                                <li>
+                                  <Link href="/subservices">Logo Design & Visual Identity</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Rebranding</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Brand Elevation</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Graphic Design</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Branding, Strategy & Development</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Corporate Profile & Company Brochure</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">UI/UX Design for Digital Products</Link>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div className="sticky-sub-menu">
+                              <h4>
+                                LA <span className="line-footer-menu"></span>
+                              </h4>
+                              <Link href="/services">COMMUNICATION</Link>
+                              <ul>
+                                <li>
+                                  <Link href="/subservices">Social Media Strategy & Design</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Search Engine Optimisation (SEO)</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Photography & Visual Storytelling</Link>
+                                </li>
+                                <li>
+                                  <Link href="/subservices">Video Storyboarding & Production</Link>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </li>
+                    </li>
 
-                <li className="primary-menu-list">
-                  <Link href="/about">The Agency</Link>
-                </li>
-                <li className="primary-menu-list">
-                  <Link href="/blogs">Insights</Link>
-                </li>
-                <li className="primary-menu-list">
-                  <Link href="/faqs">FAQ</Link>
-                </li>
-              </ul>
-            </nav>
+                    <li className="primary-menu-list">
+                      <Link href="/about">The Agency</Link>
+                    </li>
+                    <li className="primary-menu-list">
+                      <Link href="/blogs">Insights</Link>
+                    </li>
+                    <li className="primary-menu-list">
+                      <Link href="/faq">FAQ</Link>
+                    </li>
+                  </ul>
+                </nav>
 
-            <div className="cta-wrapper">
-              <Button href="/contact" className="btn btn-secondary cta-btn">
-                Get In Touch
-              </Button>
-              <Link href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="phone-image">
-                <Image src="/images/phone.svg" alt="Phone" width={48} height={48} />
-              </Link>
-              <Link href="javascript:void(0);" className="phone-image toggle-btn" onClick={toggleTheme}>
-                {dark ? "☀️" : "🌙"}
-              </Link>
+                <div className="cta-wrapper">
+                  <Button href="/contact" className="btn btn-secondary cta-btn">
+                    Get In Touch
+                  </Button>
+                  <Link href="https://wa.me/1234567890" target="_blank" rel="noreferrer" className="phone-image">
+                    <Image src={dark ? "/images/icons/phone-black.svg" : "/images/icons/phone-white.svg"} alt="Phone" width={48} height={48} />
+                  </Link>
+                  <Link href="javascript:void(0);" className="phone-image toggle-btn" onClick={toggleTheme}>
+                    {dark ? <Image src="/images/icons/sun.svg" alt="Moon" width={48} height={48} /> : <Image src="/images/icons/moon-white.svg" alt="Sun" width={48} height={48} />}
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </header>
-
       {/* Sticky Mirror Header */}
-      {stickyVisible && (
-        <header className={`sticky-header dark ${dark ? "dark" : "light"} ${isStickyDropdownVisible ? "" : "blurred"}  ${hideHeader ? "hide-header" : ""}`} style={isStickyDropdownVisible ? {} : {}}>
-          <div className="sticky-container">
-            <nav className="sticky-menu">
-              <ul>
-                {menuItems.map((item) => {
-                  const isDropdown = item.label === "What We Do";
+      <header className={`sticky-header dark ${dark ? "dark" : "light"} ${stickyVisible ? "show" : ""} ${isStickyDropdownVisible ? "" : "blurred"}${hideHeader ? "hide-header" : ""}`} style={isStickyDropdownVisible ? {} : {}}>
+        <div className="sticky-container">
+          <nav className="sticky-menu">
+            <ul>
+              {menuItems.map((item) => {
+                const isDropdown = item.label === "What We Do";
 
-                  return (
-                    <li
-                      key={item.key}
-                      className={`sticky-parent ${isDropdown ? "has-dropdown" : ""} ${isDropdown && isStickyDropdownVisible ? "is-hovered" : ""}`}
-                      onClick={(e) => {
-                        if (isDropdown) {
-                          e.stopPropagation();
-                          setIsStickyDropdownVisible((prev) => !prev);
-                        }
-                      }}
-                    >
-                      {item.href ? <Link href={item.href}>{item.label}</Link> : <a>{item.label}</a>}
+                return (
+                  <li
+                    key={item.key}
+                    className={`sticky-parent ${isDropdown ? "has-dropdown" : ""} ${isDropdown && isStickyDropdownVisible ? "is-hovered" : ""}`}
+                    onClick={(e) => {
+                      if (isDropdown) {
+                        e.stopPropagation();
+                        setIsStickyDropdownVisible((prev) => !prev);
+                      }
+                    }}
+                  >
+                    {item.href ? <Link href={item.href}>{item.label}</Link> : <a>{item.label}</a>}
 
-                      {isDropdown && (
-                        <div className={`sticky-dropdown-wrapper ${isStickyDropdownVisible ? "visible" : ""}`}>
-                          <StickyDropdown />
-                        </div>
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
-            </nav>
-          </div>
-        </header>
-      )}
+                    {isDropdown && (
+                      <div className={`sticky-dropdown-wrapper ${isStickyDropdownVisible ? "visible" : ""}`}>
+                        <StickyDropdown />
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+        </div>
+      </header>
     </>
   );
 }
