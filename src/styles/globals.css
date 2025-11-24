@@ -46,7 +46,7 @@ body p { font-size: 20px; color: rgba(var(--text) / 60%); margin-bottom: var(--s
 .fluid-container { position: fixed; top: 0; left: 0; z-index: 2; }
 .fluid-canvas { width: 100vw; height: 100vh; }
 
-.section--title { font-size: 96px; line-height: 100%; font-weight: 200; margin-bottom: var(--space-xxl); }
+.section--title { font-size: 96px; line-height: 100%; font-weight: 200; margin-bottom: var(--space-lg); }
 .section--subtitle { font-size: 36px; line-height: 122%; font-family: "InstrumentSerifRegular",serif; margin-bottom: var(--space-md); }
 h5.title { font-family: "ClashGroteskVariable", sans-serif; }
 .subtitle { font-family: "OverusedGroteskLight", sans-serif; font-size: 1.2rem; margin-bottom: 2rem; text-align: right; font-weight: 100; text-transform: uppercase; }
@@ -73,10 +73,10 @@ button { font-family: inherit; border: none; cursor: pointer; background: none; 
 
 .hero { position: relative; min-height: 100vh; padding-top: calc(var(--header-height) + var(--space-xxxl)); overflow: hidden; background: var(--bg); color: var(--accent); }
 .hero-wrapper { display: flex; align-items: flex-end; justify-content: flex-start; position: relative; z-index: 2; margin-bottom: -60px; }
-.hero .section--title { font-family: "InstrumentSerifRegular",serif; margin-bottom: var(--space-md); }
+.hero .section--title { font-family: "InstrumentSerifRegular",serif; margin-bottom: var(--space-xs); }
 
 .hero-left { width: 100%; text-align: right; margin-top: 4rem; padding-right: var(--space-lg); }
-.hero-left .hero-highlight { padding: 0 var(--space-xxxl); position: relative; margin: 0 var(--space-sm); }
+.hero-left .hero-highlight { display: inline-flex; height: 30px; padding: 0 var(--space-xxxl); position: relative; margin: 0 var(--space-sm); }
 .hero-left .hero-highlight::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: 5px; background: rgba(var(--accent) / 100%); }
 
 .gap { width: 8%; }
@@ -96,22 +96,22 @@ button { font-family: inherit; border: none; cursor: pointer; background: none; 
 .about-section { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start; min-height: 30vh; }
 .about-left { width: 48%; }
 
-.about-description { padding-left: 15rem; padding-top: var(--space-sm); }
+.about-description { padding-left: 15rem; }
 .about-description .right-line { display: block; text-align: right; padding-right: 2rem; }
 .about-description .left-line { display: block; text-align: left; }
 
 .about-gap { width: 4%; }
 
 .about-right { width: 48%; text-align: left; }
-.about-left .section--subtitle.about-line { width: 80%; }
+.about-left .section--subtitle.about-line { width: 80%; margin-bottom: var(--space-xxxl); }
 .about-grid { padding: 0 calc(var(--space-xxxl) * 2); display: grid; grid-template-columns: repeat(2, 1fr); gap: calc(var(--space-xxxl)); }
-.about-line-description { margin-bottom: 2rem; width: 90%; }
+.about-line-description { margin-bottom: var(--space-lg); width: 90%; }
 .about-line.subtitle { padding: 0 calc(var(--space-xxxl) * 2); margin-bottom: 6rem; }
 
-.grid-item { position: relative; }
-.grid-item .title { font-size: 1.2rem; margin-bottom: 0.5rem; position: relative; }
+.grid-item { position: relative; display: flex; flex-flow: row wrap; }
+.grid-item .title { width: 100%; font-size: 20px; margin-bottom: var(--space-md); position: relative; }
 .grid-item .title::after { content: ""; display: block; height: 1px; background: rgb(233, 231, 231); margin-top: 0.25rem; margin-left: auto; }
-.grid-item .number { font-size: 5.5rem; font-weight: lighter; }
+.grid-item .number { width: 100%; font-size: 95px; line-height: 1; font-weight: lighter; }
 
 .soap-bubble-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -10; pointer-events: none; user-select: none; background: radial-gradient(circle at center, #0b1220 0%, rgba(var(--bg) / 100%) 100%); }
 
@@ -166,5 +166,5 @@ button { font-family: inherit; border: none; cursor: pointer; background: none; 
 .custom-cursor { position: fixed; top: 0; left: 0; z-index: 2; pointer-events: none; }
 
 .breadcrumb { display: flex; align-items: center; font-size: 16px; margin: 1rem 0 0; }
-.breadcrumb:has(+ *) { margin-bottom: 1rem; }
+.breadcrumb:has(+ *) { margin-bottom: var(--space-xl); }
 .breadcrumb-item { position: relative; font-size: 20px; padding: 0; color: rgb(255, 255, 255, 0.5); }

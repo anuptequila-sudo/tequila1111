@@ -8,7 +8,12 @@ import styles from "@/styles/TestimonialsSlider.module.css";
 
 import useScrollAnimations from "@/components/hooks/useScrollAnimations";
 
-export default function TestimonialsSlider() {
+type TestimonialProps = {
+  sectionTitle: string;
+  sectionSubtitle: string;
+};
+
+export default function TestimonialsSlider({ sectionTitle, sectionSubtitle }: TestimonialProps) {
   const [popupVideo, setPopupVideo] = useState<string | null>(null);
 
   useScrollAnimations();
@@ -118,10 +123,10 @@ export default function TestimonialsSlider() {
         {/* Left Side */}
         <div className={styles.groupOne}>
           <h2 className="section--title" data-splitting-opacity-anime>
-            What Our Clients Say: Voices of Success
+            {sectionTitle}
           </h2>
           <h3 className="section--subtitle" data-splitting-opacity-anime>
-            <span className="description-highlight-space"></span> Partnerships that last, stories that resonate—from clients and partners turned brand ambassadors.
+            <span className="description-highlight-space"></span> {sectionSubtitle}
           </h3>
         </div>
       </div>
@@ -144,7 +149,7 @@ export default function TestimonialsSlider() {
                 <video className={styles.video} src={item.src} muted autoPlay loop playsInline onClick={() => setPopupVideo(item.src ?? null)} data-cursor-text="View Video" />
               ) : (
                 <div className={styles.textBox}>
-                  <span className={styles.testiDescriptionHighlight}>"{item.title}"</span>
+                  <span className={styles.testiDescriptionHighlight}>&quot;{item.title}&quot;</span>
                   <p className={styles.testiDescriptiontext}>{item.desc}</p>
                   <p className={styles.author}>{item.author}</p>
                   <p className={styles.roletesti}>

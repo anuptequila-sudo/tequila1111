@@ -1,11 +1,11 @@
 .portfolioSection { padding: calc(var(--space-xxxl) * 2) 0; min-height: 100vh; }
 
-.headerWrapper { display: flex; align-items: flex-start; margin-bottom: 4rem; }
+.headerWrapper { display: flex; align-items: flex-start; margin-bottom: calc(var(--space-xxl) * 3); }
 .headerTitle { flex: 0 0 50%; }
 .headerGap { flex: 0 0 20%; }
 .headerText { flex: 0 0 30%; font-size: 1.3rem; font-weight: 300; }
 
-.portfolioDetail { display: flex; flex-flow: row wrap; --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--space-xl) * 2) calc(var(--gap) * 2); position: relative; transform-style: preserve-3d; overflow: hidden; }
+.portfolioDetail { display: flex; flex-flow: row wrap; --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--space-xxxl) * 3) calc(var(--gap) * 2); position: relative; transform-style: preserve-3d; overflow: hidden; }
 
 .portfolioCard { position: relative; transform-style: preserve-3d; backface-visibility: hidden; display: flex; flex-flow: row wrap; align-items: flex-start; align-content: flex-start; }
 .horizontalVideo { width: 100%; }

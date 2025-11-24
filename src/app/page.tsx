@@ -20,8 +20,8 @@ export default function HomePage() {
       <ServicesSection />
       <AwardsSection />
       <PortfolioSection />
-      <TestimonialsSlider />
-      <FaqSection />
+      <TestimonialsSlider sectionTitle="Client Love" sectionSubtitle="Partnerships that last, stories that resonate—from clients and partners turned brand ambassadors." />
+      <FaqSection topSpace="" />
       <BlogSection />
       <ContactSection topSpace="" />
       <InformationSection />
