@@ -2,7 +2,7 @@
 .JoinTheWorkspace-header { display: flex; justify-content: space-between; align-items: flex-start; }
 .JoinTheWorkspace-header .JoinTheWorkspace-header-title { width: 50%; }
 .JoinTheWorkspace-item-first { width: 40%; }
-.JoinTheWorkspace-item-first .JoinTheWorkspace-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
+.JoinTheWorkspace-item-first .JoinTheWorkspace-header-description { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; }
 .JoinTheWorkspace-container { display: flex; gap: 10rem; scroll-behavior: smooth; justify-content: space-between; }
 
 .JoinTheWorkspace-section .JoinTheWorkspace-item-second { min-width: 20%; }

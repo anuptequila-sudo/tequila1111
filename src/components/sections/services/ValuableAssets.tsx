@@ -61,7 +61,7 @@ export default function ValuableAssets() {
   }, []);
   return (
     <section className="ValuableAssets-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="ValuableAssets-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Why a Powerful Brand is your most Valuable Asset

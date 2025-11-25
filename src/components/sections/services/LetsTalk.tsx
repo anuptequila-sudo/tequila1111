@@ -11,7 +11,7 @@ export default function LetsTalk() {
   return (
     <section className="LetsTalk-section">
       <video id="bgVideo" className="lets--talk--bg" src="/images/what-we-do.mp4" autoPlay muted loop playsInline />
-      <div className="container-fixed">
+      <div className="container">
         <div className="LetsTalk-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Ready to Build an <br />

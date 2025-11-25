@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function BlogDetails() {
   return (
     <section className="blog--details">
-      <div className="container-fixed">
+      <div className="container">
         <h2 className="hero--text">
           <span className="description-highlight-space"></span>
           Building a premium brand in the UAE is more than just having a pretty logo with slick packaging—it is an identity that evokes trust, quality, and exclusivity. Considering the highly competitive market and the consumer base that knows exactly what it wants, for all the right reasons, your

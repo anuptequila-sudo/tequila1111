@@ -81,7 +81,7 @@ export default function InformationSection() {
 
       <div className="information-container">
         <video id="bgVideo" className="information-item-video" src="/images/what-we-do.mp4" autoPlay muted loop playsInline />
-        <div className="container-fixed">
+        <div className="container">
           <div className="information-item-first">
             <span className="information-header-description" data-splitting-opacity-anime2>
               Big Ideas Start with

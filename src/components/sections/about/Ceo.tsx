@@ -54,7 +54,7 @@ export default function Ceo() {
 
   return (
     <section className="ceo-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="ceo-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Message from the CEO

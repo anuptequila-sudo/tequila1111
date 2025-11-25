@@ -70,7 +70,7 @@ export default function TangibleResults({ title, description }: TangibleResultsP
 
   return (
     <section className="TangibleResults-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="TangibleResults-header">
           {title && (
             <h2 className="section--title" data-splitting-opacity-anime>

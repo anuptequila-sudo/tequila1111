@@ -168,14 +168,14 @@ const ServicesSection = () => {
       {/* Level 1: Background Video */}
       <video id="bgVideo" className={styles.bgVideo} src="/images/what-we-do.mp4" autoPlay muted loop playsInline />
 
-      <div className="container-fixed">
+      <div className="container">
         <div className={styles.servicesSectionHeadingContainer}>
-          <h3 className={styles.servicesSectionHeading} data-splitting-opacity-anime2>
+          <h2 className={`section--title`} data-splitting-opacity-anime2>
             Tailored for Bold Brands
-          </h3>
-          <h2 className={`${styles.servicesSectionHeroHeading} section--subtitle`} data-splitting-opacity-anime2>
-            <span className={styles.spaceparagraph}></span>We help your brand show up smarter, sharper, and stronger at every touchpoint.
           </h2>
+          <h3 className={`${styles.servicesSectionHeroHeading} section--subtitle`} data-splitting-opacity-anime2>
+            <span className={styles.spaceparagraph}></span>We help your brand show up smarter, sharper, and stronger at every touchpoint.
+          </h3>
         </div>
         <div className={styles.overlay}>
           {/* Card 1 */}

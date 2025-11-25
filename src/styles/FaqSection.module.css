@@ -11,7 +11,7 @@
 
 .gap { flex: 0 0 20%; }
 
-.faqDiv { flex: 0 0 55%; display: flex; flex-direction: column; margin-top: 6rem; }
+.faqDiv { flex: 0 0 55%; display: flex; flex-direction: column; }
 .faqItem { border-bottom: 1px solid #444; cursor: pointer; transition: all 0.5s; }
 .faqItem p { font-size: 22px; color: rgba(var(--accent) / 50%); margin-bottom: 0; transition: all 0.5s; }
 .faqQuestion { display: flex; justify-content: space-between; align-items: center; font-weight: 400; padding: calc(var(--space-xs) / 2 * 5) 0; }

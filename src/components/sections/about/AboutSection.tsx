@@ -61,7 +61,7 @@ export default function AboutSection() {
 
   return (
     <section className="about-section-full">
-      <div className="container-fixed">
+      <div className="container">
         <div className="about-section" ref={sectionRef}>
           {/* Left 30% */}
           <div className="about-left">
@@ -96,18 +96,22 @@ export default function AboutSection() {
               <div className="grid-item about-line">
                 <h5 className="title">YEARS OF EXPERIENCE</h5>
                 <span className="number">25+</span>
+                <p>A team backed by decades of experitse in branding and digital—sharp, seasoned and forward-thinking</p>
               </div>
               <div className="grid-item about-line">
                 <h5 className="title">PROJECTS DELIVERED</h5>
                 <span className="number">800+</span>
+                <p>From brand identities to full-scale websites—designed, developed and launched with impact.</p>
               </div>
               <div className="grid-item about-line">
                 <h5 className="title">CLIENT RETENTTION RATE</h5>
                 <span className="number">100%</span>
+                <p>A wide spectrum of sectors—from F&B and real estate to tech, finance and more.</p>
               </div>
               <div className="grid-item about-line">
                 <h5 className="title">PROJECTS PER YEAR</h5>
                 <span className="number">30+</span>
+                <p>Recognised for creative excellence, strategic thinking and consistently bold work.</p>
               </div>
             </div>
           </div>

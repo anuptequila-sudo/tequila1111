@@ -13,9 +13,9 @@
 .portfolio--details-description .about-description { width: 100%; padding-left: 0; }
 .portfolio--details-description .about-description a { text-decoration: underline; }
 
-.portfolio--info .photo--grid { display: grid; grid-template-columns: repeat(2, 1fr);  gap: 20px; }
+.portfolio--info .photo--grid { display: grid; grid-template-columns: repeat(2, 1fr); --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--gap) * 2); }
 .portfolio--info .photo--grid > :first-child { grid-column: 1 / -1; }
 
-.portfolio--info .photo--list { display: grid; grid-template-columns: repeat(1, 1fr); gap: 24px; }
+.portfolio--info .photo--list { display: grid; grid-template-columns: repeat(1, 1fr); --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--gap) * 2); }
 
 .portfolio--info .button--wrapper { display: flex; flex-flow: row wrap; align-items: center; justify-content: space-between; margin-top: 60px; }

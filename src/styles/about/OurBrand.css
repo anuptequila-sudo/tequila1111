@@ -3,7 +3,7 @@
 .OurBrand-header .section--title { width: 100%; }
 .OurBrand-header .OurBrand-header-title { width: 50%; }
 .OurBrand-item-first { width: 40%; }
-.OurBrand-item-first .OurBrand-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
+.OurBrand-item-first .OurBrand-header-description { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; }
 .OurBrand-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
 .brand--reveal { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; list-style: none; margin: 15vh 0; }

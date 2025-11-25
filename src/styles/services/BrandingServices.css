@@ -2,7 +2,7 @@
 .BrandingServices-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
 .BrandingServices-header .section--title { width: 45%; }
 .BrandingServices-header .section--subtitle { width: 35%; }
-.BrandingServices-item-first .BrandingServices-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
+.BrandingServices-item-first .BrandingServices-header-description { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; }
 .BrandingServices-container { display: flex; gap: 4rem; scroll-behavior: smooth; }
 .BrandingServices-container .BrandingServices-item-second { flex: 1; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
 .BrandingServices-container .BrandingServices-item-second .info { width: 100%; max-width: 300px; }
@@ -11,7 +11,7 @@
 .BrandingServices-container .BrandingServices-item-second .img-box { display: flex; flex: 1; }
 .BrandingServices-container .BrandingServices-item-second .img-box img { width: 100%; height: auto; object-fit: contain; }
 
-.branding--services--list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 60px; }
+.branding--services--list { display: grid; grid-template-columns: repeat(3, 1fr); --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--gap) * 2); margin-top: 60px; }
 .branding--services--list .branding--card { border: 1px solid rgba(255, 255, 255, 0.5); padding: 55px; }
 .branding--services--list .branding--card .branding--card--img { width: 150px; display: flex; margin-bottom: 120px; }
 .branding--services--list .branding--card .branding--card--img img { width: 100%; height: auto; object-fit: contain; }

@@ -1,6 +1,6 @@
 .blogs-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; overflow: hidden; }
 
-.blogs-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: calc(var(--space-xl) * 2); }
+.blogs-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: calc(var(--space-xxxl) * 2); }
 .blogs-header .blogs-header-title { width: 50%; margin-bottom: 0; }
 .blogs-header .blogs-header-description { width: 30%; }
 

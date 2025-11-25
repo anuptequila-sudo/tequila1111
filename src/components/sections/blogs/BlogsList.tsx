@@ -189,7 +189,7 @@ export default function BlogsList() {
 
   return (
     <section className="BlogsList" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="breadcrumb" style={{ marginBottom: 0 }}>
           <div className="breadcrumb-item">
             <a href="./">Home</a>

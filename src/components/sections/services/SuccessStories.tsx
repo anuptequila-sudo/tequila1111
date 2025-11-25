@@ -47,7 +47,7 @@ export default function SuccessStories({ title, description }: ProvenProcessProp
           x: "0%",
           rotateZ: 0,
           opacity: 1,
-          // scale: 1,
+          scale: 1,
           ease: "power3.out",
           scrollTrigger: {
             trigger: card,
@@ -66,7 +66,7 @@ export default function SuccessStories({ title, description }: ProvenProcessProp
 
   return (
     <section className="SuccessStories-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="SuccessStories-header">
           {title && (
             <h2 className="section--title" data-splitting-opacity-anime>

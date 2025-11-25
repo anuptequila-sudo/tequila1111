@@ -60,7 +60,7 @@ export default function AboutSection() {
 
   return (
     <section className="about-section-full" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="about-section">
           {/* Left 30% */}
           <div className="about-left">

@@ -60,7 +60,7 @@ export default function WhyUs() {
 
   return (
     <section className="WhyUs-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="WhyUs-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Why Us?

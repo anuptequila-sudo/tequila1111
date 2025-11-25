@@ -75,7 +75,7 @@ const faq: Faq[] = [
   },
 ];
 
-export default function Faqection({ topSpace }: FaqProps) {
+export default function FaqSection({ topSpace }: FaqProps) {
   const [activeTab, setActiveTab] = useState("all");
   const [heights, setHeights] = useState<number[]>([]);
 
@@ -103,7 +103,7 @@ export default function Faqection({ topSpace }: FaqProps) {
 
   return (
     <section className="faq-section" style={{ paddingTop: topSpace }}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="breadcrumb" style={{ marginBottom: 0 }}>
           <div className="breadcrumb-item">
             <a href="./">Home</a>
@@ -112,15 +112,14 @@ export default function Faqection({ topSpace }: FaqProps) {
             FAQ
           </div>
         </div>
+        <h2 className="section--title" data-splitting-opacity-anime>
+          FAQ
+        </h2>
         <div className={styles.wrapper}>
           <div className={styles.groupOne}>
-            <h2 className="section--title" data-splitting-opacity-anime>
-              FAQ
-            </h2>
             <h3 className="section--subtitle" data-splitting-opacity-anime>
               <span className="description-highlight-space"></span> Got questions about branding & web design? We’ve answered the most common ones right here for you.
             </h3>
-            <h2></h2>
             <Button href="/contact" variant="secondary" data-come-up-anime>
               CONTACT US
             </Button>

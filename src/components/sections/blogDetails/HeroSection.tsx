@@ -55,7 +55,7 @@ export default function HeroSection() {
       <div className="hero--bg" ref={videoWraRef}>
         <Image priority width={1920} height={1080} placeholder="blur" blurDataURL="/images/blog-details/blog-details.webp" src="/images/blog-details/blog-details.webp" alt="About Banner" />
       </div>
-      <div className="container-fixed">
+      <div className="container">
         <div className="breadcrumb">
           <div className="breadcrumb-item">
             <a href="./">Home</a>

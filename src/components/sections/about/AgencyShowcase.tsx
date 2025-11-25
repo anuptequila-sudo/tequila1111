@@ -38,7 +38,7 @@ export default function AgencyShowcase() {
 
   return (
     <section className="AgencyShowcase-section">
-      <div className="container-fixed">
+      <div className="container">
         <div className="AgencyShowcase-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             An Agency where Creatives Want to Work; and People Want to Work With.
@@ -46,7 +46,7 @@ export default function AgencyShowcase() {
         </div>
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={20}
+          spaceBetween={40}
           slidesPerView={2.2}
           loop={true}
           autoplay={{

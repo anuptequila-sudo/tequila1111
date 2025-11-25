@@ -56,7 +56,7 @@ export default function MeetTheTeam() {
 
   return (
     <section className="MeetTheTeam-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="MeetTheTeam-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Meet the Team
@@ -64,10 +64,10 @@ export default function MeetTheTeam() {
         </div>
         <div className="MeetTheTeam-container">
           <div className="MeetTheTeam-item-first">
-            <p className="MeetTheTeam-header-description" data-splitting-opacity-anime>
+            <h3 className="MeetTheTeam-header-description" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime></span>
               Strategists, designers, developers, storytellers—and everything in between. We’re a tight-knit group of curious minds who bring diverse perspectives and deep expertise to the table. Different in roles, aligned in vision: building brands that lead.
-            </p>
+            </h3>
           </div>
         </div>
         <ul className="team--list">

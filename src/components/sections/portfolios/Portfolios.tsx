@@ -134,7 +134,7 @@ export default function Portfolios() {
 
   return (
     <section className="portfolioSection" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="breadcrumb">
           <div className="breadcrumb-item">
             <a href="./">Home</a>

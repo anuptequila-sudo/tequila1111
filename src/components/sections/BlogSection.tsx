@@ -69,7 +69,7 @@ export default function BlogSection() {
 
   return (
     <section className="blogs-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="blogs-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             From the Journal

@@ -9,6 +9,6 @@
 .information-header-description,
 .information-header-description-span { font-size: 3.5rem; font-weight: 100; }
 .information-header-description-span { font-style: italic; }
-.information-header-contact { font-size: 5.5rem; font-weight: 400; text-align: right; color: rgba(var(--text) / 100%); }
-.information-item-second { justify-self: end; margin-top: 30vh; }
+.information-header-contact { font-size: 5.5rem; font-weight: 400; text-align: right; color: rgba(var(--text) / 100%); line-height: 1; margin-bottom: 0; }
+.information-item-second { display: flex; flex-flow: column wrap; gap: var(--space-sm); justify-self: end; margin-top: 30vh; }
 .information-header { margin-bottom: -1rem; position: relative; z-index: -2; background-color: #ffd400; overflow: hidden; }

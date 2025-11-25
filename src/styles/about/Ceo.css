@@ -7,9 +7,9 @@
 .ceo--info .left img { width: 100%; display: flex; }
 .ceo--info .right { width: 30%; }
 
-.ceo--info .section--subtitle { width: 80%; }
+.ceo--info .section--subtitle { width: 80%; margin-bottom: calc(var(--space-xl) * 2); }
 .ceo--info p { font-size: 21px; font-weight: 300; line-height: 1.1; margin-bottom: 20px; }
-.ceo--info .name--wrapper { margin-top: var(--space-md); }
+.ceo--info .name--wrapper { margin-top: calc(var(--space-xl) * 2); }
 .ceo--info .name--wrapper .name { font-size: 24px; text-transform: uppercase; font-weight: 400; }
 .ceo--info .name--wrapper .title { font-size: 21px; font-weight: 400; color: #808080; }
 

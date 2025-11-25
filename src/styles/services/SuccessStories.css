@@ -3,7 +3,7 @@
 .SuccessStories-header .section--title { width: 70%; }
 .SuccessStories-header .section--subtitle { width: 40%; }
 
-.SuccessStories-section .SuccessStories--list { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-xxxl) var(--space-md); padding: var(--space-lg) 0; }
+.SuccessStories-section .SuccessStories--list { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--space-xxxl) * 3) calc(var(--gap) * 2); padding: var(--space-lg) 0; }
 .SuccessStories-section .SuccessStories--list .img--box { display: flex; width: 100%; margin-bottom: 24px; overflow: hidden; }
 .SuccessStories-section .SuccessStories--list .img--box img { width: 100%; height: auto; object-fit: contain; transition: all 0.5s; }
 .SuccessStories-section .SuccessStories--list .story--box:hover .img--box img { transform: scale(1.05); }

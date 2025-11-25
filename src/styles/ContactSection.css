@@ -1,6 +1,6 @@
 .contact-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; }
 
-.contact-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
+.contact-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-xxxl); }
 .contact-header .section--title { width: 40%; margin-bottom: 0; }
 
 .contact-item-first { width: 50%; }

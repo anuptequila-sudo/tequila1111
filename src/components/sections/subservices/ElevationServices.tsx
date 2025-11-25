@@ -61,7 +61,7 @@ export default function ElevationServices() {
 
   return (
     <section className="ElevationServices-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="ElevationServices-header">
           <h2 className="section--title ElevationServices-header-title" data-splitting-opacity-anime>
             Our Brand Elevation Services in Dubai 

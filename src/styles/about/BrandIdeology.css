@@ -4,7 +4,7 @@
 .BrandIdeology-header .section--subtitle { width: 40%; }
 .BrandIdeology-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
-.mission--vision { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: -60px; }
+.mission--vision { display: grid; grid-template-columns: repeat(4, 1fr); --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--gap) * 2); margin-top: -60px; }
 .mission--vision > *:first-child { grid-column: 3 / 4; }
 .mission--vision .ideology--box { position: relative; overflow: hidden; width: 100%; padding-bottom: 125%; }
 .mission--vision .ideology--box .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; transition: transform 0.5s ease; }

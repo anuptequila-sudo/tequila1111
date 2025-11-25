@@ -20,9 +20,9 @@
 
 .awards-list { position: relative; }
 
-.award-row .year { width: 10%; font-size: 1.4rem; font-weight: 300; }
-.award-row .company { width: 25%; font-size: 1.4rem; }
-.award-row .title { width: 63%; font-size: 1.4rem; }
+.award-row .year { width: 10%; font-size: 1.4rem; font-weight: 300; transition: all 0.5s; }
+.award-row .company { width: 25%; font-size: 1.4rem; transition: all 0.5s; }
+.award-row .title { width: 63%; font-size: 1.4rem; transition: all 0.5s; }
 .award-row .image-container { width: 30%; max-width: 500px; position: absolute; right: 10%; bottom: 100%; overflow: hidden; pointer-events: none; display: flex; }
 .award-row .image-container img { width: 100%; opacity: 0; transform: translateY(20px); transition: all 0.5s ease; }
 .award-row.active .image-container img { opacity: 1; transform: translateY(0); }

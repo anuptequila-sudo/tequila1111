@@ -132,7 +132,7 @@ export default function PortfolioSection() {
 
   return (
     <section className={styles.portfolioSection} ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className={styles.headerWrapper}>
           <h2 className={`${styles.headerTitle} section--title`} data-splitting-opacity-anime>
             What we've Built

@@ -118,7 +118,7 @@ export default function AwardsSection() {
 
   return (
     <section className="awards-section">
-      <div className="container-fixed">
+      <div className="container">
         <div className="awards-header">
           <div className="awards-header-title">
             <h2 className="section--title" data-splitting-opacity-anime>

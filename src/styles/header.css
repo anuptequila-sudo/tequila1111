@@ -1,5 +1,3 @@
-.container { width: 90%; margin: 0 auto; display: flex; align-items: center; }
-
 .header { width: 100%; position: absolute; top: 0; left: 0; z-index: 99; color: rgba(var(--text) / 100%); padding: var(--space-lg) 0 var(--space-md); }
 
 .logo-wrapper { flex: 0 0 auto; }
@@ -8,7 +6,7 @@
 .right-wrapper { flex: 1; display: flex; align-items: center; }
 
 .menu ul { list-style: none; display: flex; flex-wrap: wrap; margin: 0; padding: 0; margin-right: var(--space-lg); }
-.menu li a { position: relative; padding: var(--space-xs) 0; font-size: 20px; font-weight: 400; color: rgba(var(--text) / 50%); transition: all 0.5s; }
+.menu li a { position: relative; padding: var(--space-xs) 0; font-size: 20px; line-height: 1.2; font-weight: 400; color: rgba(var(--text) / 50%); transition: all 0.5s; }
 .menu li a::after { content: ""; position: absolute; width: 0%; height: 2px; bottom: 0; left: 0; background-color: rgba(var(--accent) / 100%); transition: width 0.3s ease; }
 .menu li a:hover::after { width: 0%; }
 .menu li a:hover { color: rgba(var(--text) / 100%); }
@@ -49,8 +47,9 @@
 .has-dropdown:hover .dropdown,
 .has-dropdown .dropdown:hover { opacity: 1; visibility: visible; transform: translate(-50%, 0px); pointer-events: auto; }
 
-.sticky-sub-menu li { opacity: 0.5; cursor: pointer; font-weight: 300; font-size: 0.9rem; transition: all 0.5s; }
-.sticky-sub-menu li:hover { opacity: 1; }
+.sticky-sub-menu li { margin-bottom: 6px; transition: all 0.5s; }
+.sticky-sub-menu li a { font-size: 19px; opacity: 0.6; color: rgba(var(--text) / 100%); padding: 0; }
+.sticky-sub-menu li:hover a { opacity: 1; }
 .sticky-sub-menu h4 { margin-bottom: 1.5rem; }
 
 .sticky-sub-menu h4 + a { font-size: 1.5rem; color: rgba(var(--text) / 100%); font-family: "InstrumentSerifRegular",serif; }
@@ -68,27 +67,27 @@
 .sticky-menu .sticky-sub-group.sticky-sub-middle .sticky-sub-menu ul li { font-size: 13px; }
 
 .footer-menu .footer-menu-subtitle, .footer-col .footer-menu-subtitle { font-size: 1.5rem; font-family: "InstrumentSerifRegular",serif; margin-bottom: 1rem; }
-.mega-menu { position: fixed; display: flex; width: 100vw; height: calc(100vh - calc(var(--header-height) - var(--space-md)) + 1px); gap: 1.2rem; left: 50%; transform: translateX(-50%) translateY(20px); padding: 3rem; z-index: 1; top: calc(var(--header-height) - var(--space-md)); backdrop-filter: blur(15px); background: rgb(0 0 0 / 70%); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; border-top: 1px solid rgba(255, 255, 255, 0.25); margin-top: -1px; }
+.mega-menu { position: fixed; display: flex; width: 100vw; height: calc(100vh - calc(var(--header-height) - var(--space-md)) + 1px); gap: 1.2rem; left: 50%; transform: translateX(-50%) translateY(20px); padding: 3rem; z-index: 1; top: calc(var(--header-height) - var(--space-md)); backdrop-filter: blur(10px); background: rgba(var(--bg) / 95%); opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease; border-top: 1px solid rgba(255, 255, 255, 0.25); margin-top: -1px; }
 
 [data-theme="light"] .mega-menu { background: rgba(var(--text) / 80%); }
 .mega-visible-header .mega-menu { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0px); }
-.mega-menu .col-first { margin-left: 25%; margin-right: 8%; }
+.mega-menu .col-first { margin-left: 15%; margin-right: 8%; }
 .mega-menu ul { gap: 8px; display: grid; margin-top: 1rem; }
 .mega-menu .sticky-sub-group { display: flex; gap: 1.2rem; }
-.mega-menu .col-first-text { font-size: 2rem; }
+.mega-menu .col-first-text { font-size: 40px; }
 .mega-menu .sticky-sub-menu span { font-size: 1.2rem; }
 
-.sticky-menu li.sticky-parent a { font-size: 20px; text-transform: capitalize; opacity: 0.8; padding: var(--space-sm) 0; }
+.sticky-menu li.sticky-parent > a { font-size: 20px; text-transform: capitalize; opacity: 0.8; padding: var(--space-sm) 0; }
 .sticky-menu li.sticky-parent a:hover { opacity: 1.2; }
 .sticky-menu li.sticky-parent a:hover:after { width: 0%; }
 .sticky-menu li.sticky-parent a:after { content: ""; background-color: rgba(var(--accent) / 100%); width: 0%; height: 1px; transition: width 0.3s; position: absolute; bottom: 0; left: 0; }
-.sticky-menu li.sticky-parent ul li a { font-size: 20px; color: rgba(var(--accent) / 100%); padding: calc(var(--space-xs) / 2) 0; }
+.sticky-menu li.sticky-parent ul li a { font-size: 19px; opacity: 0.5; color: rgba(var(--accent) / 100%); padding: calc(var(--space-xs) / 2) 0; transition: all 0.5s; }
+.sticky-menu li.sticky-parent ul li:hover a { opacity: 1; }
 
 .sticky-dropdown { position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0px); background: rgb(23 23 23 / 56%); display: flex; flex-direction: row; gap: 20px; width: calc(100% + (var(--space-xl) * 2)); transition: all 0.25s ease-out; z-index: -1; border-radius: 30px; backdrop-filter: blur(10px); max-height: 0px; height: 400px; overflow: hidden; opacity: 0; }
-.sticky-dropdown-columns { display: flex; flex-flow: row wrap; padding: 30px; gap: 20px; width: 100%; opacity: 0; }
+.sticky-dropdown-columns { display: flex; flex-flow: row wrap; padding: 30px; gap: 20px; width: 100%; opacity: 0; transition: all 0.5s; }
 .sticky-dropdown-wrapper.visible .sticky-dropdown { max-height: 400px; opacity: 1; }
-.sticky-dropdown-wrapper.visible .sticky-dropdown .sticky-dropdown-columns { opacity: 1; transition: all 0.25s; transition-delay: 0.25s; }
-.sticky-header.blurred { backdrop-filter: blur(10px); }
+.sticky-dropdown-wrapper.visible .sticky-dropdown .sticky-dropdown-columns { opacity: 1; }
 
 .sticky-dropdown .column-first { display: flex; gap: 2rem; width: 100%; }
 .sticky-dropdown .sticky-maim-menu { display: grid; flex: 1; }
@@ -102,7 +101,7 @@
 
 .sticky-maim-menu-load .sticky-maim-menu-load-item.load-message { padding-top: 1rem; }
 .sticky-maim-menu-load .sticky-maim-menu-load-item span { font-size: 1.5rem; }
-.sticky-maim-menu-load-item ul li { opacity: 0.8; font-weight: 300; }
+.sticky-maim-menu-load-item ul li { opacity: 1; font-weight: 300; }
 .sticky-maim-menu-load-item { display: none; }
 .sticky-maim-menu-load-item[style*="display: grid"] { display: grid !important; }
 .sticky-header-text,

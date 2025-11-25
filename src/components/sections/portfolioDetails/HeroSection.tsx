@@ -80,7 +80,7 @@ export default function HeroSection() {
   return (
     <>
       <section className="portfolio--info">
-        <div className="container-fixed">
+        <div className="container">
           {/* Left 30% */}
           <div className="portfolio--details-left">
             <div className="year" data-splitting-opacity-anime>
@@ -104,7 +104,7 @@ export default function HeroSection() {
         <div className="bg" ref={videoWraRef}>
           <Image width={1000} height={1000} src="/images/portfolio-details/portfolio-details-banner.webp" alt="Lojain Omran Ecommerce Website" />
         </div>
-        <div className="container-fixed" ref={sectionRef}>
+        <div className="container" ref={sectionRef}>
           <div className="img--box">
             <Image width={1000} height={1000} src="/images/portfolio-details/p-1.webp" alt="Lojain Omran Ecommerce Website" />
           </div>

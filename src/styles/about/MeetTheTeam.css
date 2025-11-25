@@ -2,10 +2,10 @@
 .MeetTheTeam-header { display: flex; justify-content: space-between; align-items: flex-start; }
 .MeetTheTeam-header .MeetTheTeam-header-title { width: 50%; }
 .MeetTheTeam-item-first { width: 40%; }
-.MeetTheTeam-item-first .MeetTheTeam-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
+.MeetTheTeam-item-first .MeetTheTeam-header-description { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; }
 .MeetTheTeam-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
-.team--list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); gap: 60px 20px; margin-top: 80px; }
+.team--list { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); --gap: calc(var(--space-xs) / 2 * 5); gap: calc(var(--gap) * 2); margin-top: 80px; }
 .team--list li .team--card { width: 100%; transform-origin: center bottom; }
 .team--list li .team--card .team--img { width: 100%; display: flex; margin-bottom: 15px; }
 .team--list li .team--card .team--img img { width: 100%; }

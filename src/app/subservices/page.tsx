@@ -13,6 +13,7 @@ import FaqSection from "@/components/sections/FaqSection";
 import ContactSection from "@/components/sections/ContactSection";
 import InformationSection from "@/components/sections/InformationSection";
 import Footer from "@/components/layout/Footer";
+import CoreValues from "@/components/sections/about/CoreValues";
 
 export default function SubServicesPage() {
   return (
@@ -25,13 +26,14 @@ export default function SubServicesPage() {
         title="Our Proven Process: The Tequila Way to Brand Success"
         description="We believe truly impactful branding is built on strategy, creativity, and collaboration. Our branding agency in Dubai, meticulously crafted a 9-step process ensures your brand's foundation is solid and its future is bright:"
       />
+      <CoreValues title="Who It’s Perfect For:" description="" />
       <SuccessStories title="Case Highlights" description="" />
       <TangibleResults title="The Value of Brand Elevation" description="Brand Elevation is more than design — it’s strategy, psychology, and storytelling combined. Here’s what it delivers:" />
       <WhyWorkWithUs />
-      <TestimonialsSlider />
+      <TestimonialsSlider sectionTitle="Client Voices" sectionSubtitle="" />
       <SuccessStories title="Case Highlights" description="" />
-      <FaqSection />
-      <ContactSection />
+      <FaqSection topSpace="" />
+      <ContactSection topSpace="" />
       <InformationSection />
       <Footer />
     </>

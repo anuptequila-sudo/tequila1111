@@ -64,7 +64,7 @@ export default function WhyWorkWithUs() {
 
   return (
     <section className="WhyWorkWithUs-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="WhyWorkWithUs-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Why Work with Us?

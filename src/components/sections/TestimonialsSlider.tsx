@@ -119,15 +119,17 @@ export default function TestimonialsSlider({ sectionTitle, sectionSubtitle }: Te
 
   return (
     <section className={styles.TestimonialsSlider}>
-      <div className="container-fixed">
+      <div className="container">
         {/* Left Side */}
         <div className={styles.groupOne}>
           <h2 className="section--title" data-splitting-opacity-anime>
             {sectionTitle}
           </h2>
-          <h3 className="section--subtitle" data-splitting-opacity-anime>
-            <span className="description-highlight-space"></span> {sectionSubtitle}
-          </h3>
+          {sectionSubtitle && (
+            <h3 className="section--subtitle" data-splitting-opacity-anime>
+              <span className="description-highlight-space"></span> {sectionSubtitle}
+            </h3>
+          )}
         </div>
       </div>
       <div className={styles.wrapper}>

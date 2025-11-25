@@ -39,7 +39,7 @@ export default function BrandElevation() {
 
   return (
     <section className="BrandElevation-section">
-      <div className="container-fixed">
+      <div className="container">
         {/* Left 30% */}
         <div className="about-left">
           <h2 className="section--title about-line" data-splitting-opacity-anime>
@@ -47,10 +47,10 @@ export default function BrandElevation() {
           </h2>
           <div className="BrandElevation-container">
             <div className="BrandElevation-item-first">
-              <p className="section--subtitle BrandElevation-header-description" data-splitting-opacity-anime>
+              <h3 className="section--subtitle BrandElevation-header-description" data-splitting-opacity-anime>
                 <span className="description-highlight-space" data-come-up-anime></span>
                 Not every brand needs a revolution. Sometimes, what you really need is an elevation.
-              </p>
+              </h3>
             </div>
           </div>
           <div className="about-description">

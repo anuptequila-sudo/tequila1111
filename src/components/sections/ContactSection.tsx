@@ -75,7 +75,7 @@ export default function ContactSection({ topSpace }: FaqProps) {
 
   return (
     <section className="contact-section" ref={sectionRef} style={{ paddingTop: topSpace }}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="contact-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Say Hello!

@@ -1,6 +1,6 @@
 .ElevationServices-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
 .ElevationServices-header { display: flex; justify-content: space-between; align-items: flex-start; }
-.ElevationServices-header .ElevationServices-header-title { width: 70%; }
+.ElevationServices-header .ElevationServices-header-title { width: 60%; }
 .ElevationServices-item-first { width: 40%; }
 .ElevationServices-item-first .ElevationServices-header-description { width: 100%; }
 .ElevationServices-container { display: flex; gap: 10rem; scroll-behavior: smooth; }

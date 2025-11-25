@@ -23,14 +23,14 @@ export default function AboutPage() {
       <AboutSection />
       <OurBrand />
       <BrandIdeology />
-      <CoreValues />
+      <CoreValues title="Core Values" description="Our values that define how we work, connect and build meaningful partnerships." />
       <WhyUs />
       <AgencyShowcase />
       <Ceo />
       <MeetTheTeam />
       <WhyWorkWithUs />
       <JoinTheWorkspace />
-      <ContactSection />
+      <ContactSection topSpace="" />
       <InformationSection />
       <Footer />
     </>

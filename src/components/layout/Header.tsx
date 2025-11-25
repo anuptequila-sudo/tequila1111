@@ -241,7 +241,7 @@ export default function Header() {
       <header className="header" ref={headerRef}>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-4 offset-lg-2">
+            <div className="col-lg-5 offset-lg-1">
               <div className="logo-wrapper">
                 <Link href="/">
                   <div className="logo">
@@ -384,7 +384,7 @@ export default function Header() {
         </div>
       </header>
       {/* Sticky Mirror Header */}
-      <header className={`sticky-header dark ${dark ? "dark" : "light"} ${stickyVisible ? "show" : ""} ${isStickyDropdownVisible ? "" : "blurred"}${hideHeader ? "hide-header" : ""}`} style={isStickyDropdownVisible ? {} : {}}>
+      <header className={`sticky-header dark ${dark ? "dark" : "light"} ${stickyVisible ? "show" : ""} ${isStickyDropdownVisible ? "" : "blurred"} ${hideHeader ? "hide-header" : ""}`} style={isStickyDropdownVisible ? {} : {}}>
         <div className="sticky-container">
           <nav className="sticky-menu">
             <ul>

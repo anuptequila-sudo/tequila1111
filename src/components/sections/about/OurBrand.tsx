@@ -126,7 +126,7 @@ export default function OurBrand() {
 
   return (
     <section className="OurBrand-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="OurBrand-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Our Brand DNA

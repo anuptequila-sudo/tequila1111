@@ -9,7 +9,12 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function CoreValues() {
+type CoreValuesProps = {
+  title: string;
+  description: string;
+};
+
+export default function CoreValues({ title, description }: CoreValuesProps) {
   useScrollAnimations();
 
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -65,15 +70,17 @@ export default function CoreValues() {
 
   return (
     <section className="CoreValues-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="CoreValues-header">
           <h2 className="section--title" data-splitting-opacity-anime>
-            Core Values
+            {title}
           </h2>
-          <h2 className="section--subtitle" data-splitting-opacity-anime>
-            <span className="description-highlight-space" data-come-up-anime></span>
-            Our values that define how we work, connect and build meaningful partnerships.
-          </h2>
+          {description && (
+            <h2 className="section--subtitle" data-splitting-opacity-anime>
+              <span className="description-highlight-space" data-come-up-anime></span>
+              {description}
+            </h2>
+          )}
         </div>
         <div className="CoreValues--list">
           <div className="CoreValues--box">

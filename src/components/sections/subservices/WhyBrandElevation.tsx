@@ -63,7 +63,7 @@ export default function WhyBrandElevation() {
   }, []);
   return (
     <section className="WhyBrandElevation-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="WhyBrandElevation-header">
           <h2 className="section--title WhyBrandElevation-header-title" data-splitting-opacity-anime>
             Why Choose Brand Elevation Instead of Rebranding
@@ -71,10 +71,10 @@ export default function WhyBrandElevation() {
         </div>
         <div className="WhyBrandElevation-container">
           <div className="WhyBrandElevation-item-first">
-            <p className="section--subtitle WhyBrandElevation-header-description" data-splitting-opacity-anime>
+            <h3 className="section--subtitle WhyBrandElevation-header-description" data-splitting-opacity-anime>
               <span className="description-highlight-space" data-come-up-anime hidden></span>
               Rebranding means starting over.
-            </p>
+            </h3>
           </div>
         </div>
         <div className="info">

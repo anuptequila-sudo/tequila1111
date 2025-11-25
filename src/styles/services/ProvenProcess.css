@@ -1,23 +1,25 @@
 .ProvenProcess-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
 .ProvenProcess-header { width: 100%; display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 60px; }
-.ProvenProcess-header .ProvenProcess-header-title { width: 75%; }
+.ProvenProcess-header .section--title { width: 68%; }
 .ProvenProcess-container { width: 100%; display: flex; flex-flow: row wrap; gap: var(--space-lg); }
 
 .ProvenProcess-container .ProvenProcess-item-first { width: 35%; }
-.ProvenProcess-container .ProvenProcess-item-first .ProvenProcess-header-description { width: 100%; font-size: 36px; line-height: 1.2; opacity: 0.8; font-family: "InstrumentSerifRegular"; }
+.ProvenProcess-container .ProvenProcess-item-first .ProvenProcess-header-description { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; }
 
-.ProvenProcess-container .ProvenProcess-item-second { display: flex; flex-flow: row wrap; flex: 1; height: 465px; }
+.ProvenProcess-container .ProvenProcess-item-second { display: flex; flex-flow: row wrap; width: calc(65% - var(--space-lg)); --height: 465px; height: var(--height); }
 .ProvenProcess-container .ProvenProcess-item-second .swiper { width: 100%; height: 100%; }
 
 .ProvenProcess-container .ProvenProcess-item-second .info--wrapper { width: 100%; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 24px; }
 .ProvenProcess-container .ProvenProcess-item-second .info { width: 100%; max-width: 300px; }
 .ProvenProcess-container .ProvenProcess-item-second .info .h4 { font-size: 36px; line-height: 1.1; font-weight: 400; margin-bottom: 24px; }
 .ProvenProcess-container .ProvenProcess-item-second .info p { font-size: 16px; line-height: 1.4; font-weight: 400; margin-bottom: 0; }
-.ProvenProcess-container .ProvenProcess-item-second .img-box { display: flex; flex: 1; }
-.ProvenProcess-container .ProvenProcess-item-second .img-box img { width: 100%; height: auto; object-fit: contain; }
+.ProvenProcess-container .ProvenProcess-item-second .img-box { display: flex; flex: 1; position: relative; padding-bottom: var(--height); }
+.ProvenProcess-container .ProvenProcess-item-second .img-box img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; }
 
 .process-slider .swiper-wrapper { transition-timing-function: linear; }
-.process-slider .swiper-slide { height: auto; width: auto; }
+.process-slider .swiper-slide { height: auto; width: auto; background: rgba(var(--bg) / 100%); opacity: 1 !important; clip-path: inset(100% 0% 0% 0%); transition: clip-path 1s ease-in-out; }
+.process-slider .swiper-slide.swiper-slide-prev { height: auto; width: auto; background: rgba(var(--bg) / 100%); opacity: 1 !important; clip-path: inset(0% 0% 100% 0%); }
+.process-slider .swiper-slide.swiper-slide-active { opacity: 1 !important; clip-path: inset(0% 0% 0% 0%); }
 .process-slider .swiper-slide img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
 
 .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets { top: calc(100% + var(--space-md)); display: flex; flex-flow: row wrap; gap: var(--space-sm); }

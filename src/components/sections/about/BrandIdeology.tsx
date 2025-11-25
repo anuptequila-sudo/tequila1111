@@ -64,7 +64,7 @@ export default function BrandIdeology() {
 
   return (
     <section className="BrandIdeology-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="BrandIdeology-header">
           <h2 className="section--title BrandIdeology-header-title" data-splitting-opacity-anime>
             Tequila’s <br />

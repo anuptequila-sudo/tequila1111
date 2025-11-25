@@ -12,7 +12,7 @@ import Button from "../ui/Button";
 export default function Footer() {
   return (
     <footer>
-      <div className="container-fixed">
+      <div className="container">
         <div className="footer">
           <div className="footer-group footer-left">
             <img src="/images/Logo.svg" alt="Logo" className="footer-logo" />

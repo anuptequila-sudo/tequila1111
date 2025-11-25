@@ -67,7 +67,7 @@ export default function BrandingServices() {
 
   return (
     <section className="BrandingServices-section" ref={sectionRef}>
-      <div className="container-fixed">
+      <div className="container">
         <div className="BrandingServices-header">
           <h2 className="section--title" data-splitting-opacity-anime>
             Our Tailored Branding Services

@@ -1,12 +1,12 @@
 .WhyBrandElevation-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
 .WhyBrandElevation-header { display: flex; justify-content: space-between; align-items: flex-start; }
-.WhyBrandElevation-header .WhyBrandElevation-header-title { width: 80%; }
+.WhyBrandElevation-header .WhyBrandElevation-header-title { width: 70%; }
 .WhyBrandElevation-item-first { width: 40%; }
 .WhyBrandElevation-item-first .WhyBrandElevation-header-description { width: 100%; }
 .WhyBrandElevation-container { display: flex; gap: 10rem; scroll-behavior: smooth; }
 
 .WhyBrandElevation-section .info { width: 50%; margin-left: auto; margin-top: 50px; }
-.WhyBrandElevation-section .info .h3 { width: 100%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
+.WhyBrandElevation-section .info .h3 { width: 50%; font-size: 36px; line-height: 1.2; font-family: "InstrumentSerifRegular"; color: rgba(var(--accent) / 100%); margin-bottom: 48px; }
 .WhyBrandElevation-section .info .assets--list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 30px; list-style: none; padding: 0; margin-bottom: 40px; }
 .WhyBrandElevation-section .info .assets--list .h4 { color: rgba(var(--accent) / 100%); font-size: 34px; font-weight: 400; line-height: 100%; margin-bottom: 16px; }
 .WhyBrandElevation-section .info .assets--list p { font-size: 18px; }

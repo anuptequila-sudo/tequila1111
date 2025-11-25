@@ -39,7 +39,7 @@ export default function CraftingBrands() {
 
   return (
     <section className="CraftingBrands-section">
-      <div className="container-fixed">
+      <div className="container">
         {/* Left 30% */}
         <div className="about-left">
           <h2 className="section--title" data-splitting-opacity-anime>

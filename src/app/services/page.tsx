@@ -29,11 +29,11 @@ export default function ServicesPage() {
       <BrandingServices />
       <TangibleResults title="What You'll Achieve with Tequila: Tangible Results" description="Partnering with Tequila means investing in a future where your brand isn't just seen, but felt and remembered. Expect to gain:" />
       <SuccessStories title="Our Branding Success Stories: See the Impact" description="Don't just take our word for it. Explore how Tequila has transformed visions into iconic, impactful brands for our diverse clientele around the world." />
-      <TestimonialsSlider />
+      <TestimonialsSlider sectionTitle="What Our Clients Say: Voices of Success" sectionSubtitle="" />
       <LetsTalk />
-      <FaqSection />
+      <FaqSection topSpace="" />
       <BlogSection />
-      <ContactSection />
+      <ContactSection topSpace="" />
       <InformationSection />
       <Footer />
     </>

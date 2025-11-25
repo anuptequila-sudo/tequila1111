@@ -1,5 +1,5 @@
 .TangibleResults-section { padding: calc(var(--space-xxxl) * 2) 0; position: relative; perspective: 2000px; transform-style: preserve-3d; overflow: hidden; }
-.TangibleResults-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: -60px; }
+.TangibleResults-header { display: flex; flex-flow: column wrap; justify-content: space-between; align-items: flex-start; margin-bottom: -140px; }
 .TangibleResults-header .section--title { width: 80%; }
 .TangibleResults-header .section--subtitle { width: 40%; }
 
