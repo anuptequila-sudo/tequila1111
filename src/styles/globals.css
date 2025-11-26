@@ -175,3 +175,6 @@ button { font-family: inherit; border: none; cursor: pointer; background: none; 
 .breadcrumb:has(+ *) { margin-bottom: var(--space-xl); }
 .breadcrumb-item { position: relative; font-size: 14px; padding: 0; color: rgb(255, 255, 255, 0.5); }
 .breadcrumb-item.active { color: rgb(255, 255, 255, 0.7); }
+
+.whatsapp { position: fixed; bottom: 40px; right: 40px; width: 109px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.whatsapp svg { width: 100%; }

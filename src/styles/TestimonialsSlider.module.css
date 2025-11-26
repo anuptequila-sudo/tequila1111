@@ -12,7 +12,7 @@
 .textBox { min-height: -webkit-fill-available; min-height: 65vh; align-content: end; border: 1px solid rgba(var(--text) / 30%); padding: 40px; }
 .textBox h3 { font-size: 3.2rem; margin-bottom: 20px; line-height: 1; font-weight: 200; }
 
-.navBtns { position: absolute; bottom: -100px; right: 100px; display: flex; gap: 2rem; z-index: 10; }
+.navBtns { position: absolute; bottom: -50px; right: 100px; display: flex; gap: 2rem; z-index: 10; }
 .prevBtn,
 .nextBtn { background: none; border: none; font-size: 1.4rem; cursor: pointer; transition: opacity 0.3s; color: rgba(var(--text) / 100%); }
 .prevBtn:hover,
